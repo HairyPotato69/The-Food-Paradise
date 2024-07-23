@@ -1,6 +1,8 @@
 # THE FOOD PARADISE
 Craving Malaysian Food? Wish to know more about Malaysian's delicacy?
 
+Everyone says Malaysian is a food paradise, I guess that explains why we have the highest obesity rate in South East Asia
+
 Well, you're in the right place! Visit our website to learn more about Malaysian's cuisine! We have:
 1. Nasi lemak
 2. Roti Canai
