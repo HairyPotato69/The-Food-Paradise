@@ -1,0 +1,215 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+:root{
+    --primary: #151618;
+    --background-color: #fafafa;
+    --accent-primary: #C21807;
+    --accent-secondary: #FFD700;
+    --accent-tertiary: #2F452D;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+.nav-link:hover{
+    color:var(--accent-primary);
+}
+
+/* #desktop-nav .nav-item:hover .link-line{
+    opacity: 0.50;
+    transform: translateX(0px);
+} */
+
+.btn{
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: var(--primary);
+    border: 2px solid var(--accent-primary);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: var(--accent-secondary);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.btn:hover::before{
+    scale:3;
+}
+
+.btn:hover {
+    color: var(--primary);
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+  
+.btn:active {
+    scale: 1;
+}
+/* Hamburger nav */
+.nav-button {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.button.primary {
+    background-color: pink;
+    color: white;
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+    border-radius: .25rem;
+    transition: background-color .2s ease-in-out;
+}
+
+.button.primary:hover {
+    background-color: var(--primary);
+}
+
+#menu-container{
+    position: absolute;
+    inset: 0;
+    background-color: white;
+    text-align: center;
+    display: grid; 
+    place-content: center;
+    z-index: 99;
+    height: 0;
+    transition: height .5s cubic-bezier(.14,.65,.15,1);
+}
+
+#menu-container .nav-link{
+    font-size: 2.25rem;
+    line-height: 1.4;
+    /* margin-bottom: 2rem; */
+    transition: color .5s ease-in-out;
+    color: var(--primary);
+}
+
+#menu-container ul{
+    display: block;
+    justify-content: flex-start;
+    list-style-type: none;
+}
+
+#menu-container .link-line{
+    position: relative;
+    left:15px;
+    display:inline-block;
+    width:40%;
+    height:0%;
+    border-top:2px solid rgba(0,0,0, 1);
+    transition: opacity 0.4s;
+    transition: transform 0.2s;
+    opacity: 0;
+    cursor: pointer;
+    transform: translateX(-40px);
+}
+
+#menu-container .nav-item:hover .link-line{
+    opacity: 0.50;
+    transform: translateX(-15px);
+}
+
+#menu-container li {
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+}
+
+:root[menu-open] #menu-container {
+    height: 100%;
+}
+
+:root[menu-open] #menu-container li {
+    opacity: 1;
+}
+
+#menu-button svg {
+    fill: var(--primary);
+    transition: .5s ease-in-out;
+}
+
+#menu-button{
+    display:flex;
+    flex-direction: column;
+    gap: 3.5px;
+    width: 2.5rem;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    z-index:100;
+}
+
+#menu-button span{
+    width: 25px;
+    height: 2.5px;
+    background-color: var(--primary);
+    border-radius: 2px;
+    transition: transform .3s ease-in-out, opacity .3s ease-in-out, background-color .5s ease-in-out;
+}
+
+:root[menu-open] #menu-button span:nth-child(1){
+    transform: translate3d(0, 6px, 0) rotate(45deg);
+}
+:root[menu-open] #menu-button span:nth-child(2){
+    transform: translateX(10px);
+    opacity: 0;
+}
+:root[menu-open] #menu-button span:nth-child(3){
+    transform: translate3d(0, -6px, 0) rotate(-45deg);
+}
+:root[menu-open] #menu-button span{
+    background-color: var(--primary);
+}
+
+.page-footer{
+    box-sizing: border-box;
+    height: 100%;    
+    padding-top: 1.5rem;
+    display: block;
+    background-color: var(--background-color);
+}
+
+.page-footer ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.page-footer ul li{
+    margin-right:2rem;
+}
+
+.page-footer ul li a{
+    text-decoration: none;
+    color:var(--primary);
+}
+
+.page-footer ul li:nth-child(3){
+    margin-right: 0;
+}
+
+.social-media{
+    height: 35px;
+    border-bottom: 2px solid var(--primary);
+}
