@@ -30,6 +30,11 @@
   #carousel{
     height: auto;
   }
+  .carousel-item img{
+    height:auto;
+    width: 100%;
+    object-fit: fill;
+  }
   #the-team{
     height: fit-content;
   }
