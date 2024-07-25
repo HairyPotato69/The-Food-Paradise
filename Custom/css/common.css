@@ -68,6 +68,10 @@ body{
 }
 
 /* Hamburger nav */
+#hamburger-nav{
+    display: none !important;
+}
+
 .nav-button {
     appearance: none;
     background-color: transparent;
