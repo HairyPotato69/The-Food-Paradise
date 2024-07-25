@@ -1,5 +1,4 @@
 /* Hero */
-
 #about-us{
     display: flex;
     box-sizing: border-box;
@@ -207,7 +206,7 @@ figure footer {
     height: 75vh;
     width: 100%;
     margin:0;
-    padding-top: 8rem;
+    padding: 4rem 0;
     justify-content: center;
 }
 
