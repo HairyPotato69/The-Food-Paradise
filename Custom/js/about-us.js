@@ -2,8 +2,8 @@ const menuButton = document.querySelector('#menu-button')
 const rootElement = document.documentElement
 
 menuButton.addEventListener('click', () => {
-  rootElement.toggleAttribute('menu-open')
-})
+  rootElement.toggleAttribute('menu-open');
+});
 
 const alex_span = document.querySelector('.alex');
 const alex_figure = document.querySelector('#Alex');
