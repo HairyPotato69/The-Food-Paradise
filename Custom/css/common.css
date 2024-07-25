@@ -66,8 +66,7 @@ body{
 .btn:active {
     scale: 1;
 }
-
-/* Hamburger nav */
+s
 #hamburger-nav{
     display: none !important;
 }
