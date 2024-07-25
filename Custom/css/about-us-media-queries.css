@@ -12,6 +12,9 @@
   #desktop-nav{
     display: none !important;
   }
+  #hamburger-nav{
+    display:flex !important;
+  }
   #about-us{
     height:90vh;
     padding-top:0;
