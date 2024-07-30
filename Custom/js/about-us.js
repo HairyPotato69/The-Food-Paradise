@@ -1,3 +1,5 @@
+import anime from '..\..\node_modules\animejs\lib\anime.es.js';
+
 const menuButton = document.querySelector('#menu-button')
 const rootElement = document.documentElement
 
@@ -48,3 +50,13 @@ jimmy_span.addEventListener('mouseover', () => {
 jimmy_span.addEventListener('mouseout', () => {
   jimmy_figure.classList.remove('hover-active');
 });
+
+const malay = document.getElementById('malay');
+malay.addEventListener('mouseover', animateMalay);
+
+function animateMalay(){
+  anime({
+    targets: '#malay',
+    translateX: 50
+  })
+}
