@@ -3,17 +3,24 @@
     margin:0;
 }
 
+
 :root{
     --primary: #151618;
+    --text-color: #899499;
     --background-color: #fafafa;
     --accent-primary: #C21807;
     --accent-secondary: #FFD700;
     --accent-tertiary: #2F452D;
+    --accent-quarternary: #702963;
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', medium;
     background-color: white;
+}
+
+p{
+    color:var(--text-color);
 }
 
 .nav-link:hover{
@@ -37,6 +44,7 @@ body{
     font-weight: 600;
     transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
     overflow: hidden;
+    width: fit-content;
 }
 
 .btn::before {
@@ -193,7 +201,8 @@ body{
     height: 100%;    
     padding-top: 1.5rem;
     display: block;
-    background-color: var(--background-color);
+    background-color: var(--primary);
+    color:white;
 }
 
 .page-footer ul{
@@ -207,7 +216,7 @@ body{
 
 .page-footer ul li a{
     text-decoration: none;
-    color:var(--primary);
+    color:var(--background-color);
 }
 
 .page-footer ul li:nth-child(3){
@@ -216,5 +225,9 @@ body{
 
 .social-media{
     height: 35px;
-    border-bottom: 2px solid var(--primary);
+    border-bottom: 2px solid var(--background-color);
+}
+
+.footer-statements p{
+    color:var(--background-color)
 }
