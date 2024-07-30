@@ -99,13 +99,13 @@
             </h1>
             <div class = "container">
                 <div class = "about-malaysia">
-                    <div class = "container">
+                    <div class = "container malaysia-title">
                         <h2> ABOUT <span class = "flag">MALAYSIA</span></h2>
                     </div>
                     <p> <span class = "flag">Malaysia</span> is a Southeast Asian country known for its diverse culture, stunning landscapes, and delicious cuisine. 
                         The capital, Kuala Lumpur, boasts iconic landmarks like the Petronas Towers. 
                         <span class = "flag">Malaysia</span> is famous for its pristine beaches, lush rainforests, and vibrant cities. <br><br>
-                        It’s a melting pot of Malay, Chinese, Indian, and indigenous cultures, reflected in its festivals, architecture, and food. 
+                        It’s a melting pot of <span id = "malay">Malay</span>,<span id = "chinese"> Chinese</span>, <span id = "indian">Indian</span>, and indigenous cultures, reflected in its festivals, architecture, and food. 
                         Visitors can explore historical sites in Melaka, enjoy the highlands of Cameron, or dive in the clear waters of Sipadan.
                         With a tropical climate, friendly locals, and rich heritage, <span class = "flag">Malaysia</span> offers a unique and memorable travel experience.</p>
                 </div>
@@ -173,8 +173,8 @@
                         </div>
                     </div>
                     <div class = "col team-desc">
-                        <h1 class = "mb-5">THE TEAM <div class = "dot"></div></h1>
-                        <p> Meet our team of <span style="color:var(--accent-secondary);">three</span> dedicated professionals who bring passion, expertise, and creativity to every project.<br><br> 
+                        <h1 class = "mb-4">THE TEAM <div class = "dot"></div></h1>
+                        <p><span class = "intro">Meet our team of three dedicated professionals who bring passion, expertise, and creativity to every project.</span><br><br> 
 
                             <span class = "alex">Alex, <span class = "member">our lead designer,</span></span> is renowned for crafting visually stunning and user-friendly designs. 
                             With a keen eye for detail and a knack for innovative solutions, Alex transforms ideas into captivating digital experiences. <br><br>
@@ -194,7 +194,7 @@
             </div>
         </section>
         <section id = "mission-and-vision">
-            <h1 class = "text-center mb-5">OUR MISSION</h1>
+            <h1 class = "text-center mb-5">OUR MISSION AND VISION</h1>
             <div class = "container d-flex justify-content-between">
                 <div class = "card">
                     <div class="card-border-top">
@@ -238,20 +238,11 @@
 
             </div>
         </section>
-        <section id = "join-us">
-            <div class = "container text-center">
-                <div class = "row">
-                    <div class = "col">
-                        <h1>
-                            JOIN US NOW!
-                        </h1>
-                    </div>
-                </div>
-                <div class = "row">
-                    <div class = "col">
-                        <button type = "button" class = "btn"> Contact us </button>
-                    </div>
-                </div>
+        <section id = "join-us" class = "d-flex flex-column justify-content-center align-items-center">
+                <h1>
+                    JOIN US NOW!
+                </h1>
+                <button type = "button" class = "btn"> Contact us </button>
             </div>
         </section>
         <footer class = "page-footer"> 
@@ -275,13 +266,27 @@
             <div class = "container d-flex justify-content-end social-media">
                 <ul>
                     <li>
-                        <a href = "#"><img src = "Asset/Icons/facebook.png"></a>
+                        <a href = "#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
                     </li>
                     <li>
-                        <a href = "#"><img src = "Asset/Icons/twitter.png"></a>
+                        <a href = "#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+                            </svg>
+                        </a>
                     </li>
                     <li>
-                        <a href = "#"><img src = "Asset/Icons/instagram.png"></a>
+                        <a href = "#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </div>
