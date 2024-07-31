@@ -1,5 +1,6 @@
 /* Hero */
 #about-us{
+    position: relative;
     display: flex;
     box-sizing: border-box;
     height: 75vh;
@@ -10,20 +11,15 @@
     align-items: center;
 }
 
-#about-us .container{
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#about-us .container:nth-child(2){
+#about-us > .container{
+    position: relative;
     padding: 5rem 0;
     border-top:2px solid var(--primary);
     border-bottom:2px solid var(--primary);
 }
 
 .about-malaysia{
+    position: relative;
     box-sizing: border-box;
     width: 70%;
     display: grid;
@@ -40,8 +36,9 @@
 }
 
 .container.malaysia-title{
+    position: relative;
     box-sizing: border-box;
-    background-image: url(../../Asset/Images/hand-paint-malaysia-flag.jpg);
+    background-image: url(../../Asset/Images/hand-paint-malaysia-flag.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -49,17 +46,8 @@
     width: 225px;
     height:225px;
     margin-top:2rem;
+    /* mix-blend-mode: multiply; */
 }
-
-
-.container.malaysia-title h2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    color:white;
-}
-
  
 /* Carousel */
 #carousel{
@@ -421,4 +409,11 @@ p .flag:hover{
 
 #the-team .intro{
     color:var(--primary);
+}
+
+.background-fill{
+    position: absolute;
+    float:center;
+    z-index: -2;
+    border-radius: 50%;
 }
