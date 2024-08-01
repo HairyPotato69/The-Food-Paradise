@@ -412,8 +412,17 @@ p .flag:hover{
 }
 
 .background-fill{
-    position: absolute;
-    float:center;
     z-index: -2;
     border-radius: 50%;
+}
+
+#ketupat,
+#lanterns{
+    z-index: -1;
+    mix-blend-mode: multiply;
+    opacity: 0;
+}
+
+#lanterns{
+    top:-200px;
 }

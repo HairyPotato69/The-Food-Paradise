@@ -1,5 +1,6 @@
 const about_us_section = document.getElementById('about-us');
-const style = window.getComputedStyle(about_us_section)
+const width = about_us_section.offsetWidth;
+const height = about_us_section.offsetHeight;
 
 const menuButton = document.querySelector('#menu-button')
 const rootElement = document.documentElement
@@ -57,142 +58,135 @@ jimmy_span.addEventListener('mouseout', () => {
   jimmy_figure.classList.remove('hover-active');
 });
 
+
 let animation_playing = false;
+let animation_finished = false;
+let hover_count = 1;
+let current_timeline = null;
+let next_timeline = null;
 
-let timeline_m = anime.timeline({
-  easing: 'easeInOutQuad',
-  autoplay: false,
-  complete: function(){
-    animation_playing = false;
+function animate_m(){
+  
+  let ketupat_object = document.getElementById("ketupat");
+  let lantern_object = document.getElementById("lanterns");
+  let ketupat_docu = ketupat_object.contentDocument;
+  let lantern_docu = lantern_object.contentDocument;
+  
+  if (ketupat_docu){
+    var ketupat_path = ketupat_docu.querySelector("path");
+    var lantern_path = lantern_docu.querySelector("path");
+    var ketupat_path_length = ketupat_path.getTotalLength();
+    var lantern_path_length = lantern_path.getTotalLength();
+
+    ketupat_path.style.strokeDasharray = ketupat_path_length;
+    ketupat_path.style.strokeDashoffset = ketupat_path_length;
+
+    lantern_path.style.strokeDasharray = lantern_path_length;
+    lantern_path.style.strokeDashoffset = lantern_path_length;
   }
-})
-
-timeline_m.add({
-  targets: '.background-fill',
-  background: accent_quarternary,
-    width: [
-      function(el) {
-        return 0;
-      },
-      function (el){
-        return style.height;
-      }],
-
-    height: [
-      function(el){
-        return 0;
-      },
-      function(el){
-        return style.height;
-      }],
-
-    borderRadius:['50%', '50%'],
-    duration: 900
-
-})
-
-timeline_m.add({
-  targets: ['.about-malaysia p', '#malay', '#chinese', '#indian'],
-  color: accent_secondary,
-})
-
-timeline_m.add({
-  targets: '.background-fill',
-  background: accent_quarternary,
-    width: [        
-      function(el) {
-        return style.height;
-      },
-      function (el){
-        return style.width;
-      }],
-    height: [        
-      function(el) {
-      return style.height;
-    },
-    function (el){
-      return style.width;
-    }],
-    borderRadius:['50%', '0%'],
-  },850)
-timeline_m.add({
-    targets: '#about-us > .container',
-    borderColor: ['#000000','#FFD700']
+  
+  return anime.timeline({
+    easing: 'easeInOutQuad',
+    autoplay: false,
+    complete: function(){
+      animation_playing = false;
+      animation_finished = true;
+    }
   })
-
-let timeline_c = anime.timeline({
-  easing: 'easeInOutQuad',
-  autoplay: false,
-  complete: function(){
-    animation_playing = false;
-  }
-})
-
-timeline_c.add({
-  targets: '.background-fill',
-  background: accent_primary,
-    width: [
-      function(el) {
-        return 0;
-      },
-      function (el){
-        return style.height;
-      }],
-
-    height: [
-      function(el){
-        return 0;
-      },
-      function(el){
-        return style.height;
-      }],
-
-    borderRadius:['50%', '50%'],
-    duration: 900
-
-})
-
-timeline_c.add({
-  targets: ['.about-malaysia p', '#malay', '#chinese', '#indian'],
-  color: primary,
-})
-
-timeline_c.add({
-  targets: '.background-fill',
-  background: accent_primary,
-    width: [        
-      function(el) {
-        return style.height;
-      },
-      function (el){
-        return style.width;
-      }],
-    height: [        
-      function(el) {
-      return style.height;
-    },
-    function (el){
-      return style.width;
-    }],
-    borderRadius:['50%', '0%'],
-  },850)
-timeline_c.add({
-    targets: '#about-us > .container',
-    borderColor: primary
+  .add({
+    targets: '.background-fill',
+    background: accent_quarternary,
+      width: [
+        function(el) {
+          return 0;
+        },
+        function (el){
+          return height;
+        }],
+  
+      height: [
+        function(el){
+          return 0;
+        },
+        function(el){
+          return height;
+        }],
+  
+      borderRadius:['50%', '50%'],
+      duration: 900
   })
+  .add({
+    targets: ['.about-malaysia p', '#malay', '#chinese', '#indian'],
+    color: accent_secondary,
+  },0)
+  .add({
+    targets: '.background-fill',
+    background: accent_quarternary,
+      width: [        
+        function(el) {
+          return height;
+        },
+        function (el){
+          return width;
+        }],
+      height: [        
+        function(el) {
+        return height;
+      },
+      function (el){
+        return width;
+      }],
+      borderRadius:['50%', '0%'],
+    })
+  .add({
+    targets: ketupat_path,
+    translateX: {
+      value: -500,
+      duration: 800,
+      easing:'easeOutElastic(1, .8)'
+    },
+
+    strokeDashoffset: [ketupat_path_length, 0],
+    easing:'easeInOutQuad',
+    duration: 3000,
+    opacity: [0, 100],
+    begin: function() {
+      ketupat_object.style.opacity = 1;  // Show the SVG when the animation starts
+    }
+  })
+  .add({
+    targets: lantern_path,
+    
+    translateY:{
+      value: -800,
+      duration: 800,
+      easing:'easeOutElastic(1, .8)'
+    },
+
+    strokeDashoffset: [lantern_path_length, 0],
+    easing:'easeInOutQuad',
+    duration: 3000,
+    opacity: [0, 100],
+    begin: function() {
+      lantern_object.style.opacity = 1;  // Show the SVG when the animation starts
+    }
+    }, 1000)
+  .add({      
+    targets: '#about-us > .container',
+    borderColor: ['#000000','#FFD700'],
+    }, 0)
+}
 
 document.getElementById('malay').addEventListener('mouseover', function() {
-  if (!animation_playing){
-    animation_playing = true;
-    timeline_m
-  .play();
+  if(current_timeline === null){
+    current_timeline = animate_m();
+    next_timeline = null;
   }
-});
-
-document.getElementById('chinese').addEventListener('mouseover', function() {
-  if (!animation_playing){
-    animation_playing = true;
-    timeline_c
-  .play();
+  if(animation_playing){
+    return;
   }
+  if(animation_finished){
+    current_timeline.reverse();
+  }
+  current_timeline.play();
 });
