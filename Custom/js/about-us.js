@@ -303,7 +303,10 @@ function animate_i(){
       targets: ['.about-malaysia p', '#malay', '#chinese', '#indian'],
       color: color_white
     })
-
+    .add({      
+      targets: '#about-us > .container',
+      borderColor: [color_black, color_white],
+      })
   timeline.type= 'i';
   return timeline;
 }
@@ -339,7 +342,6 @@ document.getElementById('malay').addEventListener('mouseover', function() {
 
   next_timeline = null;
 });
-
 
 document.getElementById('chinese').addEventListener('mouseover', function() {
   if(animation_playing){
