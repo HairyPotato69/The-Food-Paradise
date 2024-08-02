@@ -47,7 +47,7 @@
         <nav id  ="hamburger-nav" class = "container justify-content-between d-flex">
             <a class = "navbar-brand" href = "#">
                 
-                <img src = "Icons/ramen.svg" alt = "Noodle" class = "d-inline-block align-text-center"/>
+                <img src = "" alt = "Noodle" class = "d-inline-block align-text-center"/>
                 Why am i here </a>
                 <button class = "nav-button" id = "menu-button">
                     <span></span>
@@ -95,17 +95,19 @@
             </div>
         </section>
         <section id = "about-us">
-            <h1>
-            </h1>
-            <div class = "container">
+            <div class = "background-fill position-absolute">
+            </div>
+            <object id = "lanterns" type = "image/svg+xml" data = "Asset/Background-Decorations/lanterns.svg" class = "position-absolute"></object>
+            <object id = "ketupat" type = "image/svg+xml" data = "Asset/Background-Decorations/ketupat.svg" class = "position-absolute end-0 top-0"></object>
+            <div class = "container d-flex justify-content-center align-items-center">
                 <div class = "about-malaysia">
-                    <div class = "container malaysia-title">
-                        <h2> ABOUT <span class = "flag">MALAYSIA</span></h2>
+                    <div class = "container malaysia-title d-flex align-items-center justify-content-center">
+                        <h2 class = "d-flex flex-column justify-content-center text-white"> ABOUT <span class = "flag">MALAYSIA</span></h2>
                     </div>
                     <p> <span class = "flag">Malaysia</span> is a Southeast Asian country known for its diverse culture, stunning landscapes, and delicious cuisine. 
                         The capital, Kuala Lumpur, boasts iconic landmarks like the Petronas Towers. 
                         <span class = "flag">Malaysia</span> is famous for its pristine beaches, lush rainforests, and vibrant cities. <br><br>
-                        It’s a melting pot of <span id = "malay">Malay</span>,<span id = "chinese"> Chinese</span>, <span id = "indian">Indian</span>, and indigenous cultures, reflected in its festivals, architecture, and food. 
+                        It's a melting pot of <span id = "malay">Malay</span>,<span id = "chinese"> Chinese</span>, <span id = "indian">Indian</span>, and indigenous cultures, reflected in its festivals, architecture, and food. 
                         Visitors can explore historical sites in Melaka, enjoy the highlands of Cameron, or dive in the clear waters of Sipadan.
                         With a tropical climate, friendly locals, and rich heritage, <span class = "flag">Malaysia</span> offers a unique and memorable travel experience.</p>
                 </div>
@@ -248,7 +250,7 @@
         <footer class = "page-footer"> 
             <div class="container d-flex justify-content-between align-items-center">
                 <a class = "navbar-brand" href = "#">
-                    <img src = "Asset/Icons/ramen.svg" alt = "Noodle" class = "d-inline-block align-text-center"/>
+                    <img src = "" alt = "Noodle" class = "d-inline-block align-text-center"/>
                     WHY AM I HERE
                 </a>
                 <ul class = "footer-links">
@@ -294,9 +296,10 @@
                 <p>&copy; 2024 FoodClub </p>
             </div>
         </footer>
+        <script src ='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js'></script>
+        <script src="Custom/js/about-us.js"></script>
+       
+        <!-- Bootstrap -->
+        <script src="js/bootstrap.bundle.min.js"></script>
     </body>
-    
-    <script src="Custom/js/about-us.js"></script>
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.bundle.min.js"></script>
 </html>

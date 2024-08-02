@@ -1,17 +1,20 @@
 *{
     padding:0;
     margin:0;
+    cursor: default;
 }
 
 
 :root{
-    --primary: #151618;
-    --text-color: #899499;
-    --background-color: #fafafa;
-    --accent-primary: #C21807;
-    --accent-secondary: #FFD700;
-    --accent-tertiary: #2F452D;
-    --accent-quarternary: #702963;
+    --font-base: "Poppins";
+    --color-black: #151618;
+    --color-gray: #899499;
+    --color-purple: #702963;
+    --color-red: #C21807;
+    --color-yellow: #ffd700;
+    --color-green: #2f452d;
+    --color-white: #fafafa;
+
 }
 
 body{
@@ -20,11 +23,11 @@ body{
 }
 
 p{
-    color:var(--text-color);
+    color:var(--color-gray);
 }
 
 .nav-link:hover{
-    color:var(--accent-primary);
+    color:var(--color-red);
 }
 
 /* #desktop-nav .nav-item:hover .link-line{
@@ -37,8 +40,8 @@ p{
     position: relative;
     padding: 10px 24px;
     font-size: 18px;
-    color: var(--primary);
-    border: 2px solid var(--accent-primary);
+    color: var(--color-black);
+    border: 2px solid var(--color-red);
     border-radius: 34px;
     background-color: transparent;
     font-weight: 600;
@@ -57,7 +60,7 @@ p{
     border-radius: inherit;
     scale: 0;
     z-index: -1;
-    background-color: var(--accent-secondary);
+    background-color: var(--color-yellow);
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
@@ -66,7 +69,7 @@ p{
 }
 
 .btn:hover {
-    color: var(--primary);
+    color: var(--color-black);
     scale: 1.1;
     box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
 }
@@ -97,7 +100,7 @@ p{
 }
 
 .button.primary:hover {
-    background-color: var(--primary);
+    background-color: var(--color-black);
 }
 
 #menu-container{
@@ -117,7 +120,7 @@ p{
     line-height: 1.4;
     /* margin-bottom: 2rem; */
     transition: color .5s ease-in-out;
-    color: var(--primary);
+    color: var(--color-black);
 }
 
 #menu-container ul{
@@ -159,7 +162,7 @@ p{
 }
 
 #menu-button svg {
-    fill: var(--primary);
+    fill: var(--color-black);
     transition: .5s ease-in-out;
 }
 
@@ -177,7 +180,7 @@ p{
 #menu-button span{
     width: 25px;
     height: 2.5px;
-    background-color: var(--primary);
+    background-color: var(--color-black);
     border-radius: 2px;
     transition: transform .3s ease-in-out, opacity .3s ease-in-out, background-color .5s ease-in-out;
 }
@@ -193,7 +196,7 @@ p{
     transform: translate3d(0, -6px, 0) rotate(-45deg);
 }
 :root[menu-open] #menu-button span{
-    background-color: var(--primary);
+    background-color: var(--color-black);
 }
 
 .page-footer{
@@ -201,7 +204,7 @@ p{
     height: 100%;    
     padding-top: 1.5rem;
     display: block;
-    background-color: var(--primary);
+    background-color: var(--color-black);
     color:white;
 }
 
@@ -216,7 +219,7 @@ p{
 
 .page-footer ul li a{
     text-decoration: none;
-    color:var(--background-color);
+    color:var(--color-white);
 }
 
 .page-footer ul li:nth-child(3){
@@ -225,9 +228,9 @@ p{
 
 .social-media{
     height: 35px;
-    border-bottom: 2px solid var(--background-color);
+    border-bottom: 2px solid var(--color-white);
 }
 
 .footer-statements p{
-    color:var(--background-color)
+    color:var(--color-white)
 }
