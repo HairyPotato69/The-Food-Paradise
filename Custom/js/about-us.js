@@ -5,10 +5,12 @@ const height = about_us_section.offsetHeight;
 const menuButton = document.querySelector('#menu-button')
 const rootElement = document.documentElement
 
-const primary =  '#151618';
-const accent_quarternary= '#2F452D';
-const accent_primary = '#C21807';
-const accent_secondary = '#FFD700';
+const color_black =  '#151618';
+const color_green= '#2F452D';
+const color_red = '#C21807';
+const color_yellow = '#FFD700';
+const color_purple = '#702963';
+const color_white = '#fafafa';
 
 menuButton.addEventListener('click', () => {
   rootElement.toggleAttribute('menu-open')
@@ -61,41 +63,42 @@ jimmy_span.addEventListener('mouseout', () => {
 
 let animation_playing = false;
 let animation_finished = false;
-let hover_count = 1;
 let current_timeline = null;
-let next_timeline = null;
 
 function animate_m(){
-  
-  let ketupat_object = document.getElementById("ketupat");
-  let lantern_object = document.getElementById("lanterns");
-  let ketupat_docu = ketupat_object.contentDocument;
-  let lantern_docu = lantern_object.contentDocument;
-  
-  if (ketupat_docu){
-    var ketupat_path = ketupat_docu.querySelector("path");
-    var lantern_path = lantern_docu.querySelector("path");
-    var ketupat_path_length = ketupat_path.getTotalLength();
-    var lantern_path_length = lantern_path.getTotalLength();
 
-    ketupat_path.style.strokeDasharray = ketupat_path_length;
-    ketupat_path.style.strokeDashoffset = ketupat_path_length;
-
-    lantern_path.style.strokeDasharray = lantern_path_length;
-    lantern_path.style.strokeDashoffset = lantern_path_length;
-  }
+  // let ketupat_object = document.getElementById("ketupat");
+  // let lantern_object = document.getElementById("lanterns");
+  // let ketupat_docu = ketupat_object.contentDocument;
+  // let lantern_docu = lantern_object.contentDocument;
   
-  return anime.timeline({
+  // if (ketupat_docu){
+  //   var ketupat_path = ketupat_docu.querySelector("path");
+  //   var lantern_path = lantern_docu.querySelector("path");
+  //   var ketupat_path_length = ketupat_path.getTotalLength();
+  //   var lantern_path_length = lantern_path.getTotalLength();
+
+  //   ketupat_path.style.strokeDasharray = ketupat_path_length;
+  //   ketupat_path.style.strokeDashoffset = ketupat_path_length;
+
+  //   lantern_path.style.strokeDasharray = lantern_path_length;
+  //   lantern_path.style.strokeDashoffset = lantern_path_length;
+  // }
+  
+  const timeline = anime.timeline({
     easing: 'easeInOutQuad',
     autoplay: false,
     complete: function(){
       animation_playing = false;
       animation_finished = true;
+    },
+    begin: function(){
+      animation_playing = true;
     }
   })
-  .add({
+  timeline.add({
     targets: '.background-fill',
-    background: accent_quarternary,
+    background: color_green,
       width: [
         function(el) {
           return 0;
@@ -116,12 +119,8 @@ function animate_m(){
       duration: 900
   })
   .add({
-    targets: ['.about-malaysia p', '#malay', '#chinese', '#indian'],
-    color: accent_secondary,
-  },0)
-  .add({
     targets: '.background-fill',
-    background: accent_quarternary,
+    background: color_green,
       width: [        
         function(el) {
           return height;
@@ -139,54 +138,270 @@ function animate_m(){
       borderRadius:['50%', '0%'],
     })
   .add({
-    targets: ketupat_path,
-    translateX: {
-      value: -500,
-      duration: 800,
-      easing:'easeOutElastic(1, .8)'
-    },
-
-    strokeDashoffset: [ketupat_path_length, 0],
-    easing:'easeInOutQuad',
-    duration: 3000,
-    opacity: [0, 100],
-    begin: function() {
-      ketupat_object.style.opacity = 1;  // Show the SVG when the animation starts
-    }
+    targets: ['.about-malaysia p', '#malay', '#chinese', '#indian'],
+    color: color_yellow
   })
-  .add({
-    targets: lantern_path,
-    
-    translateY:{
-      value: -800,
-      duration: 800,
-      easing:'easeOutElastic(1, .8)'
-    },
-
-    strokeDashoffset: [lantern_path_length, 0],
-    easing:'easeInOutQuad',
-    duration: 3000,
-    opacity: [0, 100],
-    begin: function() {
-      lantern_object.style.opacity = 1;  // Show the SVG when the animation starts
-    }
-    }, 1000)
   .add({      
     targets: '#about-us > .container',
     borderColor: ['#000000','#FFD700'],
-    }, 0)
+    })
+  // .add({
+  //   targets: ketupat_path,
+  //   translateX: {
+  //     value: -500,
+  //     duration: 800,
+  //     easing:'easeOutElastic(1, .8)'
+  //   },
+
+  //   strokeDashoffset: [ketupat_path_length, 0],
+  //   easing:'easeInOutQuad',
+  //   duration: 3000,
+  //   opacity: [0, 100],
+  //   begin: function() {
+  //     ketupat_object.style.opacity = 1;  // Show the SVG when the animation starts
+  //   }
+  // })
+  // .add({
+  //   targets: lantern_path,
+    
+  //   translateY:{
+  //     value: -800,
+  //     duration: 800,
+  //     easing:'easeOutElastic(1, .8)'
+  //   },
+
+  //   strokeDashoffset: [lantern_path_length, 0],
+  //   easing:'easeInOutQuad',
+  //   duration: 3000,
+  //   opacity: [0, 100],
+  //   begin: function() {
+  //     lantern_object.style.opacity = 1;  // Show the SVG when the animation starts
+  //   }
+  //   }, 1000)
+  timeline.type='m';
+  return timeline;
 }
 
+function animate_c(){
+  const timeline = anime.timeline({
+    easing: 'easeInOutQuad',
+    autoplay: false,
+    complete: function(){
+      animation_playing = false;
+      animation_finished = true;
+    },
+    begin: function(){
+      animation_playing = true;
+    }
+  })
+
+  timeline.add({
+    targets: '.background-fill',
+    background: color_red,
+    width: [
+      function(el) {
+        return 0;
+      },
+      function (el){
+        return height;
+      }],
+
+      height: [
+        function(el){
+          return 0;
+        },
+
+        function(el){
+          return height;
+      }],
+      borderRadius:['50%', '50%'],
+      duration: 900
+  })
+  .add({
+    targets: '.background-fill',
+    background: color_yellow,
+      width: [        
+        function(el) {
+          return height;
+        },
+        function (el){
+          return width;
+        }],
+      height: [        
+        function(el) {
+        return height;
+      },
+      function (el){
+        return width;
+      }],
+      borderRadius:['50%', '0%'],
+    })
+    .add({
+      targets: ['.about-malaysia p', '#malay', '#chinese', '#indian'],
+      color: color_black
+    })
+
+  timeline.type= 'c';
+  return timeline;
+}
+
+function animate_i(){
+  const timeline = anime.timeline({
+    easing: 'easeInOutQuad',
+    autoplay: false,
+    complete: function(){
+      animation_playing = false;
+      animation_finished = true;
+    },
+    begin: function(){
+      animation_playing = true;
+    }
+  })
+
+  timeline.add({
+    targets: '.background-fill',
+    background: color_black,
+    width: [
+      function(el) {
+        return 0;
+      },
+      function (el){
+        return height;
+      }],
+
+      height: [
+        function(el){
+          return 0;
+        },
+
+        function(el){
+          return height;
+      }],
+      borderRadius:['50%', '50%'],
+      duration: 900
+  })
+  .add({
+    targets: '.background-fill',
+    background: color_purple,
+      width: [        
+        function(el) {
+          return height;
+        },
+        function (el){
+          return width;
+        }],
+      height: [        
+        function(el) {
+        return height;
+      },
+      function (el){
+        return width;
+      }],
+      borderRadius:['50%', '0%'],
+    })
+    .add({
+      targets: ['.about-malaysia p', '#malay', '#chinese', '#indian'],
+      color: color_white
+    })
+
+  timeline.type= 'i';
+  return timeline;
+}
+
+
+
 document.getElementById('malay').addEventListener('mouseover', function() {
-  if(current_timeline === null){
-    current_timeline = animate_m();
-    next_timeline = null;
-  }
   if(animation_playing){
     return;
   }
-  if(animation_finished){
-    current_timeline.reverse();
+
+  if(current_timeline === null){
+    current_timeline = animate_m();
+    current_timeline.play();
   }
-  current_timeline.play();
+
+  else if(current_timeline.type != 'm'){
+    current_timeline.reverse();
+    current_timeline.play();
+
+    current_timeline.finished.then(() => {
+      current_timeline = animate_m();
+      current_timeline.play();
+    });
+  }
+  else if (current_timeline && current_timeline.type == 'm' && animation_finished){
+    current_timeline.reverse();
+    current_timeline.play();
+    current_timeline.finished.then(()=>{
+      current_timeline = null;
+    });
+  }
+
+  next_timeline = null;
 });
+
+
+document.getElementById('chinese').addEventListener('mouseover', function() {
+  if(animation_playing){
+    return;
+  }
+
+  else if(current_timeline === null){
+    current_timeline = animate_c();
+    current_timeline.play();
+  }
+
+  else if(current_timeline.type != 'c'){
+    current_timeline.reverse();
+    current_timeline.play();
+
+    current_timeline.finished.then(()=>{
+      current_timeline = animate_c();
+      current_timeline.play();
+    });
+
+  }
+  else if (current_timeline && current_timeline.type == 'c' && animation_finished){
+    current_timeline.reverse();
+    current_timeline.play();
+
+    current_timeline.finished.then(()=>{
+      current_timeline = null;
+    });
+  }
+
+  next_timeline = null;
+});
+
+document.getElementById('indian').addEventListener('mouseover', function() {
+  if(animation_playing){
+    return;
+  }
+
+  else if(current_timeline === null){
+    current_timeline = animate_i();
+    current_timeline.play();
+  }
+
+  else if(current_timeline.type != 'i'){
+    current_timeline.reverse();
+    current_timeline.play();
+
+    current_timeline.finished.then(()=>{
+      current_timeline = animate_i();
+      current_timeline.play();
+    });
+
+  }
+  else if (current_timeline && current_timeline.type == 'i' && animation_finished){
+    current_timeline.reverse();
+    current_timeline.play();
+
+    current_timeline.finished.then(()=>{
+      current_timeline = null;
+    });
+  }
+
+  next_timeline = null;
+});
+

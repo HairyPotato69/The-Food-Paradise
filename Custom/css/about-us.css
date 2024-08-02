@@ -14,8 +14,8 @@
 #about-us > .container{
     position: relative;
     padding: 5rem 0;
-    border-top:2px solid var(--primary);
-    border-bottom:2px solid var(--primary);
+    border-top:2px solid var(--color-black);
+    border-bottom:2px solid var(--color-black);
 }
 
 .about-malaysia{
@@ -61,7 +61,7 @@
     text-align: center;
     padding-top:4rem;
     padding-bottom:2rem;
-    color:var(--accent-primary);
+    color:var(--color-red);
 }
 
 .carousel-item {
@@ -72,7 +72,7 @@
     width: 12px !important;
     height:12px !important;
     border-radius: 50%;
-    background-color: var(--background-color); /* Customize the color as needed */
+    background-color: var(--color-white); /* Customize the color as needed */
     border: none;
 }
 
@@ -90,14 +90,14 @@
     justify-content: center;
     display: flex;
     align-items: center;
-    background-color: var(--background-color);
+    background-color: var(--color-white);
 }
 
 #the-team .container{
     box-sizing: border-box;
     padding:3rem 2rem 3rem 2rem;
     border: 5px solid #0000; /* space for the border */
-    --_g: #0000 90deg,var(--primary) 0;
+    --_g: #0000 90deg,var(--color-black) 0;
     --_p: 100px 100px border-box no-repeat;
     background:
       conic-gradient(from 90deg  at top    5px left  5px,var(--_g)) 0   0    / var(--_p),
@@ -112,7 +112,7 @@
 
 .team-desc h1{
     display: flex;
-    border-bottom: 0.75rem solid var(--primary)
+    border-bottom: 0.75rem solid var(--color-black)
 }
 
 .team-desc span{
@@ -163,13 +163,13 @@ figcaption main{
 
 figure h3{
     font-size:xx-large;
-    color: var(--accent-secondary);
+    color: var(--color-yellow);
 }
 
 figure p{
     margin:0;
     font-size: large;
-    color: var(--background-color);
+    color: var(--color-white);
 }
 
 figcaption footer{
@@ -220,7 +220,7 @@ figure footer {
 }
 
 #mission-and-vision h1{
-    color:var(--accent-primary)
+    color:var(--color-red)
 }
 
 #mission-and-vision .container{
@@ -252,7 +252,7 @@ figure footer {
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    background-color: var(--accent-primary);
+    background-color: var(--color-red);
     position: absolute;
     right: 250px;
     transition: right 0.4s 0s linear;
@@ -265,7 +265,7 @@ figure footer {
 
 .card span {
     font-weight: 600;
-    color: var(--primary);
+    color: var(--color-black);
     text-align: center;
     display: block;
     padding-top: 10px;
@@ -278,7 +278,7 @@ figure footer {
     width: 70px;
     height: 70px;
     border-radius: 100%;
-    border:2px solid var(--primary);
+    border:2px solid var(--color-black);
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -288,7 +288,7 @@ figure footer {
 
 .card .desc {
     font-weight: 400;
-    color: var(--primary);
+    color: var(--color-black);
     display: block;
     text-align: center;
     padding-top: 5px;
@@ -307,28 +307,28 @@ figure footer {
 }
 
 .card:hover p{
-    color:var(--background-color);
+    color:var(--color-white);
 }
 
 .card .showcase{
-    color:var(--accent-primary);
+    color:var(--color-red);
 }
 .card .vision{
-    color:var(--accent-secondary);
+    color:var(--color-yellow);
 }
 .card .connect{
-    color:var(--accent-tertiary);
+    color:var(--color-green);
 }
 
 .card:hover *{
-    color:var(--background-color);
+    color:var(--color-white);
 }
 .card:hover .img{
-    border-color: var(--background-color);
+    border-color: var(--color-white);
 }
 .card:hover circle
 {
-    fill: var(--background-color);
+    fill: var(--color-white);
 }
 
 #join-us{
@@ -336,24 +336,24 @@ figure footer {
     height: 60vh;
     width: 100%; 
     margin-bottom:2rem;
-    background-color: var(--accent-primary);
+    background-color: var(--color-red);
     border-bottom-left-radius: 80% 500px;
     border-bottom-right-radius: 80% 500px;
 }
 
 #join-us h1{
     font-size: 88px;
-    color:var(--background-color);
+    color:var(--color-white);
 }
 
 #join-us .btn{
-    color: var(--background-color);
-    border-color: var(--accent-secondary);
+    color: var(--color-white);
+    border-color: var(--color-yellow);
 }
 
 #join-us .btn:hover{
-    color: var(--primary);
-    border-color: var(--accent-primary);;
+    color: var(--color-black);
+    border-color: var(--color-red);;
 }
 
 /* Deco */
@@ -365,7 +365,7 @@ figure footer {
 }
 
 p .flag{
-    background: var(--primary);
+    background: var(--color-black);
     background-clip: text;
 }
 
@@ -377,7 +377,7 @@ p .flag:hover{
 }
 
 .member{
-    color:var(--accent-primary);
+    color:var(--color-red);
     font-weight: bold;
 }
 
@@ -387,28 +387,28 @@ p .flag:hover{
     left: 10px;
     width: 18px;
     height:18px;
-    background-color: var(--accent-primary);
+    background-color: var(--color-red);
 }
 
 #malay{
-    color: var(--accent-tertiary);
+    color: var(--color-green);
 }
 #chinese{
-    color: var(--accent-primary);
+    color: var(--color-red);
 }
 #indian{
-    color: var(--accent-quarternary);
+    color: var(--color-purple);
 }
 
 .alex,
 .jia-en,
 .thomas,
 .jimmy{
-    color:var(--primary);
+    color:var(--color-black);
 }
 
 #the-team .intro{
-    color:var(--primary);
+    color:var(--color-black);
 }
 
 .background-fill{
