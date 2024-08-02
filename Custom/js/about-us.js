@@ -12,10 +12,6 @@ const color_yellow = '#FFD700';
 const color_purple = '#702963';
 const color_white = '#fafafa';
 
-menuButton.addEventListener('click', () => {
-  rootElement.toggleAttribute('menu-open')
-})
-
 const alex_span = document.querySelector('.alex');
 const alex_figure = document.querySelector('#Alex');
 

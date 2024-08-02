@@ -3,74 +3,45 @@
     <head lang = "en">
         <title>About us</title>
         <meta charset="UTF-8"/>
-        <meta name = "viewport" content="width=device-width, initial scale=1"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name = "viewport" content="width=device-width, initial-scale=1"/>
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        
         <!-- Bootstrap -->
         <link rel = "stylesheet" href = "css/bootstrap.min.css"/>
+
         <!-- Personal -->
         <link rel = "stylesheet" href = "Custom/css/about-us.css"/>
         <link rel = "stylesheet" href = "Custom/css/common.css"/>
         <link rel = "stylesheet" href = "Custom/css/about-us-media-queries.css"/>
+        <link rel = "stylesheet" href = "Custom/css/common-media-queries.css"/>
     </head>
     <body>
         <!-- Desktop Navigation -->
-        <nav id = "desktop-nav" class = "navbar navbar-expand-lg d-flex justify-content-between sticky-top shadow bg-white">
-            <div class = "container">
-                <a class = "navbar-brand d-flex" href = "#">
-                    <div class = "d-flex flex-column lh-1">
-                        <p class = "mb-0">MALAYSIAN CUISINE</p>
-                        <p class = "mb-0 fs-6">The Food Paradise</p>
-                    </div>
-                    <!-- <img src = "Asset/Icons/ramen.svg" alt = "Noodle" class = "d-inline-block align-text-top"/> -->
-                </a>
-                <ul class = "navbar-nav me-4">
-                    <li class = "nav-item">
-                        <a class = "nav-link" href = "#">Home</a>
-                    </li>
-                    <li class = "nav-item">
-                        <a class = "nav-link" href = "#">Explore</a>
-                    </li>
-                    <li class = "nav-item">
-                        <a class = "nav-link" href = "#">Events</a>
-                    </li>
-                    <li class = "nav-item">
-                        <a class = "nav-link" href = "#">About</a>
-                    </li>
+        <nav class = "desktop-navbar shadow sticky-top bg-white">
+            <div class = "navbar-container container">
+                <input type = "checkbox" name ="" id = "">
+                <div class = "hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+
+                <ul class="menu-items order-2 d-flex">
+                    <li><a href="#hi">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><button type = "button" class = "btn-contact-us"> Contact us </button></li>
                 </ul>
-                <button type = "button" class = "btn"> Contact us </button>
-                <!-- </div> -->
+                <div class = "nav-logo order-1 d-flex flex-column pt-3">
+                    <h1 class="fs-3 mb-0">Malaysian Cuisine</h1>
+                    <p class = "mt-0 fs-6"> The Food Padarise</p>
+                </div>
             </div>
         </nav>
-        <!-- Mobile Navigation -->
-        <nav id  ="hamburger-nav" class = "container justify-content-between d-flex">
-            <a class = "navbar-brand" href = "#">
-                
-                <img src = "" alt = "Noodle" class = "d-inline-block align-text-center"/>
-                Why am i here </a>
-                <button class = "nav-button" id = "menu-button">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-        </nav>
-        <div id = "menu-container">
-            <ul>
-                <li class = "nav-item">
-                    <a class = "nav-link" href = "#">Home</a>
-                    <span class = "link-line"></span>
-                </li>
-                <li class = "nav-item">
-                    <a class = "nav-link" href = "#">Product</a>
-                    <span class = "link-line"></span>
-                </li>
-                <li class = "nav-item">
-                    <a class = "nav-link" href = "#">About</a>
-                    <span class = "link-line"></span>
-                </li>
-            </ul>
-        </div>
         <!-- Hero section -->
         <section id = "carousel">
             <div class = "container">
@@ -94,7 +65,7 @@
                 </div>
             </div>
         </section>
-        <section id = "about-us">
+        <section id = "about-us" class = "d-flex m-0 justify-content-center align-items-center">
             <div class = "background-fill position-absolute">
             </div>
             <object id = "lanterns" type = "image/svg+xml" data = "Asset/Background-Decorations/lanterns.svg" class = "position-absolute"></object>
@@ -104,23 +75,23 @@
                     <div class = "container malaysia-title d-flex align-items-center justify-content-center">
                         <h2 class = "d-flex flex-column justify-content-center text-white"> ABOUT <span class = "flag">MALAYSIA</span></h2>
                     </div>
-                    <p> <span class = "flag">Malaysia</span> is a Southeast Asian country known for its diverse culture, stunning landscapes, and delicious cuisine. 
+                    <p> Malaysia is a Southeast Asian country known for its diverse culture, stunning landscapes, and delicious cuisine. 
                         The capital, Kuala Lumpur, boasts iconic landmarks like the Petronas Towers. 
-                        <span class = "flag">Malaysia</span> is famous for its pristine beaches, lush rainforests, and vibrant cities. <br><br>
+                        Malaysia is famous for its pristine beaches, lush rainforests, and vibrant cities. <br><br>
                         It's a melting pot of <span id = "malay">Malay</span>,<span id = "chinese"> Chinese</span>, <span id = "indian">Indian</span>, and indigenous cultures, reflected in its festivals, architecture, and food. 
                         Visitors can explore historical sites in Melaka, enjoy the highlands of Cameron, or dive in the clear waters of Sipadan.
-                        With a tropical climate, friendly locals, and rich heritage, <span class = "flag">Malaysia</span> offers a unique and memorable travel experience.</p>
+                        With a tropical climate, friendly locals, and rich heritage, Malaysia offers a unique and memorable travel experience.</p>
                 </div>
             </div>
         </section>
-        <section id = "the-team">
+        <section id = "the-team" class = "d-flex justify-content-center align-items-center m-0">
             <div class="container">
                 <div class = "row gx-5">
                     <div class = "col">
                         <div class = "row">
                             <div class = "col">
                                 <figure class = "mb-5 rounded" id = "Alex">
-                                    <img src="Asset/Images/hehe2.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <img src="Asset/Images/hehe2.jpg" class="figure-img img-fluid rounded d-block" alt="...">
                                     <figcaption>
                                         <main>
                                             <h3>ALEX</h3>
@@ -175,7 +146,7 @@
                         </div>
                     </div>
                     <div class = "col team-desc">
-                        <h1 class = "mb-4">THE TEAM <div class = "dot"></div></h1>
+                        <h1 class = "mb-4 d-flex">THE TEAM <div class = "dot"></div></h1>
                         <p><span class = "intro">Meet our team of three dedicated professionals who bring passion, expertise, and creativity to every project.</span><br><br> 
 
                             <span class = "alex">Alex, <span class = "member">our lead designer,</span></span> is renowned for crafting visually stunning and user-friendly designs. 
@@ -195,9 +166,9 @@
                 </div>
             </div>
         </section>
-        <section id = "mission-and-vision">
+        <section id = "mission-and-vision" class = "m-0">
             <h1 class = "text-center mb-5">OUR MISSION AND VISION</h1>
-            <div class = "container d-flex justify-content-between">
+            <div class = "container d-flex justify-content-between pt-2">
                 <div class = "card">
                     <div class="card-border-top">
                     </div>
@@ -244,7 +215,7 @@
                 <h1>
                     JOIN US NOW!
                 </h1>
-                <button type = "button" class = "btn"> Contact us </button>
+                <button type = "button" class = "btn-contact-us"> Contact us </button>
             </div>
         </section>
         <footer class = "page-footer"> 
