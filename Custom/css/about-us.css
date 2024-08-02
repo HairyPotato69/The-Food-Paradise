@@ -1,55 +1,5 @@
-/* Hero */
-#about-us{
-    position: relative;
-    display: flex;
-    box-sizing: border-box;
-    height: 75vh;
-    width: 100%;
-    margin:0;
-    /* padding-top: 5rem; */
-    justify-content: center;
-    align-items: center;
-}
-
-#about-us > .container{
-    position: relative;
-    padding: 5rem 0;
-    border-top:2px solid var(--color-black);
-    border-bottom:2px solid var(--color-black);
-}
-
-.about-malaysia{
-    position: relative;
-    box-sizing: border-box;
-    width: 70%;
-    display: grid;
-    grid-template-columns: 0.25fr 1fr;
-    column-gap:10rem;
-}
-
-.sub-title{
-    display: flex;
-    width: fit-content;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.container.malaysia-title{
-    position: relative;
-    box-sizing: border-box;
-    background-image: url(../../Asset/Images/hand-paint-malaysia-flag.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow:visible;
-    width: 225px;
-    height:225px;
-    margin-top:2rem;
-    /* mix-blend-mode: multiply; */
-}
- 
 /* Carousel */
+
 #carousel{
     box-sizing: border-box;
     height:75vh;
@@ -80,20 +30,119 @@
     background-color: black; /* Customize the active color as needed */
 }
 
+
+/* About us */
+
+#about-us{
+    box-sizing: border-box;
+    height: 75vh;
+    width: 100%;
+}
+
+#about-us > .container{
+    position: relative;
+    padding: 5rem 0;
+    border-top:2px solid var(--color-black);
+    border-bottom:2px solid var(--color-black);
+}
+
+.about-malaysia{
+    box-sizing: border-box;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+    column-gap:10rem;
+}
+
+/* .sub-title{
+    display: flex;
+    width: fit-content;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+} */
+
+.container.malaysia-title{
+    box-sizing: border-box;
+    background-image: url(../../Asset/Images/hand-paint-malaysia-flag.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow:visible;
+    width: 225px;
+    height:225px;
+    margin-top:2rem;
+}
+
+.flag{
+    background: linear-gradient(45deg,#d32f2f, #1976d2, #FFD700);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p .flag{
+    background: var(--color-black);
+    background-clip: text;
+}
+
+p .flag:hover{
+    background: linear-gradient(45deg,#d32f2f, #1976d2, #FFD700);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#malay{
+    color: var(--color-green);
+}
+
+#chinese{
+    color: var(--color-red);
+}
+
+#indian{
+    color: var(--color-purple);
+}
+
+.alex,
+.jia-en,
+.thomas,
+.jimmy{
+    color:var(--color-black);
+}
+
+#the-team .intro{
+    color:var(--color-black);
+}
+
+.background-fill{
+    z-index: -2;
+    border-radius: 50%;
+}
+
+#ketupat,
+#lanterns{
+    z-index: -1;
+    mix-blend-mode: multiply;
+    opacity: 0;
+}
+
+#lanterns{
+    top:-200px;
+}
+
+
 /* The team */
 #the-team{
     box-sizing: border-box;
     height: 100vh;
     width: 100%;
-    margin:0;
     padding: 4rem 0;
-    justify-content: center;
-    display: flex;
-    align-items: center;
     background-color: var(--color-white);
 }
 
-#the-team .container{
+#the-team >.container{
     box-sizing: border-box;
     padding:3rem 2rem 3rem 2rem;
     border: 5px solid #0000; /* space for the border */
@@ -105,20 +154,6 @@
       conic-gradient(from 0deg   at bottom 5px left  5px,var(--_g)) 0    100% / var(--_p),
       conic-gradient(from -90deg at bottom 5px right 5px,var(--_g)) 100% 100% / var(--_p);
 }
-
-.team-desc{
-    padding:0 4rem;
-}
-
-.team-desc h1{
-    display: flex;
-    border-bottom: 0.75rem solid var(--color-black)
-}
-
-.team-desc span{
-    font-weight: bold;
-}
-
 
 figure{
     width: 100%;
@@ -185,13 +220,11 @@ figure footer{
 }
 
 figure main {
-    transform: translate3d(0, -6rem, 0);
-    
+    transform: translate3d(0, -6rem, 0);   
 }
 
 figure footer {
-    transform: translate3d(0, 6rem, 0);
-    
+    transform: translate3d(0, 6rem, 0);  
 }
 
 figure:hover main,
@@ -210,21 +243,44 @@ figure footer {
     transition-timing-function: ease-in-out;
 }
 
+.team-desc{
+    padding:0 4rem;
+}
+
+.team-desc h1{
+    border-bottom: 0.75rem solid var(--color-black)
+}
+
+.team-desc span{
+    font-weight: bold;
+}
+
+.member{
+    color:var(--color-red);
+    font-weight: bold;
+}
+
+.dot{
+    position: relative;
+    top: 19px;
+    left: 10px;
+    width: 18px;
+    height:18px;
+    background-color: var(--color-red);
+}
+
+
+/* Mission and Vision */
+
 #mission-and-vision{
     box-sizing: border-box;
     height: 75vh;
     width: 100%;
-    margin:0;
     padding: 4rem 0;
-    justify-content: center;
 }
 
 #mission-and-vision h1{
     color:var(--color-red)
-}
-
-#mission-and-vision .container{
-    padding-top: rem;
 }
 
 .card{
@@ -247,6 +303,7 @@ figure footer {
     transition-timing-function: ease-in-out, ease-in-out;
     border: none;
 }
+
 .card::after{
     content: "";
     width: 500px;
@@ -313,9 +370,11 @@ figure footer {
 .card .showcase{
     color:var(--color-red);
 }
+
 .card .vision{
     color:var(--color-yellow);
 }
+
 .card .connect{
     color:var(--color-green);
 }
@@ -323,11 +382,12 @@ figure footer {
 .card:hover *{
     color:var(--color-white);
 }
+
 .card:hover .img{
     border-color: var(--color-white);
 }
-.card:hover circle
-{
+
+.card:hover circle{
     fill: var(--color-white);
 }
 
@@ -346,83 +406,12 @@ figure footer {
     color:var(--color-white);
 }
 
-#join-us .btn{
+#join-us .btn-contact-us{
     color: var(--color-white);
     border-color: var(--color-yellow);
 }
 
-#join-us .btn:hover{
+#join-us .btn-contact-us:hover{
     color: var(--color-black);
     border-color: var(--color-red);;
-}
-
-/* Deco */
-.flag{
-    background: linear-gradient(45deg,#d32f2f, #1976d2, #FFD700);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-p .flag{
-    background: var(--color-black);
-    background-clip: text;
-}
-
-p .flag:hover{
-    background: linear-gradient(45deg,#d32f2f, #1976d2, #FFD700);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.member{
-    color:var(--color-red);
-    font-weight: bold;
-}
-
-.dot{
-    position: relative;
-    top: 19px;
-    left: 10px;
-    width: 18px;
-    height:18px;
-    background-color: var(--color-red);
-}
-
-#malay{
-    color: var(--color-green);
-}
-#chinese{
-    color: var(--color-red);
-}
-#indian{
-    color: var(--color-purple);
-}
-
-.alex,
-.jia-en,
-.thomas,
-.jimmy{
-    color:var(--color-black);
-}
-
-#the-team .intro{
-    color:var(--color-black);
-}
-
-.background-fill{
-    z-index: -2;
-    border-radius: 50%;
-}
-
-#ketupat,
-#lanterns{
-    z-index: -1;
-    mix-blend-mode: multiply;
-    opacity: 0;
-}
-
-#lanterns{
-    top:-200px;
 }

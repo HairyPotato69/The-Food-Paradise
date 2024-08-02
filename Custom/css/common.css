@@ -1,9 +1,11 @@
-*{
+*,
+*::after,
+*::before{
     padding:0;
     margin:0;
     cursor: default;
+    box-sizing: border-box;
 }
-
 
 :root{
     --font-base: "Poppins";
@@ -14,7 +16,6 @@
     --color-yellow: #ffd700;
     --color-green: #2f452d;
     --color-white: #fafafa;
-
 }
 
 body{
@@ -30,12 +31,7 @@ p{
     color:var(--color-red);
 }
 
-/* #desktop-nav .nav-item:hover .link-line{
-    opacity: 0.50;
-    transform: translateX(0px);
-} */
-
-.btn{
+.btn-contact-us{
     cursor: pointer;
     position: relative;
     padding: 10px 24px;
@@ -50,7 +46,7 @@ p{
     width: fit-content;
 }
 
-.btn::before {
+.btn-contact-us::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -64,140 +60,64 @@ p{
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
-.btn:hover::before{
+.btn-contact-us:hover::before{
     scale:3;
 }
 
-.btn:hover {
+.btn-contact-us:hover {
     color: var(--color-black);
     scale: 1.1;
     box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
 }
   
-.btn:active {
+.btn-contact-us:active {
     scale: 1;
 }
 
-/* Hamburger nav */
-#hamburger-nav{
-    display: none !important;
+.desktop-navbar input[type="checkbox"],
+.desktop-navbar .hamburger-lines{
+    display: none;
 }
 
-.nav-button {
-    appearance: none;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+.desktop-navbar .container{
+    max-width: 1200px;
+    width: 90%;
+    margin:auto;
 }
 
-.button.primary {
-    background-color: pink;
-    color: white;
-    font-size: 1.125rem;
-    padding: 1rem 2rem;
-    border-radius: .25rem;
-    transition: background-color .2s ease-in-out;
-}
-
-.button.primary:hover {
-    background-color: var(--color-black);
-}
-
-#menu-container{
-    position: absolute;
-    inset: 0;
-    background-color: white;
-    text-align: center;
-    display: grid; 
-    place-content: center;
-    z-index: 99;
-    height: 0;
-    transition: height .5s cubic-bezier(.14,.65,.15,1);
-}
-
-#menu-container .nav-link{
-    font-size: 2.25rem;
-    line-height: 1.4;
-    /* margin-bottom: 2rem; */
-    transition: color .5s ease-in-out;
+.desktop-navbar{
+    width: 100%;
     color: var(--color-black);
+    opacity: 0.85;
+    z-index: 100;
 }
 
-#menu-container ul{
-    display: block;
-    justify-content: flex-start;
-    list-style-type: none;
-}
-
-#menu-container .link-line{
-    position: relative;
-    left:15px;
-    display:inline-block;
-    width:40%;
-    height:0%;
-    border-top:2px solid rgba(0,0,0, 1);
-    transition: opacity 0.4s;
-    transition: transform 0.2s;
-    opacity: 0;
-    cursor: pointer;
-    transform: translateX(-40px);
-}
-
-#menu-container .nav-item:hover .link-line{
-    opacity: 0.50;
-    transform: translateX(-15px);
-}
-
-#menu-container li {
-    opacity: 0;
-    transition: opacity .2s ease-in-out;
-}
-
-:root[menu-open] #menu-container {
-    height: 100%;
-}
-
-:root[menu-open] #menu-container li {
-    opacity: 1;
-}
-
-#menu-button svg {
-    fill: var(--color-black);
-    transition: .5s ease-in-out;
-}
-
-#menu-button{
-    display:flex;
-    flex-direction: column;
-    gap: 3.5px;
-    width: 2.5rem;
-    height: 2.5rem;
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
     align-items: center;
-    justify-content: center;
-    z-index:100;
 }
 
-#menu-button span{
-    width: 25px;
-    height: 2.5px;
-    background-color: var(--color-black);
-    border-radius: 2px;
-    transition: transform .3s ease-in-out, opacity .3s ease-in-out, background-color .5s ease-in-out;
+.menu-items li{
+    list-style-type: none;
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
 }
 
-:root[menu-open] #menu-button span:nth-child(1){
-    transform: translate3d(0, 6px, 0) rotate(45deg);
+.desktop-navbar a{
+    color: var(--color-black);
+    text-decoration:none;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
 }
-:root[menu-open] #menu-button span:nth-child(2){
-    transform: translateX(10px);
-    opacity: 0;
+
+.desktop-navbar a:hover{
+    color: var(--color-red);
 }
-:root[menu-open] #menu-button span:nth-child(3){
-    transform: translate3d(0, -6px, 0) rotate(-45deg);
-}
-:root[menu-open] #menu-button span{
-    background-color: var(--color-black);
-}
+
 
 .page-footer{
     box-sizing: border-box;
