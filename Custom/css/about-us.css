@@ -184,7 +184,7 @@ figure:hover .role,
 figure:hover .name,
 .hover-active .role,
 .hover-active .name{
-    transform: translateY(10px);
+    transform: translateY(30px);
 }
 
 .team-desc{
@@ -231,7 +231,7 @@ figure:hover .name,
     color:var(--color-red)
 }
 
-.card{
+#mission-and-vision .card{
     width: 250px;
     height: 346px;
     box-sizing: border-box;
@@ -252,7 +252,7 @@ figure:hover .name,
     border: none;
 }
 
-.card::after{
+#mission-and-vision .card::after{
     content: "";
     width: 500px;
     height: 500px;
@@ -264,11 +264,11 @@ figure:hover .name,
     z-index: 1;
 }
 
-.card:hover::after {
+#mission-and-vision .card:hover::after {
     right: -160px;
 }
 
-.card span {
+#mission-and-vision .card span {
     font-weight: 600;
     color: var(--color-black);
     text-align: center;
@@ -278,7 +278,7 @@ figure:hover .name,
     z-index:10;
 }
 
-.card .img{
+#mission-and-vision .card .img{
     box-sizing: border-box;
     width: 70px;
     height: 70px;
@@ -291,7 +291,7 @@ figure:hover .name,
     z-index:10;
 }
 
-.card .desc {
+#mission-and-vision .card .desc {
     font-weight: 400;
     color: var(--color-black);
     display: block;
@@ -303,39 +303,39 @@ figure:hover .name,
     z-index:10;
 }
 
-.card:hover{
+#mission-and-vision .card:hover{
     transform: scale(1.2);
 }
 
-.card:hover{
+#mission-and-vision .card:hover{
     box-shadow: 10px 15px 30px rgba(0,0,0, 0.25);;
 }
 
-.card:hover p{
+#mission-and-vision .card:hover p{
     color:var(--color-white);
 }
 
-.card .showcase{
+#mission-and-vision .card .showcase{
     color:var(--color-red);
 }
 
-.card .vision{
+#mission-and-vision .card .vision{
     color:var(--color-yellow);
 }
 
-.card .connect{
+#mission-and-vision .card .connect{
     color:var(--color-green);
 }
 
-.card:hover *{
+#mission-and-vision .card:hover *{
     color:var(--color-white);
 }
 
-.card:hover .img{
+#mission-and-vision .card:hover .img{
     border-color: var(--color-white);
 }
 
-.card:hover circle{
+#mission-and-vision .card:hover circle{
     fill: var(--color-white);
 }
 
