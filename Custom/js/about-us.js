@@ -1,6 +1,7 @@
 const about_us_section = document.getElementById('about-us');
-const width = about_us_section.offsetWidth;
-const height = about_us_section.offsetHeight;
+const test = about_us_section.getBoundingClientRect();
+const width = test.width;
+const height = test.height;
 
 const menuButton = document.querySelector('#menu-button')
 const rootElement = document.documentElement
@@ -129,12 +130,12 @@ function animate_m(){
         return height;
       },
       function (el){
-        return width;
+        return height;
       }],
       borderRadius:['50%', '0%'],
     })
   .add({
-    targets: ['.row:nth-child(2) p', '#malay', '#chinese', '#indian'],
+    targets: ['#about-us p', '#malay', '#chinese', '#indian'],
     color: color_yellow
   }, 0)
   .add({      
@@ -228,12 +229,12 @@ function animate_c(){
         return height;
       },
       function (el){
-        return width;
+        return height;
       }],
       borderRadius:['50%', '0%'],
     })
     .add({
-      targets: ['.row:nth-child(2) p', '#malay', '#chinese', '#indian'],
+      targets: ['#about-us p', '#malay', '#chinese', '#indian'],
       color: color_black
     },0)
 
@@ -291,12 +292,12 @@ function animate_i(){
         return height;
       },
       function (el){
-        return width;
+        return height;
       }],
       borderRadius:['50%', '0%'],
     })
     .add({
-      targets: ['.row:nth-child(2) p', '#malay', '#chinese', '#indian'],
+      targets: ['#about-us p', '#malay', '#chinese', '#indian'],
       color: color_white
     },0)
     .add({      

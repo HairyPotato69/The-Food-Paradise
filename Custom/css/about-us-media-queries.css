@@ -8,10 +8,8 @@
         overflow-x: hidden;
     }
     #about-us {
-        height: 80%;
         align-items: center;
         display: flex;
-        margin: 2rem 0;
     }
 
     #about-us .jumbotron {
@@ -57,7 +55,6 @@
 
     #the-team{
         height:fit-content;
-        margin:4rem 0;
     }
 
     #the-team .row{
@@ -76,6 +73,22 @@
     #the-team .team-desc{
         padding:0 0.5rem;
     }
+
+    figure .role{
+        font-size: 1.5rem !important;
+    }
+
+    figure:hover .role,
+    .hover-active .role{
+    transform: translateY(70px);
+    }
+
+    figure:hover .name
+    .hover-active .name{
+        transform: translateY(50px);
+    }
+
+
     #mission-and-vision .card:hover{
         transform: scale(1);
     }
