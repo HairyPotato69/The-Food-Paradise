@@ -13,7 +13,7 @@ const color_purple = '#702963';
 const color_white = '#fafafa';
 
 const alex_span = document.querySelector('.alex');
-const alex_figure = document.querySelector('#Alex');
+const alex_figure = document.querySelector('#alex');
 
 alex_span.addEventListener('mouseover', () => {
   alex_figure.classList.add('hover-active');
@@ -24,7 +24,7 @@ alex_span.addEventListener('mouseout', () => {
 });
 
 const jia_span = document.querySelector('.jia-en');
-const jia_figure = document.querySelector('#Jia-En');
+const jia_figure = document.querySelector('#jia-en');
 
 jia_span.addEventListener('mouseover', () => {
   jia_figure.classList.add('hover-active');
@@ -35,7 +35,7 @@ jia_span.addEventListener('mouseout', () => {
 });
 
 const thomas_span = document.querySelector('.thomas');
-const thomas_figure = document.querySelector('#Thomas');
+const thomas_figure = document.querySelector('#thomas');
 
 thomas_span.addEventListener('mouseover', () => {
   thomas_figure.classList.add('hover-active');
@@ -46,7 +46,7 @@ thomas_span.addEventListener('mouseout', () => {
 });
 
 const jimmy_span = document.querySelector('.jimmy');
-const jimmy_figure = document.querySelector('#Jimmy');
+const jimmy_figure = document.querySelector('#jimmy');
 
 jimmy_span.addEventListener('mouseover', () => {
   jimmy_figure.classList.add('hover-active');
@@ -134,13 +134,13 @@ function animate_m(){
       borderRadius:['50%', '0%'],
     })
   .add({
-    targets: ['.about-malaysia p', '#malay', '#chinese', '#indian'],
+    targets: ['.row:nth-child(2) p', '#malay', '#chinese', '#indian'],
     color: color_yellow
-  })
+  }, 0)
   .add({      
-    targets: '#about-us > .container',
+    targets: '#about-us .container .row',
     borderColor: ['#000000','#FFD700'],
-    })
+    }, 0)
   // .add({
   //   targets: ketupat_path,
   //   translateX: {
@@ -233,9 +233,9 @@ function animate_c(){
       borderRadius:['50%', '0%'],
     })
     .add({
-      targets: ['.about-malaysia p', '#malay', '#chinese', '#indian'],
+      targets: ['.row:nth-child(2) p', '#malay', '#chinese', '#indian'],
       color: color_black
-    })
+    },0)
 
   timeline.type= 'c';
   return timeline;
@@ -296,18 +296,16 @@ function animate_i(){
       borderRadius:['50%', '0%'],
     })
     .add({
-      targets: ['.about-malaysia p', '#malay', '#chinese', '#indian'],
+      targets: ['.row:nth-child(2) p', '#malay', '#chinese', '#indian'],
       color: color_white
-    })
+    },0)
     .add({      
-      targets: '#about-us > .container',
+      targets: '#about-us .container .row',
       borderColor: [color_black, color_white],
-      })
+      },0)
   timeline.type= 'i';
   return timeline;
 }
-
-
 
 document.getElementById('malay').addEventListener('mouseover', function() {
   if(animation_playing){
