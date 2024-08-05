@@ -120,6 +120,7 @@ p{
 
 footer{
     background-color: var(--color-black);
+    height: fit-content;
 }
 
 footer ul{

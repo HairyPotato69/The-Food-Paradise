@@ -98,12 +98,12 @@ p .flag:hover{
     border-radius: 50%;
 }
 
-#ketupat,
+/* #ketupat,
 #lanterns{
     z-index: -1;
     mix-blend-mode: multiply;
     opacity: 0;
-}
+} */
 
 #lanterns{
     top:-200px;
