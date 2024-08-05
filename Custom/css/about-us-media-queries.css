@@ -118,3 +118,55 @@
       display: none;
   }
 } */
+@media (max-width: 768px) {
+    #about-us .jumbotron {
+        padding: 1rem 0; /* Reduce padding on smaller screens */
+        height:fit-content !important;
+    }
+
+    #about-us h2 {
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+    }
+
+    #about-us p {
+        font-size: 0.875rem; /* Adjust font size for readability */
+        margin: 0.5rem; /* Adjust margin for spacing */
+    }
+
+    #about-us .container .row{
+        padding:1.5rem 0;
+    } 
+
+    #mission-and-vision{
+        height:fit-content;
+        margin-bottom: 2rem;
+    }
+    #mission-and-vision .jumbotron{
+        margin-top: 2rem;
+    }
+    #join-us{
+        height: 40vh;
+    }
+    #join-us h1{
+        font-size: 1.5rem;
+    }
+
+    #join-us .jumbotron{
+        height:100%;
+        border-bottom-left-radius: 80% 300px;
+        border-bottom-right-radius: 80% 300px;
+        margin-bottom: 2rem;
+    }
+    #the-team{
+        height:100%;
+    }
+
+    #the-team .row{
+        margin: 2rem 0;
+    }
+
+    #the-team .faces{
+        margin-bottom: 2rem;
+    }
+
+}

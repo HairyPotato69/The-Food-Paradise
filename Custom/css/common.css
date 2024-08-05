@@ -118,32 +118,21 @@ p{
     color: var(--color-red);
 }
 
-
-.page-footer{
-    box-sizing: border-box;
-    height: 100%;    
-    padding-top: 1.5rem;
-    display: block;
+footer{
     background-color: var(--color-black);
-    color:white;
 }
 
-.page-footer ul{
-    display: flex;
+footer ul{
     list-style-type: none;
 }
-
-.page-footer ul li{
-    margin-right:2rem;
-}
-
-.page-footer ul li a{
+footer ul li a{
     text-decoration: none;
     color:var(--color-white);
+    transition: color 0.2s ease-in-out;
 }
 
-.page-footer ul li:nth-child(3){
-    margin-right: 0;
+footer ul li a:hover{
+    color:var(--color-red);
 }
 
 .social-media{

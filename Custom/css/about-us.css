@@ -1,18 +1,11 @@
 /* Carousel */
 
-#carousel{
-    box-sizing: border-box;
+/* #carousel{
+    /* box-sizing: border-box;
     height:75vh;
     width: 100%;
-    overflow: hidden;   
-}
-
-.title{
-    text-align: center;
-    padding-top:4rem;
-    padding-bottom:2rem;
-    color:var(--color-red);
-}
+    overflow: hidden;  
+} */
 
 .carousel-item {
     transition: transform 0.5s ease-in-out;
@@ -34,44 +27,28 @@
 /* About us */
 
 #about-us{
-    box-sizing: border-box;
     height: 75vh;
     width: 100%;
-}
+} 
 
-#about-us > .container{
-    position: relative;
-    padding: 5rem 0;
+
+#about-us .container .row{
     border-top:2px solid var(--color-black);
     border-bottom:2px solid var(--color-black);
 }
 
-.about-malaysia{
-    box-sizing: border-box;
-    width: 70%;
-    display: grid;
-    grid-template-columns: 0.25fr 1fr;
-    column-gap:10rem;
-}
-
-/* .sub-title{
-    display: flex;
-    width: fit-content;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
+/* #about-us .about-malaysia{
+    background-image: url(../../Asset/Images/hand-paint-malaysia-flag.png);
 } */
 
-.container.malaysia-title{
-    box-sizing: border-box;
-    background-image: url(../../Asset/Images/hand-paint-malaysia-flag.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow:visible;
-    width: 225px;
-    height:225px;
-    margin-top:2rem;
+#about-us .about-malaysia img{
+    position: relative;
+    object-fit: cover; /* Ensures the image covers the container */
+    z-index: -1; /* Image is behind the text */
+}
+#about-us h2{
+    position: relative;
+    left:-60%;
 }
 
 .flag{
@@ -135,17 +112,15 @@ p .flag:hover{
 
 /* The team */
 #the-team{
-    box-sizing: border-box;
     height: 100vh;
     width: 100%;
-    padding: 4rem 0;
     background-color: var(--color-white);
 }
 
-#the-team >.container{
+#the-team .container .faces{
     box-sizing: border-box;
     padding:3rem 2rem 3rem 2rem;
-    border: 5px solid #0000; /* space for the border */
+    border: 5px solid #0000; 
     --_g: #0000 90deg,var(--color-black) 0;
     --_p: 100px 100px border-box no-repeat;
     background:
@@ -153,28 +128,13 @@ p .flag:hover{
       conic-gradient(from 180deg at top    5px right 5px,var(--_g)) 100% 0    / var(--_p),
       conic-gradient(from 0deg   at bottom 5px left  5px,var(--_g)) 0    100% / var(--_p),
       conic-gradient(from -90deg at bottom 5px right 5px,var(--_g)) 100% 100% / var(--_p);
-}
+} 
 
 figure{
     width: 100%;
     height:fit-content;
     overflow: hidden;
     position:relative;
-}
-
-figure img{
-    width: 100%;
-    height:100%;
-    display: block;
-    object-fit: cover;
-    transform: scale(1.2);
-    transition-property: transform;
-}
-
-figure:hover img,
-.hover-active img{
-    transform: scale(1.1);
-    filter: brightness(60%);
 }
 
 figcaption{
@@ -189,58 +149,42 @@ figcaption{
     z-index: 1;
 }
 
-figcaption main{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 2rem;
-}
-
-figure h3{
-    font-size:xx-large;
+figcaption .role{
+    transform: translateY(-120px);
     color: var(--color-yellow);
 }
 
-figure p{
-    margin:0;
-    font-size: large;
-    color: var(--color-white);
+figcaption .name{
+    transform: translateY(100px);
 }
 
-figcaption footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} 
-
-figure main,
-figure footer{
-    opacity: 0;
-    transition-property: opacity, transform;
+figure img{
+    width: 100%;
+    height:100%;
+    display: block;
+    object-fit: cover;
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
 }
 
-figure main {
-    transform: translate3d(0, -6rem, 0);   
+figure:hover img,
+.hover-active img{
+    transform: scale(1.1);
+    filter: brightness(60%);
 }
 
-figure footer {
-    transform: translate3d(0, 6rem, 0);  
+
+.role,
+.name{
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
-figure:hover main,
-figure:hover footer,
-.hover-active main,
-.hover-active footer{
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-}
 
-figcaption::before,
-figure img,
-figure main,
-figure footer {
-    transition-duration: .2s;
-    transition-timing-function: ease-in-out;
+figure:hover .role,
+figure:hover .name,
+.hover-active .role,
+.hover-active .name{
+    transform: translateY(10px);
 }
 
 .team-desc{
@@ -269,14 +213,18 @@ figure footer {
     background-color: var(--color-red);
 }
 
+#jia-en{
+    transform: translateY(20px);
+}
+#jimmy{
+    transform: translateY(20px);
+}
 
 /* Mission and Vision */
 
 #mission-and-vision{
-    box-sizing: border-box;
     height: 75vh;
     width: 100%;
-    padding: 4rem 0;
 }
 
 #mission-and-vision h1{
@@ -391,20 +339,17 @@ figure footer {
     fill: var(--color-white);
 }
 
+
 #join-us{
-    box-sizing: border-box;
-    height: 60vh;
-    width: 100%; 
-    margin-bottom:2rem;
+    height:75vh;
+}
+
+#join-us .jumbotron{
     background-color: var(--color-red);
     border-bottom-left-radius: 80% 500px;
     border-bottom-right-radius: 80% 500px;
 }
 
-#join-us h1{
-    font-size: 88px;
-    color:var(--color-white);
-}
 
 #join-us .btn-contact-us{
     color: var(--color-white);
@@ -414,4 +359,15 @@ figure footer {
 #join-us .btn-contact-us:hover{
     color: var(--color-black);
     border-color: var(--color-red);;
+}
+
+footer{
+    background-color: var(--color-black);
+}
+
+footer ul{
+    list-style-type: none;
+}
+footer a{
+    text-decoration: none;
 }
