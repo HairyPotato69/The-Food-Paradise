@@ -18,6 +18,10 @@
         <link rel = "stylesheet" href = "Custom/css/common.css"/>
         <link rel = "stylesheet" href = "Custom/css/about-us-media-queries.css"/>
         <link rel = "stylesheet" href = "Custom/css/common-media-queries.css"/>
+        
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    
     </head>
     <body>
         <!-- Desktop Navigation -->
@@ -97,7 +101,7 @@
             <div class = "jumbotron h-100 d-flex align-items-center">
                 <div class = "container">
                     <div class = "row">
-                        <div class = "col d-flex align-items-center faces">
+                        <div class = "col d-flex align-items-center faces" data-aos="fade-right" data-aos-easing="ease-in-sine">
                             <div class = "row row-cols-2">
                                 <div class = "col">
                                     <figure id = "alex">
@@ -154,7 +158,7 @@
 
                             </div>
                         </div>
-                        <div class = "col-md-6 team-desc d-flex flex-column flex-wrap">                        
+                        <div class = "col-md-6 team-desc d-flex flex-column flex-wrap" data-aos="fade-left" data-aos-easing="ease-in-sine">                        
                             <h1 class = "mb-4 d-flex">THE TEAM <div class = "dot"></div></h1>
                             <p>
                                 <span class = "intro">Meet our team of three dedicated professionals who bring passion, expertise, and creativity to every project.</span><br><br> 
@@ -182,7 +186,7 @@
                     <h1 class = "text-center mb-5">OUR MISSION AND VISION</h1>
                     <div class = "row gx-5 align-items-center">
                         <div class = "col-md-4 mb-5">
-                            <div class = "card">
+                            <div class = "card" data-aos = "fade-right" data-aos-easing="ease-in-sine">
                                 <div class="card-border-top"></div>
                                     <div class = "img">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-images"><path d="M18 22H4a2 2 0 0 1-2-2V6"/>
@@ -196,7 +200,7 @@
                             </div>
                         </div>
                         <div class = "col-md-4 mb-5">
-                            <div class = "card">
+                            <div class = "card" data-aos="fade-up" data-aos-easing="ease-in-sine">
                                 <div class="card-border-top"></div>
                                     <div class = "img">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users">
@@ -211,7 +215,7 @@
                             </div>
                         </div>
                         <div class = "col-md-4 mb-5">
-                            <div class = "card">
+                            <div class = "card" data-aos="fade-left" data-aos-easing="ease-in-sine">
                                 <div class="card-border-top"></div>
                                     <div class = "img">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/>
@@ -240,6 +244,11 @@
         <script src="Custom/js/about-us.js"></script>
         <!-- Bootstrap -->
         <script src="js/bootstrap.bundle.min.js"></script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
     </body>
     <footer class = "mt-5">
         <div class = "jumbotron">
