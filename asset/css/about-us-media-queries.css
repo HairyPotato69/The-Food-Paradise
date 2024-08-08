@@ -88,27 +88,27 @@
         font-size: 1rem !important;
     }
 
-    #alex figure:hover .role,
-    #thomas figure:hover .role,
+    #alex:hover .role,
+    #thomas:hover .role,
     .hover-active .role{
-        transform: translateY(50px);
+        transform: translateY(5rem);
 
     }
 
-    #alex figure:hover .name,
-    #thomas figure:hover.name,
+    #alex:hover .name,
+    #thomas:hover.name,
     .hover-active .name{
         transform: translateY(50px);
     }
 
-    #jia-en figure:hover .role,
-    #jimmy figure:hover .role,
+    #jia-en:hover .role,
+    #jimmy:hover .role,
     .hover-active .role{
         transform: translateY(5rem);
     }
 
-    #jia-en figure:hover .name,
-    #jimmy figure:hover.name,
+    #jia-en:hover .name,
+    #jimmy:hover.name,
     .hover-active .name{
         transform: translateY(50px);
     }

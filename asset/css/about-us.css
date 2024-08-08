@@ -181,10 +181,12 @@ figure:hover img,
 
 
 figure:hover .role,
+.hover-active .role{
+    transform: translateY(70px);
+}
 figure:hover .name,
-.hover-active .role,
 .hover-active .name{
-    transform: translateY(30px);
+    transform: translateY(50px);
 }
 
 .team-desc{
