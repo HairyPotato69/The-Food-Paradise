@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head lang = "en">
+        <title>About us</title>
+        <meta charset="UTF-8"/>
+        <meta name = "viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!--Bootstrap-->
+        <link rel = "stylesheet" href = "css/bootstrap.min.css"/>
+        <!--Personal-->
+        <link rel = "stylesheet" href = "Custom/css/common-join-us.css"/>
+        <link rel = "stylesheet" href = "Custom/css/common-media-queries.css"/>
+        <link rel = "stylesheet" href = "Custom/css/join-us.css"/>
+        <!--Animation-->
+        <link rel = "stylesheet" href = "css/aos.css">
+        <style>
+            .card {
+    border: none;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0.25rem 1rem var(--color-grey);
+    transition: 0.3s ease;
+}
+        </style>
+    </head>
+    <body>
+        <nav class = "desktop-navbar shadow sticky-top bg-black position-absolute">
+            <div class = "navbar-container container">
+                <input type = "checkbox" name ="" id = "">
+                <div class = "hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+
+                <ul class="menu-items order-2 d-flex">
+                    <li><a href="#hi">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Recomendation</a></li>
+                    <li><button type = "button" class = "btn-contact-us"> Contact us </button></li>
+                </ul>
+                <div class = "nav-logo order-1 d-flex flex-column pt-3">
+                    <h1 class="fs-3 mb-0">Malaysian Cuisine</h1>
+                    <p class = "mt-0 fs-6"> The Food Padarise</p>
+                </div>
+            </div>
+        </nav> 
+        <div id = "hero-container">
+            <video id = "hero" autoplay muted loop>
+                <source src="Asset/Videos/hero.mp4" id="heroVideo">  
+            </video>
+            <div id ="hero-gradient"></div>
+        </div>
+        <!--Carousel-->
+        <div id = "black-container">
+            <div class="container-fuild">
+                <div class="row g-0 d-flex justify-content-center" data-aos="fade-down" data-aos-delay="80">
+                    <div class="col-md-12">
+                        <div id="carouselExample" class="carousel slide make-center" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="Asset/Images/wju-1.jpeg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Asset/Images/wju-2.jpeg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Asset/Images/wju-3.jpeg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="Asset/Images/wju-4.jpeg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id = "closing-container">
+            <div class = "make-center flex-column">
+                <div class = "d-flex justify-content-center text-white pt-5">
+                    <h1>ADVENTURE . EXPLORE . EXPERIENCE</h1>
+                </div>
+                <div class = "d-flex justify-content-center">
+                    <video controls id="set-video" class="d-flex justify-content-center">
+                        <source src = "Asset/Videos/join-us-video-1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class = "d-flex flex-column justify-content-center align-items-center">
+                    <h1 class="">.</hl><br>
+                    <h3 class="col-7 fixed-line-height text-center">Meet Jia En, a culinary adventurer with the power to teleport! Join him as he explores the vibrant and diverse flavors of Malaysian cuisine, hopping from bustling street markets to serene beachside settings. Discover the magic of Malaysian food culture in this exciting journey!</h3>
+                    <h1 class="">.</hl>
+                </div>
+            </div>
+            <!--Banner-->
+            <div class="container"> 
+                <div class="jumbotron" id="jumbo">
+                    <div class="inner">
+                        <div class="row ">
+                            <div class="col-md-11">
+                                <h1 class="whitney">Join Us! Be the next culinary explorer.</h1>
+                                <ul class="whitney boxtick ms-2 mt-3">
+                                    <li class="p-2">1 Month Training Provided!</li>
+                                    <li class="p-2">Free Breakfast for Employees</li>
+                                    <li class="p-2">Recreation and Healthy Facilities Provided!</li>
+                                    <li class="p-2">Near Kampar Railway Station!</li>
+                                </ul>
+                            </div>
+                            <a class="btn btn-lg col-md-1 arrowInBanner" role="button" onclick="openForm()"><img src="Asset/Icons/circled-arrow.png" width="70px"></a></p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!--Partnership-->
+            <div class="container" data-aos="fade-down">
+                <div class = "d-flex justify-content-center flex-wrap mt-5">
+                    <img src = "Asset/Icons/ribbon.svg" class = "col-10 ribbonconfig img-fluid">
+                    <h2 class = "col">~ In Proud Partnership With ~</h2>
+                    <div class="w-100"></div>
+                    <div class="row mt-1">
+                        <img src="Asset/Icons/MTCM.svg" class="col-4">
+                        <img src="Asset/Icons/UTAR.svg" class="col-4">
+                        <img src="Asset/Icons/AirAsia.svg" class="col-4">
+                    </div>
+                </div>
+                <div class="altpartner">
+                    <div class="marquee marquee--hover-pause">
+                        <ul class="marquee__content">
+                            <li><a href="https://www.google.com" data-mdb-animation="fade-in"><img src="Asset/Icons/nestle.svg"></a></li>
+                            <li><a href="TEMP"></a><img src="Asset/Icons/cocacola.svg"></a></li>
+                            <li><a href="TEMP"></a><img src="Asset/Icons/maggi.svg"></a></li>
+                            <li><a href="TEMP"></a><img src="Asset/Icons/mamee.svg"></a></li>
+                            <li><a href="TEMP"></a><img src="Asset/Icons/oldtown.svg"></a></li>
+                        </ul>
+                        <!-- Mirrors the content above -->
+                        <ul class="marquee__content" aria-hidden="true">
+                            <li><a href="TEMP"></a><img src="Asset/Icons/nestle.svg"></a></li>
+                            <li><a href="TEMP"></a><img src="Asset/Icons/cocacola.svg"></a></li>
+                            <li><a href="TEMP"></a><img src="Asset/Icons/maggi.svg"></a></li>
+                            <li><a href="TEMP"></a><img src="Asset/Icons/mamee.svg"></a></li>
+                            <li><a href="TEMP"></a><img src="Asset/Icons/oldtown.svg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <footer class = "mt-5">
+                <div class = "jumbotron">
+                    <div class = "container">
+                        <div class = "row justify-content-center">
+                            <ul class = "d-flex flex-row justify-content-center align-items-center m-5">
+                                <li class = "me-5">
+                                    <a href = "#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook">
+                                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class = "me-5">
+                                    <a href = "#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter">
+                                            <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href = "#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram">
+                                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class = "row">
+                            <ul class="d-flex justify-content-center">
+                                <li class = "me-5"><a href="#hi">Home</a></li>
+                                <li class = "me-5"><a href="#">About</a></li>
+                                <li><a href="#">Recipes</a></li>
+                            </ul>
+                            <ul class = "d-flex justify-content-center">
+                                <li class = "me-5"><a href="#">Gallery</a></li>
+                                <li><a href="#">Recomendation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class = "jumbotron d-flex justify-content-center bg-black align-items-center">
+                    <p class ="text-white m-2">&copy; 2024 FoodClub </p>
+                </div>
+            </footer>
+        </div>
+
+        <!--Pop Up Registration Form-->
+        <div class="form-popup" id="regForm">
+            <div class="form-container">
+                <div class="text">
+                   Contact us Form
+                </div>
+                <form action="#">
+                    <div class="form-row">
+                        <div class="input-data">
+                            <input type="text" required>
+                            <div class="underline"></div>
+                            <label for="">First Name</label>
+                        </div>
+                        <div class="input-data">
+                            <input type="text" required>
+                            <div class="underline"></div>
+                            <label for="">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-data">
+                            <input type="text" required>
+                            <div class="underline"></div>
+                            <label for="">Email Address</label>
+                        </div>
+                        <div class="input-data">
+                            <input type="text" required>
+                            <div class="underline"></div>
+                            <label for="">Contact no</label>
+                        </div>
+                    </div>
+                    <b class="form-row">Choose a date:</b>
+                    <div class="d-flex flex-column form-row">
+                            <label><input type = "radio" name="activityDate" value="2110" required> 21 October 2024</label>
+                            <label><input type = "radio" name="activityDate" value="2210" required> 22 October 2024</label>
+                            <label><input type = "radio" name="activityDate" value="2310" required> 23 October 2024</label>
+                    </div>
+                           
+                     
+                    <div class="form-row">
+                    <div class="input-data textarea">
+                        <textarea rows="8" cols="80" required></textarea>
+                        <br />
+                        <div class="underline"></div>
+                        <label for="">Write your message</label>
+                        <br />
+                        <div class="form-row submit-btn">
+                            <div class="input-data">
+                                <div class="inner"></div>
+                                <input type="submit" value="submit">
+                            </div>
+                            <div class="input-data">
+                                <div class="inner"></div>
+                                <input type="button" onclick="closeForm()" value="Return">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </body>
+    <script type="text/javascript" src="Custom/js/join-us.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script>AOS.init();</script>
+</html>
