@@ -1,45 +1,120 @@
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
+@media screen and (max-width: 480px) { 
+    html,
+    body{
+        width: 100%;
+        height: 100%;
+        padding:0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    
+    #about-us {
+        height:100%;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    #about-us .jumbotron .container{
+        height:fit-content !important;
+    }
+    
+    #about-us .about-malaysia h2{
+        color:var(--color-black) !important;
+    }
+    #about-us .about-malaysia {
+        padding-top:0.5rem;
+    }
+
+    #about-us h2 {
+        font-size: 1.5rem; 
+    }
+
+    #about-us p {
+        font-size: 0.875rem;
+        margin: 0.5rem;
+        padding-bottom:0.5rem;
+    }
+
+    #about-us .container .row{
+        /* padding:0.5rem 0; */
+        width: 100%;
+    } 
+
+    #mission-and-vision{
+        height:fit-content;
+        margin-bottom: 2rem;
+    }
+    #mission-and-vision .jumbotron{
+        margin-top: 2rem;
+    }
+
+    #join-us{
+        height: 40vh;
+    }
+    #join-us h1{
+        font-size: 1.5rem;
+    }
+
+    #join-us .jumbotron{
+        height:100%;
+        border-bottom-left-radius: 80% 300px;
+        border-bottom-right-radius: 80% 300px;
+        margin-bottom: 2rem;
+    }
+
+    #the-team{
+        height:fit-content;
+    }
+
+    #the-team .row{
+        margin: 2rem 0;
+    }
+
+    #the-team .container .faces{
+        margin-bottom: 2rem;
+        padding: 0 0 0 0;
+    }
+    
+    #the-team p{
+        font-size: 0.875rem; 
+        margin: 0.5rem; 
+    }
+    #the-team .team-desc{
+        padding:0 0.5rem;
+    }
+
+    figure .role{
+        font-size: 1rem !important;
+    }
+
+    #alex:hover .role,
+    #thomas:hover .role,
+    .hover-active .role{
+        transform: translateY(5rem);
+
+    }
+
+    #alex:hover .name,
+    #thomas:hover.name,
+    .hover-active .name{
+        transform: translateY(50px);
+    }
+
+    #jia-en:hover .role,
+    #jimmy:hover .role,
+    .hover-active .role{
+        transform: translateY(5rem);
+    }
+
+    #jia-en:hover .name,
+    #jimmy:hover.name,
+    .hover-active .name{
+        transform: translateY(50px);
+    }
 
 
-@media screen and (min-width: 320px) and (max-width: 480px){
-  #desktop-nav{
-    display: none !important;
-  }
-  #about-us{
-    height:90vh;
-    padding-top:0;
-  }
-  #about-us .container:nth-child(2){
-    padding:3rem 0;
-  }
-  .about-malaysia{
-    display:grid;
-    grid-template-columns: 1fr;
-    row-gap: 1rem;
-  }
-  #carousel{
-    height: auto;
-  }
-  #the-team{
-    height: fit-content;
-  }
-  #the-team .container .row{
-    display: flex;
-    flex-direction: column;
-  }
-
-  #the-team .container >.row > .col{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  
-
-
+    #mission-and-vision .card:hover{
+        transform: scale(1.1);
+    }
 }
