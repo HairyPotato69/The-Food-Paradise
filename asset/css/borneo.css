@@ -1,6 +1,7 @@
 #hero{
     background-color: var(--color-green);
     height: 75vh;
+	background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
 }
 
 .borneo-title h1{
@@ -37,7 +38,109 @@
     bottom:-171px;
 }
 
-#wrapper{
+
+/* Food showcase */
+
+#food-showcase{
+    height: fit-content;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.9),
+	 rgba(255, 255, 255, 0.9)), 
+	 url('https://www.shutterstock.com/image-vector/seamless-texture-kitchen-doodle-sketch-600nw-278535350.jpg');
+}
+
+.menu{
+    border-bottom: 1px solid var(--color-black);
+    padding: 2px 0;
+    margin-bottom: 10px;
+}
+
+.menu ul{
+    list-style-type: none;
+}
+
+.menu li{
+    text-decoration: none;
+    color: var(--color-black);
+    margin: 0 10px;
+    font-weight: bold;
+	transition: color .2s ease-in-out;
+}
+
+.menu a{
+	text-decoration: none;
+	color:var(--color-black);
+	transition: color 0.2s ease-in-out;
+}
+
+.menu a:hover{
+    color: var(--color-red);
+}
+
+.category{
+	font-weight: bold;
+}
+
+.card{
+	transition: box-shadow 0.2s ease-in-out;
+}
+
+.card .img-holder{
+	overflow: hidden;
+}
+
+.card .img-holder img{
+	width: 100%;
+	height:100%;
+	object-fit: cover;
+	transform: scale(1.4);
+	transition: all 0.2s ease-in-out;
+} 
+
+.card:hover{
+	box-shadow: 10px 10px 40px var(--color-black);
+}
+
+.card:hover img{
+	transform: scale(1);
+}
+
+.popup {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	background-color: white;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	animation-name: popup;
+	animation-duration: 0.2s;
+}
+
+.popup.visible {
+	display: block;
+}
+.popup-content img {
+	width: 50%;
+}
+
+.close-btn {
+	margin-top: 10px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+@keyframes popup {
+	from {
+		transform: translate(50%, -50%);
+	}
+	/* to {
+		transform: (0, 50%);
+	} */
+}
+
+
+/* #wrapper{
 	width:600px;
 	margin:50px auto;
 	height:400px;
@@ -114,10 +217,10 @@
 	z-index:100;
 	
 	
-	/* -webkit-user-select: none;  
+	-webkit-user-select: none;  
 	-moz-user-select: none; 
 	-khtml-user-select: none; 
-	-ms-user-select: none; */
+	-ms-user-select: none; 
 	
 	-webkit-transition: all 0.1s ease;
 	-moz-transition: all 0.1s ease;
@@ -185,80 +288,4 @@
 	-o-transition: all 0.3s cubic-bezier(1,.01,.32,1);
 	-ms-transition: all 0.3s cubic-bezier(1,.01,.32,1);
 	transition: all 0.3s cubic-bezier(1,.01,.32,1);	
-}
-
-
-/* Food showcase */
-
-#food-showcase{
-    height: 100vh;
-}
-
-.menu{
-    border-bottom: 1px solid var(--color-black);
-    padding: 2px 0;
-    margin-bottom: 10px;
-}
-
-.menu ul{
-    list-style-type: none;
-}
-
-.menu li{
-    text-decoration: none;
-    color: var(--color-black);
-    margin: 0 10px;
-    font-weight: bold;
-	transition: color .2s ease-in-out;
-}
-
-.menu a:hover{
-    color: var(--color-red);
-}
-
-
-.card {
-box-sizing: border-box;
-    width: 190px;
-    height: 254px;
-    background: rgba(217, 217, 217, 0.58);
-    border: 1px solid white;
-    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-    backdrop-filter: blur(6px);
-    border-radius: 17px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.5s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
-    font-weight: bolder;
-    color: black;
-    overflow: hidden; 
-}
-
-.card img{
-    max-width: 100%;
-    max-height: 100%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: inherit;
-    transform: scale(1.2);
-    transition: transform 0.2s ease-in-out;
-}
-
-
-.card:hover {
-    border: 1px solid black;
-    transform: scale(1.05);
-}
-
-.card:hover img{
-    transform: scale(1);
-}
-
-.card:active {
-    transform: scale(0.95) rotateZ(1.7deg);
-}
+} */

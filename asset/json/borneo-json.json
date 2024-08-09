@@ -1,0 +1,28 @@
+{
+    "1": {
+        "title": "White Cheddar Crunch Burgers",
+        "image": "burger.jpg",
+        "description": "Delicious burger with griddled onions...",
+        "time": 30,
+        "calories": 1040,
+        "ingredients": [
+            "1 unit Crispy Fried Onions",
+            "1 unit White Cheddar Cheese",
+            "1 tablespoon Cooking Oil"
+        ],
+        "instructions": "Preheat the oven to 220°C. Cook the onions..."
+    },
+    "2": {
+        "title": "Chicken Tacos",
+        "image": "tacos.jpg",
+        "description": "Spicy chicken tacos with fresh salsa...",
+        "time": 25,
+        "calories": 850,
+        "ingredients": [
+            "1 unit Chicken Breast",
+            "2 units Tortillas",
+            "1 unit Salsa"
+        ],
+        "instructions": "Grill the chicken, warm the tortillas..."
+    }
+}
