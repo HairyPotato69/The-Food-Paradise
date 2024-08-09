@@ -1,0 +1,146 @@
+*,
+*::after,
+*::before{
+    padding:0;
+    margin:0;
+    cursor: default;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-base: "Poppins";
+    --color-black: #151618;
+    --color-gray: #899499;
+    --color-purple: #702963;
+    --color-red: #C21807;
+    --color-yellow: #ffd700;
+    --color-green: #2f452d;
+    --color-white: #fafafa;
+}
+
+body{
+    font-family: 'Poppins', medium;
+    background-color: white;
+}
+
+p{
+    color:var(--color-gray);
+}
+
+.nav-link:hover{
+    color:var(--color-red);
+}
+
+.btn-contact-us{
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: var(--color-black);
+    border: 2px solid var(--color-red);
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+    width: fit-content;
+}
+
+.btn-contact-us::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: var(--color-yellow);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.btn-contact-us:hover::before{
+    scale:3;
+}
+
+.btn-contact-us:hover {
+    color: var(--color-black);
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+  
+.btn-contact-us:active {
+    scale: 1;
+}
+
+.desktop-navbar input[type="checkbox"],
+.desktop-navbar .hamburger-lines{
+    display: none;
+}
+
+.desktop-navbar .container{
+    max-width: 1200px;
+    width: 90%;
+    margin:auto;
+}
+
+.desktop-navbar{
+    width: 100%;
+    color: var(--color-black);
+    opacity: 0.85;
+    z-index: 100;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.menu-items li{
+    list-style-type: none;
+    margin-left: 1.5rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.desktop-navbar a{
+    color: var(--color-black);
+    text-decoration:none;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+.desktop-navbar a:hover{
+    color: var(--color-red);
+}
+
+footer{
+    background-color: var(--color-black);
+    height: fit-content;
+}
+
+footer ul{
+    list-style-type: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color:var(--color-white);
+    transition: color 0.2s ease-in-out;
+}
+
+footer ul li a:hover{
+    color:var(--color-red);
+}
+
+.social-media{
+    height: 35px;
+    border-bottom: 2px solid var(--color-white);
+}
+
+.footer-statements p{
+    color:var(--color-white)
+}

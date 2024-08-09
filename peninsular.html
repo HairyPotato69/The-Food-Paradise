@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head lang = "en">
+        <title>Peninsular Malaysia</title>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name = "viewport" content="width=device-width, initial-scale=1"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!--Bootstrap-->
+        <link rel = "stylesheet" href = "assets/css/bootstrap.min.css"/>
+        <!--Personal-->
+        <link rel = "stylesheet" href = "assets/css/peninsular.css"/>
+        <link rel = "stylesheet" href = "assets/css/peninsular-media-queries.css"/>
+        <link rel = "stylesheet" href = "assets/css/common.css"/>
+        <link rel = "stylesheet" href = "assets/css/common-media-queries.css"/>
+
+        <!--Animation-->
+        <link rel = "stylesheet" href = "assets/css/aos.css">
+    </head>
+
+    <body>
+        <!-- Desktop Navigation -->
+        <nav class = "desktop-navbar shadow sticky-top bg-white">
+            <div class = "navbar-container container">
+                <input type = "checkbox" name ="" id = "">
+                <div class = "hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+
+                <ul class="menu-items order-2 d-flex">
+                    <li><a href="#hi">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Recomendation</a></li>
+                    <li><button type = "button" class = "btn-contact-us"> Contact us </button></li>
+                </ul>
+                <div class = "nav-logo order-1 d-flex flex-column pt-3">
+                    <h1 class="fs-3 mb-0">Malaysian Cuisine</h1>
+                    <p class = "mt-0 fs-6"> The Food Padarise</p>
+                </div>
+            </div>
+        </nav>
+        <!--content-->
+        <section id = "carousel">
+            <div id = "tourists-spots" class = "carousel slide" data-bs-ride="carousel">
+                <div class = "carousel-indicators">
+                    <button type="button" data-bs-target="#tourists-spots" data-bs-slide-to="0" class = "active"></button>
+                    <button type="button" data-bs-target="#tourists-spots" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#tourists-spots" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#tourists-spots" data-bs-slide-to="3"></button>
+                </div>
+                <div class = "carousel-inner">
+                    <div class = "carousel-item active" data-bs-interval="5000">
+                        <img src = "Assets/svg/PeninCarousel1.svg" class = "d-block w-100" alt = "...">
+                    </div>
+                    <div class = "carousel-item" data-bs-interval="5000">
+                        <img src = "Assets/svg/PeninCarousel2.svg" class = "d-block w-100" alt = "...">
+                    </div>
+                    <div class = "carousel-item" data-bs-interval="5000">
+                        <img src = "Assets/svg/PeninCarousel3.svg" class = "d-block w-100" alt = "...">
+                    </div>
+                    <div class = "carousel-item" data-bs-interval="5000">
+                        <img src = "Assets/svg/PeninCarousel4.svg" class = "d-block w-100" alt = "...">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id = "filter">
+
+        </section class = "container">
+            <label class="config-util"><h6>Search: </h6><input type="text" id="searchInput" placeholder="Search"></label>
+            <label class="config-util"><h6>Filter: </h6><select id="filterSelect" >
+                <option value="all">All</option>
+                <option disabled><b>-- By Types --</b></option>
+                <option value="Rice">Rice</option>
+                <option value="Noodle">Noodle</option>
+                <option value="Snack">Snack</option>
+                <option value="Side">Side Dish</option>
+                <option disabled><b>-- By Ethnic --</b></option>
+                <option value="Malay">Malay</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Indian">Indian</option>
+                <!-- Add more options as needed -->
+            </select></label>
+            <ul id="foodList" class="collage-container">
+                <li class="collage-item" data-food="Nasi Lemak" data-category="Rice Malay">
+                    <div data-aos="fade-down" data-aos-delay="100">
+                        <img src="assets/images/NasiLemak.png" alt="Nasi Lemak">
+                        <div class="label">Nasi Lemak</div>
+                    </div>
+                </li>
+                <li class="collage-item" data-food="Laksa Utara" data-category="Noodle Malay">
+                    <div data-aos="fade-down" data-aos-delay="200">
+                        <img src="assets/images/NasiLemak.png" alt="Laksa Utara">
+                        <div class="label">Laksa Utara</div>
+                    </div>
+                </li>
+                <li class="collage-item" data-food="Asam Laksa" data-category="Noodle Chinese">
+                    <div data-aos="fade-down" data-aos-delay="300">
+                        <img src="assets/images/NasiLemak.png" alt="Asam Laksa">
+                        <div class="label">Asam Laksa</div>
+                    </div>
+                </li>
+                <li class="collage-item" data-food="Lamb Rendang" data-category="Rice Side Indian">
+                    <div data-aos="fade-down" data-aos-delay="100">
+                        <img src="assets/images/NasiLemak.png" alt="Lamb Rendang">
+                        <div class="label">Lamb Rendang</div>
+                    </div>
+                </li>
+                <li class="collage-item" data-food="Curry Mee" data-category="Noodle Indian Chinese">
+                    <div data-aos="fade-down" data-aos-delay="200">
+                        <img src="assets/images/NasiLemak.png" alt="Curry Mee">
+                        <div class="label">Curry Mee</div>
+                    </div>
+                <li class="collage-item" data-food="Keropok Lekor" data-category="Snack Malay">
+                    <div data-aos="fade-down" data-aos-delay="300">
+                        <img src="assets/images/NasiLemak.png" alt="Keropok Lekor">
+                        <div class="label">Keropok Lekor</div>
+                    </div>
+                </li>
+                <li class="collage-item" data-food="Murtabak" data-category="Snack Side Malay">
+                    <div data-aos="fade-down" data-aos-delay="100">
+                        <img src="assets/images/NasiLemak.png" alt="Murtabak">
+                        <div class="label">Murtabak</div>
+                    </div>
+                </li>
+                <li class="collage-item" data-food="Popiah" data-category="Snack Side Chinese">
+                    <div data-aos="fade-down" data-aos-delay="200">
+                        <img src="assets/images/NasiLemak.png" alt="Popiah">
+                        <div class="label">Popiah</div>
+                    </div>
+                </li>
+                <li class="collage-item" data-food="Nasi Beriani" data-category="Rice Indian">
+                    <div data-aos="fade-down" data-aos-delay="300">
+                        <img src="assets/images/NasiLemak.png" alt="Nasi Beriani">
+                        <div class="label">Nasi Beriani</div>
+                    </div>
+                </li>
+            </ul>
+            <h3 style="color: rgb(173, 2, 2)" id="notFound"></h3>
+            <!-- <ul id="foodList" class="row">
+                <li data-food="Nasi Lemak" data-category="Rice" class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <img src = "assets/images/NasiLemak.png" class="food-card">
+                        <div class="food-name"><p>Nasi Lemak</p></div>
+                </li>
+                <li data-food="Laksa Utara" data-category="Noodle" class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src = "assets/images/NasiLemak.png" class="food-card">
+                    </div>                
+                </li>
+                <li data-food="Asam Laksa" data-category="Noodle" class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src = "assets/images/NasiLemak.png" class="food-card">
+                    </div>                
+                </li>
+                <li data-food="Asam Laksa" data-category="Noodle" class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <img src = "assets/images/NasiLemak.png" class="food-card">
+                    </div>                
+                </li>
+                Add more food items as needed
+            </ul> -->
+        </section>
+
+        <!--Footer-->
+        <!--<footer class = "mt-5">
+            <div class = "jumbotron">
+                <div class = "container">
+                    <div class = "row justify-content-center">
+                        <ul class = "d-flex flex-row justify-content-center align-items-center m-5">
+                            <li class = "me-5">
+                                <a href = "#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class = "me-5">
+                                <a href = "#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter">
+                                        <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram">
+                                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class = "row">
+                        <ul class="d-flex justify-content-center">
+                            <li class = "me-5"><a href="#hi">Home</a></li>
+                            <li class = "me-5"><a href="#">About</a></li>
+                            <li><a href="#">Recipes</a></li>
+                        </ul>
+                        <ul class = "d-flex justify-content-center">
+                            <li class = "me-5"><a href="#">Gallery</a></li>
+                            <li><a href="#">Recomendation</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class = "jumbotron d-flex justify-content-center bg-black align-items-center">
+                <p class ="text-white m-2">&copy; 2024 FoodClub </p>
+            </div>
+        </footer>-->
+    </body>
+    <script src ='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js'></script>
+    <script type="text/javascript" src="assets/js/peninsular.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script>
+        AOS.init( {disable: window.innerWidth < 768});
+    </script>
+</html>

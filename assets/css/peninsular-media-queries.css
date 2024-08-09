@@ -1,0 +1,60 @@
+@media (min-width: 1320px) {
+    .collage-item {
+        flex: 0 0 32%; /* 3 items per row */
+    }
+}
+@media (min-width: 870px) and (max-width: 1320px) {
+    .collage-item {
+        flex: 0 0 50%; /* 2 items per row */
+    }
+}
+@media (max-width: 870px) {
+    .collage-item {
+        flex: 0 0 100%; /* 1 item per row */
+    }
+}
+
+@media (max-width: 500px) {
+    .collage-item img {
+        width: 22vh;
+        height: auto;
+        display: block;
+        margin: auto;
+        border-radius: 15px;
+      }
+      .collage-item .label {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(255, 255, 255, 0.5);
+        color: rgb(0, 0, 0);
+        padding: 5px 10px;
+        border-radius: 15px;
+        font-size: 14px;
+        width: 22vh;
+        height: 6vh;
+        text-align: center;
+        font-size: large;
+        font-weight: bold;
+        display:grid;
+        place-items: center;
+      }
+      .collage-item div:hover img {
+        transition: 0.5s;
+        width: 23vh;
+        height:auto;
+      }
+      
+      .collage-item div:hover .label {
+        transition: 0.5s;
+        bottom: 10px;
+        background: -webkit-linear-gradient(right, #f1e7ab, #e5e774, #f79797);
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        width: 23vh;
+        height: 7vh;
+        border-radius: 100px;
+      }
+      
+}
