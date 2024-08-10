@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px){
+@media screen and (max-width: 480px){
     .desktop-navbar{
         opacity: 0.95;
     }
@@ -110,7 +110,6 @@
     .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
         transform: rotate(-45deg);
     }
-  
   }
   
   @media screen and(max-width: 500px){
