@@ -17,10 +17,44 @@ const foodData = {
         ]
     },
     2: {
-        title: "Chicken Tacos",
-        image: "tacos.jpg",
-        description: "Spicy chicken tacos with fresh salsa...",
-    }
+        title: "Nasi Linou",
+        image: "asset\\images\\nasi-linou.jpg",
+        description: "Nasi Linou is a traditional Kadazan-Dusun dish made with glutinous rice, cooked with coconut milk and flavored with pandan leaves. It's usually served with side dishes like chicken, beef, or vegetables.",
+		allergenlist: ['Coconut'],
+		nutrients: [            
+			{ name: "Calories", value: 150 },
+            { name: "Fat", value: 1.5 },
+            { name: "Carbohydrates", value: 35 },
+            { name: "Protein", value: 2 },
+
+		]
+    },
+	3: {
+		title: "Nasi Tumpang",
+        image: "asset\\images\\nasi-tumpang.jpg",
+        description: "A specialty of the Bajau people, Nasi Tumpang consists of rice layered with various fillings like spicy sambal, meat, and vegetables, all wrapped in banana leaves and steamed.",
+		allergenlist: ['Depends on filling ingredients'],
+		nutrients: [            
+			{ name: "Calories", value: 180 },
+            { name: "Fat", value: 2 },
+            { name: "Carbohydrates", value: 38 },
+            { name: "Protein", value: 4 },
+
+		]	
+	},
+	4: {
+		title: "Nasi Ulam",
+        image: "asset\\images\\nasi-ulam.jpg",
+        description: "Nasi Ulam is a rice dish mixed with a variety of fresh herbs and vegetables, often seasoned with sambal. It’s a healthy and aromatic dish.",
+		allergenlist: ['Peanuts', 'Seafood'],
+		nutrients: [            
+			{ name: "Calories", value: 170 },
+            { name: "Fat", value: 3 },
+            { name: "Carbohydrates", value: 30 },
+            { name: "Protein", value: 5 },
+
+		]	
+	}
 }
 
 
@@ -34,7 +68,6 @@ document.querySelectorAll('.food-item').forEach(item =>{
 
 function createPopup(data) {
 	
-
 	const overlay = document.createElement('div')
 	overlay.id = 'overlay';
 	overlay.className = 'overlay';

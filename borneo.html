@@ -26,7 +26,7 @@
     </head>
     <body>
         <!-- Desktop Navigation -->
-        <!-- <nav class = "desktop-navbar shadow sticky-top bg-white">
+        <nav class = "desktop-navbar shadow sticky-top bg-white">
             <div class = "navbar-container container">
                 <input type = "checkbox" name ="" id = "">
                     <div class = "hamburger-lines">
@@ -48,80 +48,81 @@
                     <p class = "mt-0 fs-6"> The Food Padarise</p>
                 </div>
             </div>
-        </nav> -->
+        </nav>
         <!-- Hero section -->
-        <section id = "hero">
-            <div class = "jumbotron d-flex h-100 align-items-center">
-                <div class = "borneo-title container d-flex flex-column text-center align-items-center">
+        <!-- <section id = "hero">
+            <div class = "jumbotron d-flex positition-fixed">
+                <div class = "borneo-title container d-flex flex-column text-center h-75 mt-5">
                     <h1 class = "sabah z-3">SABAH</h1>
                     <h1 class = "sarawak">SARAWAK</h1>
                     <h1 class = "sarawak">SARAWAK</h1>
                     <h1 class = "sabah">SABAH</h1>
                 </div>
+                <div class ="blackbar bg-black position-absolute w-100"></div>
             </div>
-        </section>
+        </section> -->
         <section id = "food-showcase">
             <div class = "jumbotron pt-5 h-100">
-                <div class = "container">
-                    <div class = "menu">
-                        <ul class = "d-flex justify-content-around align-items-center">
-                            <li><a class = "filter-cat">All</a></li>
-                            <li><a class = "filter-cat">Rice</a></li>
-                            <li><a class = "filter-cat">Noodle</a></li>
-                            <li><a class = "filter-cat">Snack</a></li>
-                            <li><a class = "filter-cat">Sides</a></li>
+                <div class = "container d-flex justify-content-center">
+                    <div class = "menu w-100">
+                        <ul class = "d-flex justify-content-around align-items-center ps-0">
+                            <li><a href = "#" class = "filter-cat" data-filter = "all">All</a></li>
+                            <li><a href = "#" class = "filter-cat" data-filter = "rice">Rice</a></li>
+                            <li><a href = "#" class = "filter-cat" data-filter = "noodle">Noodle</a></li>
+                            <li><a href = "#" class = "filter-cat" data-filter = "snack">Snack</a></li>
+                            <li><a href = "#" class = "filter-cat" data-filter = "sides">Sides</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class = "container">
+                <div id = "food-container" class = "container">
                     <div class = "row">
                         <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="1" data-category = "rice">
+                            <div class="card food-item rounded" data-id="1" data-category = "rice">
                                 <div class = "position-relative img-holder">
-                                    <img src="asset/Images/chinese-temple.jpg" class="card-img-top" alt="...">
+                                    <img src="https://www.andy-cooks.com/cdn/shop/articles/20231116072724-c2-a9andy_cooks_thumbnails_nasi_lemak_01.jpg?v=1700389619&width=1600" class="card-img-top" alt="Nasi Lemak">
                                 </div>
                                 <div class="card-body">
-                                  <h5 class="card-title fs-2">Roti Canai</h5>
-                                  <p class="card-text fs-6">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <h5 class="card-title fs-2">Nasi Lemak</h5>
+                                  <p class="card-text fs-6">Malaysia's national dish.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "col-lg-4 p-3">
+                            <div class="card food-item rounded" data-id="2" data-category="rice">
+                                <div class = "position-relative img-holder">
+                                    <img src="asset/images/nasi-linou.jpg" class="card-img-top" alt="Nasi Linou">
+                                </div>
+                                <div class="card-body">
+                                  <h5 class="card-title fs-2">Nasi Linou</h5>
+                                  <p class="card-text fs-6">Nasi Linou is a traditional Kadazan-Dusun dish.</p>
                                 </div>
                               </div>
                         </div>
                         <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="2" data-category="noodle">
+                            <div class="card food-item" data-id="3" data-category="rice">
                                 <div class = "position-relative img-holder">
-                                    <img src="asset/Images/chinese-temple.jpg" class="card-img-top" alt="...">
+                                    <img src="asset/images/nasi-tumpang.jpg" class="card-img-top" alt="...">
                                 </div>
                                 <div class="card-body">
-                                  <h5 class="card-title fs-2">Roti Canai</h5>
-                                  <p class="card-text fs-6">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                              </div>
-                        </div>
-                        <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="3" data-category="snack side">
-                                <div class = "position-relative img-holder">
-                                    <img src="asset/Images/chinese-temple.jpg" class="card-img-top" alt="...">
-                                </div>
-                                <div class="card-body">
-                                  <h5 class="card-title fs-2">Roti Canai</h5>
-                                  <p class="card-text fs-6">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <h5 class="card-title fs-2">Nasi Tumpang</h5>
+                                  <p class="card-text fs-6">A specialty of the Bajau people.</p>
                                 </div>
                               </div>
                         </div>
                     </div>
                     <!-- <div class = "row">
                         <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="4" data-category="side">
+                            <div class="card food-item" data-id="4" data-category="rice">
                                 <div class = "position-relative img-holder">
-                                    <img src="asset/Images/chinese-temple.jpg" class="card-img-top" alt="...">
+                                    <img src="asset/images/nasi-ulam.jpg" class="card-img-top" alt="...">
                                 </div>
                                 <div class="card-body">
-                                  <h5 class="card-title fs-2">Roti Canai</h5>
-                                  <p class="card-text fs-6">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <h5 class="card-title fs-2">Nasi Ulam</h5>
+                                  <p class="card-text fs-6">Nasi Ulam is a rice dish mixed with a variety of fresh herbs and vegetables, often seasoned with sambal.</p>
                                 </div>
                               </div>
-                        </div>
-                        <div class = "col-lg-4 p-3">
+                        </div> -->
+                        <!-- <div class = "col-lg-4 p-3">
                             <div class="card food-item" data-id="5">
                                 <div class = "position-relative img-holder">
                                     <img src="asset/Images/chinese-temple.jpg" class="card-img-top" alt="...">
@@ -182,7 +183,7 @@
                 </div>
             </div>
         </section>
-        <footer class = "mt-5">
+        <footer class = "mt-0">
             <div class = "jumbotron">
                 <div class = "container">
                     <div class = "row justify-content-center">

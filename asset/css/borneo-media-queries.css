@@ -22,5 +22,51 @@
     .menu{
         width: fit-content;
     }
+    .food-card{
+        height:500px;
+        width: 300px;
+    }
+    .food-card img{
+        max-height:500px;
+        width: 300px;
+        object-fit: cover;
+    }
+    .food-image h1{
+        position: absolute;
+        top: 150px;
+    }
+    .food-info{
+        padding:0.75rem;
+    }
 
 }
+/* 
+.food-info{
+	padding: 1rem 2rem 2rem 2rem;
+	height: auto;
+}
+
+.food-description, 
+.food-allergies,
+.food-nutrition{
+	height:fit-content;
+	border-bottom: 1px solid black;
+	padding:1rem;
+}
+
+.food-info h2{
+	margin-bottom: 1rem;
+}
+
+.food-info p{
+	line-height: 1.5rem;
+}
+
+.allergens-list{
+	display: flex;
+	list-style-type: none;
+}
+
+.allergens-list li{
+	margin-right: 2rem;
+} */
