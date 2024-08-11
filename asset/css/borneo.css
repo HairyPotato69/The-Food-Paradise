@@ -104,26 +104,77 @@
 	transform: scale(1);
 }
 
-.popup {
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	z-index: 9998;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.food-card{
 	display: none;
 	position: fixed;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	padding: 20px;
-	background-color: white;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 	animation-name: popup;
 	animation-duration: 0.2s;
+	width: 600px;
+	height: 900px;
+	border: 2px solid black;
+	border-radius: 16px;
+	z-index: 9999;
 }
 
-.popup.visible {
+.food-card.visible {
 	display: block;
 }
-.popup-content img {
-	width: 50%;
+
+.food-image img {
+	max-height: 400px;
+	max-width:600px;
 }
 
+.food-image h1{
+	position: absolute;
+	top: 300px;
+	padding: 2rem;
+	color:white;
+}
+
+.food-info{
+	padding: 1rem 2rem 2rem 2rem;
+	height: auto;
+}
+
+.food-description, 
+.food-allergies,
+.food-nutrition{
+	height:fit-content;
+	border-bottom: 1px solid black;
+	padding:1rem;
+}
+
+.food-info h2{
+	margin-bottom: 1rem;
+}
+
+.food-info p{
+	line-height: 1.5rem;
+}
+
+.allergens-list{
+	display: flex;
+	list-style-type: none;
+}
+
+.allergens-list li{
+	margin-right: 2rem;
+}
 .close-btn {
 	margin-top: 10px;
 	padding: 5px 10px;

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello</title>
+        <link rel = "stylesheet" href = "asset/css/bootstrap.min.css"/>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+                scroll-behavior: smooth;
+                box-sizing: border-box;
+            }
+            body{
+                height:100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .food-card{
+                width: 600px;
+                height:900px;
+                border: 2px solid black;
+                border-radius: 16px;
+            }
+
+            .food-image img{
+                max-height: 400px;
+                max-width:600px;
+            }
+
+            .food-image h1{
+                position: absolute;
+                top: 300px;
+                padding: 2rem;
+                color:white;
+            }
+
+            .food-info{
+                padding: 1rem 2rem 2rem 2rem;
+                height: auto;
+            }
+            .food-description, 
+            .food-allergies,
+            .food-nutrition{
+                height:fit-content;
+                border-bottom: 1px solid black;
+                padding:1rem;
+            }
+            .food-info h2{
+                margin-bottom: 1rem;
+            }
+            .food-info p{
+                line-height: 1.5rem;
+            }
+
+            .allergens-list{
+                display: flex;
+                list-style-type: none;
+            }
+
+            .allergens-list li{
+                margin-right: 2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "food-card d-flex flex-column overflow-y-scroll overflow-x-hidden">
+            <div class = "food-image position-relative">
+               <h1 class = "z-1 m-0 ps-5 p-0">  NASI LEMAK </h1>
+              <img src = "https://www.andy-cooks.com/cdn/shop/articles/20231116072724-c2-a9andy_cooks_thumbnails_nasi_lemak_01.jpg?v=1700389619&width=1600"/>
+            </div>
+            <div class = "food-info d-flex flex-column">
+                
+                <div class = "food-description">
+                    <h2>Description</h2>
+                    <p> Nasi Lemak is Malaysia's national dish, featuring fragrant rice cooked in coconut milk, served with sambal, anchovies, peanuts, boiled egg, and cucumber. 
+                        This flavorful meal is enjoyed at any time of day and is traditionally wrapped in a banana leaf.
+                        Its rich, creamy rice paired with spicy sambal and crunchy sides creates a delightful blend of textures and flavors. 
+                        Variations may include fried chicken, rendang, or sambal squid.</p>
+                </div>
+                <div class = "food-allergies">
+                    <h2>Allergens</h2>
+                    <ul class ="allergens-list d-flex ps-0 mb-2">
+                        <li> Peanuts </li>
+                        <li> Anchovies </li>
+                        <li> Eggs </li>
+                    </ul>
+                </div>
+                <div class = "food-nutrition">
+                    <div class = "table-responsive">
+                        <table class = "table table-borderless table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Nutrients</th>
+                                    <th scope="col">per serving</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Carolies</th>
+                                    <td>69</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Fat</th>
+                                    <td>69</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Saturated Fat</th>
+                                    <td>69</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Carbohydrates</th>
+                                    <td>69</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Sugar</th>
+                                    <td>69</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Dietary Fiber</th>
+                                    <td>69</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Protein</th>
+                                    <td>69</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Cholesterol</th>
+                                    <td>69</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Sodium</th>
+                                    <td>69</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+          </div>
+    </body>
+</html>
