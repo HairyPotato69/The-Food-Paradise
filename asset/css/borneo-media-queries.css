@@ -1,22 +1,39 @@
 @media screen and (max-width: 480px){
+    .sabah, 
+    .sarawak{
+        width: fit-content;
+    }
+    .borneo-title{
+        justify-content: center;
+    }
     .borneo-title h1{
-        font-size: 2rem;
-    }
-    
-    .borneo-title h1:nth-child(2){
-        transform: translateX(1.5rem);
-    }
-    
-    .borneo-title h1:nth-child(3){
-        transform: translateX(1.5rem);
-    }
-    
-    .borneo-title h1:nth-child(4){
-        transform: translateX(1.5rem);
+        font-size: 3rem;
     }
 
-    .slideshow *{
-        display: none;
+    .borneo-title .sabah{
+        transform: translateX(2rem) !important;
+    }
+    .borneo-title .sarawak{
+        transform: translateX(2rem) !important;
+    }
+    /* .borneo-title .sabah:first-of-type,
+    .borneo-title h1:nth-child(3)
+    {
+        transform: translateX(0) !important;
+    }
+    .borneo-title h1:nth-child(2),
+    .borneo-title h1:nth-child(4)
+    {
+        transform: translateX(0);
+    } */
+    
+    .mobile-hero{
+        display: block;
+    }
+    
+    .blackbar{
+        height:100px;
+        bottom:110px;
     }
 
     .menu{

@@ -32,6 +32,9 @@
     transform: translateX(11rem);
 }
 
+.mobile-hero{
+	display: none;
+}
 /* .borneo-title h1:nth-child(odd){
     transform: translateX(3rem);
 } */
