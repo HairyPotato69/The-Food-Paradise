@@ -11,10 +11,10 @@
     }
 
     .borneo-title .sabah{
-        transform: translateX(2rem) !important;
+        transform: translateX(6rem) !important;
     }
     .borneo-title .sarawak{
-        transform: translateX(2rem) !important;
+        transform: translateX(3rem) !important;
     }
     /* .borneo-title .sabah:first-of-type,
     .borneo-title h1:nth-child(3)
