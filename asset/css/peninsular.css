@@ -1,0 +1,169 @@
+:root {
+  --main-color: rgb(228, 198, 149);
+
+}
+
+body {
+  background-color: var(--main-color) !important;
+}
+
+/*Header*/
+.seperate {
+  width:100%;
+  height: 6vh;
+  background-color: var(--main-color);
+  display: block;
+}
+
+.holder1 {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+  justify-content: center;
+  width: 100%;
+  border-radius: 1rem 1rem 2rem 2rem;
+}
+
+#header1 {
+  display: block;
+  width: 99%;
+  height: 30vh;
+  background-color: black;
+  border-radius: 1rem;
+  margin-top: 0.7vh;
+}
+
+/*Search and Filter*/
+.form-group {
+  width: 100%;
+  border-radius: 0 0 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10vh;
+  align-items: center;
+}
+
+.form-group h5 {
+  margin: 1em 0;
+  color: black;
+}
+
+.form-group h6 {
+  display: block;
+  margin-top: 1em;
+  color: rgb(207, 36, 36);
+}
+
+.form-group button{
+  width: 100px;
+}
+
+.btn-outline-primary.active {
+  background-color: #0563c9;
+  color: white;
+}
+
+.input-group {
+  width: 60%;
+}
+
+/*New Card*/
+.card {
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 1rem var(--color-grey);
+  transition: 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 12.5rem;
+  object-fit: cover;
+}
+
+/*Animation*/
+.img-zoom-out {
+  transition: transform 0.5s ease;
+  transform: scale(1);
+  box-shadow: 2px 3px 5px gray;
+}
+
+.img-zoom-out:hover {
+  transition: transform 0.5s ease;
+  transform: scale(0.97); /* Zoom out */
+  box-shadow: 1px 2px 3px gray;
+}
+
+/**/
+.slide-in-right {
+  animation: slideInRight 1s forwards;
+  animation-timing-function: ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+      transform: translateX(15%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+/**/
+.fade-in-text {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.flip {
+  display: inline-block;
+  min-height: 22vh;
+  width: 100%;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style:preserve-3d;
+}
+
+.flip:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front h5{
+  text-align: center;
+  font-size: 3vh;
+}
+
+.flip-front h4{
+  text-align: center;
+  font-size: 3vh;
+  margin: auto;
+}
+
+.flip-front, .flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+}

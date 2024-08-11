@@ -65,18 +65,18 @@
                 <div class = "container">
                     <div class = "menu">
                         <ul class = "d-flex justify-content-around align-items-center">
-                            <li><a href="#">All</a></li>
-                            <li><a href="#">Rice</a></li>
-                            <li><a href="#">Noodle</a></li>
-                            <li><a href="#">Snack</a></li>
-                            <li><a href="#">Sides</a></li>
+                            <li><a class = "filter-cat">All</a></li>
+                            <li><a class = "filter-cat">Rice</a></li>
+                            <li><a class = "filter-cat">Noodle</a></li>
+                            <li><a class = "filter-cat">Snack</a></li>
+                            <li><a class = "filter-cat">Sides</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class = "container">
                     <div class = "row">
                         <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="1">
+                            <div class="card food-item" data-id="1" data-category = "rice">
                                 <div class = "position-relative img-holder">
                                     <img src="asset/Images/chinese-temple.jpg" class="card-img-top" alt="...">
                                 </div>
@@ -87,7 +87,7 @@
                               </div>
                         </div>
                         <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="2">
+                            <div class="card food-item" data-id="2" data-category="noodle">
                                 <div class = "position-relative img-holder">
                                     <img src="asset/Images/chinese-temple.jpg" class="card-img-top" alt="...">
                                 </div>
@@ -98,7 +98,7 @@
                               </div>
                         </div>
                         <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="3">
+                            <div class="card food-item" data-id="3" data-category="snack side">
                                 <div class = "position-relative img-holder">
                                     <img src="asset/Images/chinese-temple.jpg" class="card-img-top" alt="...">
                                 </div>
@@ -109,9 +109,9 @@
                               </div>
                         </div>
                     </div>
-                    <div class = "row">
+                    <!-- <div class = "row">
                         <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="4">
+                            <div class="card food-item" data-id="4" data-category="side">
                                 <div class = "position-relative img-holder">
                                     <img src="asset/Images/chinese-temple.jpg" class="card-img-top" alt="...">
                                 </div>
@@ -178,7 +178,7 @@
                                 </div>
                               </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -234,6 +234,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         
         <script src="asset/js/borneo-food.js"></script>
+        <script src="asset/js/borneo.js"></script>
+
 
         <!-- Bootstrap -->
         <script src="asset/js/bootstrap.bundle.min.js"></script>
