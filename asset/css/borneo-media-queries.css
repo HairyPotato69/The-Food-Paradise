@@ -7,14 +7,15 @@
         justify-content: center;
     }
     .borneo-title h1{
-        font-size: 3rem;
+        font-size: 4rem;
+        line-height: 1.8rem;
     }
 
     .borneo-title .sabah{
-        transform: translateX(6rem) !important;
+        transform: translateX(0rem) !important;
     }
     .borneo-title .sarawak{
-        transform: translateX(3rem) !important;
+        transform: translateX(0rem) !important;
     }
     /* .borneo-title .sabah:first-of-type,
     .borneo-title h1:nth-child(3)
@@ -29,6 +30,9 @@
     
     .mobile-hero{
         display: block;
+    }
+    .desktop-hero{
+        display: none;
     }
     
     .blackbar{
