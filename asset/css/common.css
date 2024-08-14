@@ -181,29 +181,19 @@ p{
     color: var(--color-red);
 } */
 
-footer{
-    background-color: var(--color-black);
-    height: fit-content;
+.social-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1.125rem;
+    color: var(--color-white);
+    border: 0.125rem solid var(--color-white);
+    transition: 0.3s ease;
 }
 
-footer ul{
-    list-style-type: none;
-}
-footer ul li a{
-    text-decoration: none;
-    color:var(--color-white);
-    transition: color 0.2s ease-in-out;
-}
-
-footer ul li a:hover{
-    color:var(--color-red);
-}
-
-.social-media{
-    height: 35px;
-    border-bottom: 2px solid var(--color-white);
-}
-
-.footer-statements p{
-    color:var(--color-white)
+.social-icon:hover {
+    color: var(--color-white);
+    background-color: var(--color-red);
+    border-color: var(--color-red);
+    transition: 0.3s ease;
 }

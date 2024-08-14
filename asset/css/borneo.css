@@ -8,24 +8,46 @@
 	height:100%;
 }
 
+#sabah-sarawak-carousel{
+	left:27%;
+	top:10%;
+	z-index: 99;
+}
+
+.carousel-item{
+	width: 375px;
+	height: fit-content;
+}
+#sabah-sarawak-carousel img{
+	object-fit: fill;
+}
+
+.borneo-title{
+	width: fit-content;
+}
+
+
 .borneo-title .desktop-hero h1{
     color: var(--color-yellow);
-    font-size: 5rem;
+    font-size: 6rem;
 }
 
 .borneo-title .desktop-hero .sabah:first-of-type{
-    transform: translateX(3rem);
-}
-
-.borneo-title .desktop-hero h1:nth-child(3){
-    transform: translateX(8rem);
-    position: relative;
+	position: relative;
+	z-index: 100;
 }
 
 .borneo-title .desktop-hero h1:nth-child(2){
     color:var(--color-white);
     transform: translateX(15rem);
 }
+
+.borneo-title .desktop-hero h1:nth-child(3){
+    /* transform: translateX(8rem); */
+    position: relative;
+}
+
+
 
 .borneo-title .desktop-hero h1:nth-child(4){
     color:var(--color-white);
@@ -42,6 +64,10 @@
 .mobile-hero{
 	display: none;
 }
+
+.desktop-hero{
+	width: fit-content;
+}
 /* .borneo-title h1:nth-child(odd){
     transform: translateX(3rem);
 } */
@@ -49,7 +75,7 @@
 .blackbar{
     position: absolute;
     height:150px;
-	bottom:150px;
+	bottom:229px;
 	border:2px solid black;
 }
 
@@ -195,6 +221,12 @@
 .allergens-list li{
 	margin-right: 2rem;
 }
+
+footer p{
+	color: var(--color-white);
+}
+
+
 
 @keyframes popup {
 	from {

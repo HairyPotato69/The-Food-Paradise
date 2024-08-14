@@ -3,9 +3,16 @@
     .sarawak{
         width: fit-content;
     }
-    .borneo-title{
-        justify-content: center;
+    #hero{
+        overflow: hidden;
     }
+    #sabah-sarawak-carousel{
+        display: none;
+    }
+
+    /* .borneo-title{
+        justify-content: center;
+    } */
     .borneo-title h1{
         font-size: 4rem;
         line-height: 1.8rem;
@@ -17,16 +24,6 @@
     .borneo-title .sarawak{
         transform: translateX(0rem) !important;
     }
-    /* .borneo-title .sabah:first-of-type,
-    .borneo-title h1:nth-child(3)
-    {
-        transform: translateX(0) !important;
-    }
-    .borneo-title h1:nth-child(2),
-    .borneo-title h1:nth-child(4)
-    {
-        transform: translateX(0);
-    } */
     
     .mobile-hero{
         display: block;
@@ -36,8 +33,68 @@
     }
     
     .blackbar{
-        height:100px;
-        bottom:110px;
+        display: none;
+    }
+
+    .menu{
+        width: fit-content;
+    }
+    .food-card{
+        height:700px;
+        width: 350px;
+    }
+    .food-card img{
+        max-height:600px;
+        /* height: 200px; */
+        width: 350px;
+        object-fit: cover;
+    }
+    .food-image h1{
+        position: absolute;
+        top: calc(200px * 3/4);
+    }
+    .food-info{
+        padding:0.75rem;
+    }
+
+}
+
+@media screen and (max-width: 360px){
+    .sabah, 
+    .sarawak{
+        width: fit-content;
+    }
+    #hero{
+        overflow: hidden;
+    }
+    #sabah-sarawak-carousel{
+        display: none;
+    }
+
+    /* .borneo-title{
+        justify-content: center;
+    } */
+    .borneo-title h1{
+        font-size: 4rem;
+        line-height: 3rem;
+    }
+
+    .borneo-title .sabah{
+        transform: translateX(0rem) !important;
+    }
+    .borneo-title .sarawak{
+        transform: translateX(0rem) !important;
+    }
+    
+    .mobile-hero{
+        display: block;
+    }
+    .desktop-hero{
+        display: none;
+    }
+    
+    .blackbar{
+        display: none;
     }
 
     .menu{
@@ -49,45 +106,16 @@
     }
     .food-card img{
         max-height:500px;
+        height: 200px;
         width: 300px;
         object-fit: cover;
     }
     .food-image h1{
         position: absolute;
-        top: 150px;
+        top: calc(200px * 3/4);
     }
     .food-info{
         padding:0.75rem;
     }
 
 }
-/* 
-.food-info{
-	padding: 1rem 2rem 2rem 2rem;
-	height: auto;
-}
-
-.food-description, 
-.food-allergies,
-.food-nutrition{
-	height:fit-content;
-	border-bottom: 1px solid black;
-	padding:1rem;
-}
-
-.food-info h2{
-	margin-bottom: 1rem;
-}
-
-.food-info p{
-	line-height: 1.5rem;
-}
-
-.allergens-list{
-	display: flex;
-	list-style-type: none;
-}
-
-.allergens-list li{
-	margin-right: 2rem;
-} */
