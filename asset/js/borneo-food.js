@@ -17,12 +17,141 @@ const foodData = {
         ]
     },
     2: {
-        title: "Chicken Tacos",
-        image: "tacos.jpg",
-        description: "Spicy chicken tacos with fresh salsa...",
-    }
-}
+        title: "Nasi Linou",
+        image: "asset\\images\\nasi-linou.jpg",
+        description: "Nasi Linou is a traditional Kadazan-Dusun dish made with glutinous rice, cooked with coconut milk and flavored with pandan leaves. It's usually served with side dishes like chicken, beef, or vegetables.",
+		allergenlist: ['Coconut'],
+		nutrients: [            
+			{ name: "Calories", value: 150 },
+            { name: "Fat", value: 1.5 },
+            { name: "Carbohydrates", value: 35 },
+            { name: "Protein", value: 2 },
+		]
+    },
+	3: {
+		title: "Nasi Tumpang",
+        image: "asset\\images\\nasi-tumpang.jpg",
+        description: "A specialty of the Bajau people, Nasi Tumpang consists of rice layered with various fillings like spicy sambal, meat, and vegetables, all wrapped in banana leaves and steamed.",
+		allergenlist: ['Depends on filling ingredients'],
+		nutrients: [            
+			{ name: "Calories", value: 180 },
+            { name: "Fat", value: 2 },
+            { name: "Carbohydrates", value: 38 },
+            { name: "Protein", value: 4 },
 
+		]	
+	},
+	4: {
+		title: "Nasi Ulam",
+        image: "asset\\images\\nasi-ulam.jpg",
+        description: "Nasi Ulam is a rice dish mixed with a variety of fresh herbs and vegetables, often seasoned with sambal. It’s a healthy and aromatic dish.",
+		allergenlist: ['Peanuts', 'Seafood'],
+		nutrients: [            
+			{ name: "Calories", value: 170 },
+            { name: "Fat", value: 3 },
+            { name: "Carbohydrates", value: 30 },
+            { name: "Protein", value: 5 },
+
+		]	
+	},
+	5: {
+		title: "Nuba Laya",
+        image: "asset\\images\\lun-bawang.jpg",
+		description: "Nuba Laya is a Lun Bawang dish from Sarawak, made with mashed rice wrapped in banana leaves. It is typically served with a variety of side dishes, such as meats and vegetables, offering a hearty and satisfying meal.",
+        allergenlist: ["None"],
+        nutrients: [
+            { name: "Calories", value: 200 },
+            { name: "Fat", value: 1 },
+            { name: "Carbohydrates", value: 45 },
+            { name: "Protein", value: 4 },
+        ]
+	},
+	6: {
+		title: "Lemang",
+        image: "asset\\images\\lemang.jpg",
+		description: "Sarawak Lemang is a traditional glutinous rice dish cooked in bamboo with coconut milk, commonly enjoyed during festive occasions. The bamboo imparts a unique aroma and flavor to the rice, which is often served with meat or curries.",
+        allergenlist: ["Coconut"],
+        nutrients: [
+            { name: "Calories", value: 330 },
+            { name: "Fat", value: 8 },
+            { name: "Carbohydrates", value: 65 },
+            { name: "Protein", value: 5 },
+        ]
+	},
+	7: {
+		title: "Sarawak Laksa",
+        image: "asset\\images\\sarawak-laksa.jpg",
+		description: "A rich, spicy noodle soup with a coconut milk base, flavored with sambal belacan, garlic, lemon grass, and tamarind.",
+        allergenlist: ["Shellfish", "Coconut"],
+		nutrients: [
+			{ "name": "Calories", "value": 450 },
+			{ "name": "Fat", "value": 20 },
+			{ "name": "Carbohydrates", "value": 50 },
+			{ "name": "Protein", "value": 25 }
+		]
+	},
+	8: {
+		title: "Sarawak Laksa",
+        image: "asset\\images\\mee-goreng-basah.jpg",
+		description: "Mee Goreng Basah is a Malaysian wet fried noodle dish. The noodles are stir-fried with a flavorful blend of spices, soy sauce, vegetables, and a choice of meat or seafood, creating a savory, slightly saucy dish.",
+        allergenlist: ["Wheat", "Soy", "Seafood"],
+        nutrients: [
+            { name: "Calories", value: 480 },
+            { name: "Fat", value: 15 },
+            { name: "Carbohydrates", value: 70 },
+            { name: "Protein", value: 20 },
+        ]
+	},
+	9: {
+		title: "Tuaran Mee",
+        image: "asset\\images\\tuaran-mee.jpg",
+		description: "Tuaran Mee is a famous noodle dish from Tuaran, Sabah, featuring homemade egg noodles stir-fried with vegetables, pork, and egg. The noodles are known for their springy texture and are often served with a savory sauce.",
+        allergenlist: ["Wheat", "Eggs", "Pork"],
+        nutrients: [
+            { name: "Calories", value: 500 },
+            { name: "Fat", value: 18 },
+            { name: "Carbohydrates", value: 68 },
+            { name: "Protein", value: 22 },
+        ]
+	},
+	10: {
+		title: "Kuih Cincin",
+        image: "asset\\images\\kuih-cincin.jpg",
+		description: "Kuih Cincin is a traditional Sabahan snack made from rice flour, palm sugar, and pandan leaves. The dough is shaped into rings and deep-fried until crispy, creating a sweet and crunchy treat.",
+        allergenlist: ["None"],
+        nutrients: [
+            { name: "Calories", value: 150 },
+            { name: "Fat", value: 5 },
+            { name: "Carbohydrates", value: 25 },
+            { name: "Protein", value: 2 },
+        ]
+	},
+	11: {
+		title: "Kuih Penyaram",
+        image: "asset\\images\\penyaram.jpg",
+		description: "Penyaram, also known as Kuih UFO, is a traditional Sarawakian snack made from rice flour, coconut milk, and palm sugar. It has a distinctive UFO shape and is deep-fried to achieve a crispy texture.",
+        allergenlist: ["Coconut"],
+        nutrients: [
+            { name: "Calories", value: 180 },
+            { name: "Fat", value: 7 },
+            { name: "Carbohydrates", value: 30 },
+            { name: "Protein", value: 3 },
+        ]
+	},
+	12: {
+		title: "Kuih Penyaram",
+        image: "asset\\images\\kek-lapis.jpg",
+		description: "Kek Lapis Sarawak, or Sarawak Layer Cake, is a colorful and intricate layered cake made from butter, condensed milk, and eggs. It is a festive snack often enjoyed during celebrations.",
+        allergenlist: ["Eggs", "Dairy"],
+        nutrients: [
+            { name: "Calories", value: 220 },
+            { name: "Fat", value: 12 },
+            { name: "Carbohydrates", value: 25 },
+            { name: "Protein", value: 3 },
+        ]
+	}
+
+}
 
 
 document.querySelectorAll('.food-item').forEach(item =>{
@@ -35,7 +164,6 @@ document.querySelectorAll('.food-item').forEach(item =>{
 
 function createPopup(data) {
 	
-
 	const overlay = document.createElement('div')
 	overlay.id = 'overlay';
 	overlay.className = 'overlay';
@@ -106,10 +234,6 @@ function createPopup(data) {
 
 	overlay.addEventListener('click', () => closePopup(popup, overlay));
 
-	// overlay.addEventListener('click', ()=>{
-	// 	document.body.removeChild(popup);
-	// 	document.body.removeChild(overlay);
-	// });
 }
 
 function closePopup(popup, overlay) {
@@ -117,89 +241,3 @@ function closePopup(popup, overlay) {
     document.body.removeChild(overlay);
     document.body.style.overflow = ''; // Restore scrolling
 }
-
-/*
-
-current position
-var pos = 0;
-number of slides
-var totalSlides = $('#slider-wrap ul li').length;
-get the slide width
-var sliderWidth = $('#slider-wrap').width();
-
-
-$(document).ready(function(){
-	//set width to be 'x' times the number of slides
-	$('#slider-wrap ul#slider').width(sliderWidth*totalSlides);
-	
-    //next slide 	
-	$('#next').click(function(){
-		slideRight();
-	});
-	
-	//previous slide
-	$('#previous').click(function(){
-		slideLeft();
-	});
-
-	//automatic slider
-	var autoSlider = setInterval(slideRight, 3000);
-	
-	//for each slide 
-	$.each($('#slider-wrap ul li'), function() { 
-	   //set its color
-	   var c = $(this).attr("data-color");
-	   $(this).css("background",c);
-	   
-	   //create a pagination
-	   var li = document.createElement('li');
-	   $('#pagination-wrap ul').append(li);	   
-	});
-	
-	//counter
-	countSlides();
-	
-	//pagination
-	pagination();
-	
-	//hide/show controls/btns when hover
-	//pause automatic slide when hover
-	$('#slider-wrap').hover(
-	  function(){ $(this).addClass('active'); clearInterval(autoSlider); }, 
-	  function(){ $(this).removeClass('active'); autoSlider = setInterval(slideRight, 3000); }
-	);
-
-});//DOCUMENT READY
-
-
-function slideLeft(){
-	pos--;
-	if(pos==-1){ pos = totalSlides-1; }
-	$('#slider-wrap ul#slider').css('left', -(sliderWidth*pos)); 	
-	
-	//*> optional
-	countSlides();
-	pagination();
-}
-
-
-function slideRight(){
-	pos++;
-	if(pos==totalSlides){ pos = 0; }
-	$('#slider-wrap ul#slider').css('left', -(sliderWidth*pos)); 
-	
-	//*> optional 
-	countSlides();
-	pagination();
-}
-
-function countSlides(){
-	$('#counter').html(pos+1 + ' / ' + totalSlides);
-}
-
-function pagination(){
-	$('#pagination-wrap ul li').removeClass('active');
-	$('#pagination-wrap ul li:eq('+pos+')').addClass('active');
-}
-		
-*/

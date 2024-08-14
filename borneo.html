@@ -20,166 +20,286 @@
         <link rel = "stylesheet" href = "asset/css/common-media-queries.css"/>
         
         <!-- AOS -->
-        <link href="asset/css/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="asset/css/aos.css"/>
 
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Swiper Bundle -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        
+        <!-- Awesome font -->
+        <link rel="stylesheet" href="asset/css/all.min.css"/>
+
+        <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    
     </head>
     <body>
         <!-- Desktop Navigation -->
-        <!-- <nav class = "desktop-navbar shadow sticky-top bg-white">
-            <div class = "navbar-container container">
-                <input type = "checkbox" name ="" id = "">
-                    <div class = "hamburger-lines">
-                        <span class="line line1"></span>
-                        <span class="line line2"></span>
-                        <span class="line line3"></span>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+            <div class="container">
+                <div class="d-flex">
+                    <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <a class="navbar-brand d-flex mx-3" href="#">
+                        <div class="d-flex flex-column lh-1">
+                            <p class="mb-0">Malaysian Cuisine</p>
+                            <p class="mb-0 fs-6 fw-light">The Food Paradise</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            <div class="d-flex flex-column lh-1">
+                                <p class="mb-0">Malaysian Cuisine</p>
+                                <p class="mb-0 fs-6 fw-light text-muted">The Food Paradise</p>
+                            </div>
+                        </h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
                     </div>
-        
-                    <ul class="menu-items order-2 d-flex">
-                        <li><a href="#hi">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Recipes</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Recomendation</a></li>
-                        <li><button type = "button" class = "btn-contact-us"> Contact us </button></li>
-                    </ul>
-                <div class = "nav-logo order-1 d-flex flex-column pt-3">
-                    <h1 class="fs-3 mb-0">Malaysian Cuisine</h1>
-                    <p class = "mt-0 fs-6"> The Food Padarise</p>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" href="#">Explore</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" href="#">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-2" href="#">About</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex justify-content-start align-items-center mx-2 mt-3 mt-lg-0 ">
+                            <button type="button" class="btn-contact-us">Contact us</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav> -->
+        </nav>
         <!-- Hero section -->
         <section id = "hero">
-            <div class = "jumbotron d-flex h-100 align-items-center">
-                <div class = "borneo-title container d-flex flex-column text-center align-items-center">
-                    <h1 class = "sabah z-3">SABAH</h1>
-                    <h1 class = "sarawak">SARAWAK</h1>
-                    <h1 class = "sarawak">SARAWAK</h1>
-                    <h1 class = "sabah">SABAH</h1>
+            <div class = "jumbotron d-flex positition-fixed">
+                <div id = "sabah-sarawak-carousel" class="carousel slide position-absolute rounded" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="asset/images/orang-utan.jpg" class="d-block w-100" alt="Orang Utan" data-bs-interval="1000">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class = "text-white fs-1">Orang Utan</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item"> 
+                            <img src="asset/images/proboscis-monkey.jpg" class = "d-block w-100" alt="Proboscis Monkey" data-bs-interval="10000">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class = "text-white fs-1">Proboscis Monkey</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item"> 
+                            <img src="asset/images/mount-kinabalu.jpg" class = "d-block w-100" alt="Mount Kinabalu" data-bs-interval="1000">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class = "text-white fs-1">Mount Kinabalu</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item"> 
+                            <img src="asset/images/rafflesia.jpg" class = "d-block w-100" alt="Rafflesia" data-bs-interval="1000">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class = "text-white fs-1">Rafflesia</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item"> 
+                            <img src="asset/images/hornbill.jpg" class = "d-block w-100" alt="Rafflesia" data-bs-interval="1000">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class = "text-white fs-1">Rhinocerous Hornbill</h5>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                <div class = "borneo-title container d-flex flex-column text-center h-75 mt-5">
+                    <div class = "desktop-hero">
+                        <h1 class = "sabah">SABAH</h1>
+                        <h1 class = "sarawak">SARAWAK</h1>
+                        <h1 class = "sarawak">SARAWAK</h1>
+                        <h1 class = "sabah">SABAH</h1>
+                    </div>
+                    <div class = "mobile-hero">
+                        <h1 class = "sarawak">SARAWAK</h1>
+                        <h1 class = "sabah">SABAH</h1>
+                        <h1 class = "sarawak">SARAWAK</h1>
+                        <h1 class = "sabah">SABAH</h1>
+                        <h1 class = "sarawak">SARAWAK</h1>
+                        <h1 class = "sabah">SABAH</h1>
+                        <h1 class = "sarawak">SARAWAK</h1>
+                        <h1 class = "sabah">SABAH</h1>
+                        <h1 class = "sarawak">SARAWAK</h1>
+                        <h1 class = "sabah">SABAH</h1>
+                        <h1 class = "sarawak">SARAWAK</h1>
+                        <h1 class = "sabah">SABAH</h1>
+                        <h1 class = "sarawak">SARAWAK</h1>
+                        <h1 class = "sabah">SABAH</h1>
+                        <h1 class = "sarawak">SARAWAK</h1>
+                        <h1 class = "sabah">SABAH</h1>
+                        <h1 class = "sarawak">SARAWAK</h1>
+                    </div>
                 </div>
+                <div class ="blackbar bg-black position-absolute w-100"></div>
             </div>
         </section>
+        <!-- Food Cards -->
         <section id = "food-showcase">
             <div class = "jumbotron pt-5 h-100">
-                <div class = "container">
-                    <div class = "menu">
-                        <ul class = "d-flex justify-content-around align-items-center">
-                            <li><a href="#">Rice</a></li>
-                            <li><a href="#">Noodle</a></li>
-                            <li><a href="#">Dessert</a></li>
-                            <li><a href="#">Drinks</a></li>
-                            <li><a href="#">Condiments</a></li>
-                            <li><a href="#">Snack</a></li>
-                            <div class = "change-filter d-flex">
-                                <span class="category">Category: <span class = "filter">Food</span></span> 
-                                <div class="arrow-button">▲</div>
-                            </div>
+                <div class = "container d-flex justify-content-center">
+                    <div class = "menu w-100">
+                        <ul class = "d-flex justify-content-around align-items-center ps-0">
+                            <li><a href = "#" class = "filter-cat" data-filter = "all">All</a></li>
+                            <li><a href = "#" class = "filter-cat" data-filter = "rice">Rice</a></li>
+                            <li><a href = "#" class = "filter-cat" data-filter = "noodle">Noodle</a></li>
+                            <li><a href = "#" class = "filter-cat" data-filter = "snack">Snack</a></li>
+                            <li><a href = "#" class = "filter-cat" data-filter = "sides">Sides</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class = "container">
+                <div id = "food-container" class = "container">
                     <div class = "row">
                         <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="1">
+                            <div class="card food-item rounded" data-id="1" data-category = "rice">
                                 <div class = "position-relative img-holder">
-                                    <img src="asset/Images/chinese-temple.jpg" class="card-img-top" alt="...">
+                                    <img src="https://www.andy-cooks.com/cdn/shop/articles/20231116072724-c2-a9andy_cooks_thumbnails_nasi_lemak_01.jpg?v=1700389619&width=1600" class="card-img-top" alt="Nasi Lemak">
                                 </div>
                                 <div class="card-body">
-                                  <h5 class="card-title fs-2">Roti Canai</h5>
-                                  <p class="card-text fs-6">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <h5 class="card-title fs-3">Nasi Lemak</h5>
+                                  <p class="card-text fs-6">Malaysia</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "col-lg-4 p-3">
+                            <div class="card food-item rounded" data-id="2" data-category="rice">
+                                <div class = "position-relative img-holder">
+                                    <img src="asset/images/nasi-linou.jpg" class="card-img-top" alt="Nasi Linou">
+                                </div>
+                                <div class="card-body">
+                                  <h5 class="card-title fs-3">Nasi Linou</h5>
+                                  <p class="card-text fs-6">Kadazan-Dusun</p>
                                 </div>
                               </div>
                         </div>
                         <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="2">
+                            <div class="card food-item" data-id="11" data-category="snack">
                                 <div class = "position-relative img-holder">
-                                    <img src="asset/Images/chinese-temple.jpg" class="card-img-top" alt="...">
+                                    <img src="asset/images/penyaram.jpg" class="card-img-top" alt="...">
                                 </div>
                                 <div class="card-body">
-                                  <h5 class="card-title fs-2">Roti Canai</h5>
-                                  <p class="card-text fs-6">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <h5 class="card-title fs-3">Penyaram</h5>
+                                  <p class="card-text fs-6">Sabah</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-lg-4 p-3">
+                            <div class="card food-item" data-id="4" data-category="rice">
+                                <div class = "position-relative img-holder">
+                                    <img src="asset/images/nasi-ulam.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                  <h5 class="card-title fs-3">Nasi Ulam</h5>
+                                  <p class="card-text fs-6">Brunei</p>
                                 </div>
                               </div>
                         </div>
                         <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="3">
+                            <div class="card food-item" data-id="5" data-category="rice">
                                 <div class = "position-relative img-holder">
-                                    <img src="asset/Images/chinese-temple.jpg" class="card-img-top" alt="...">
+                                    <img src="asset/images/lun-bawang.jpg" class="card-img-top" alt="...">
                                 </div>
                                 <div class="card-body">
-                                  <h5 class="card-title fs-2">Roti Canai</h5>
-                                  <p class="card-text fs-6">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <h5 class="card-title fs-3">Nuba Laya</h5>
+                                  <p class="card-text fs-6">Lun Bawang from Sarawak</p>
+                                </div>
+                              </div>
+                        </div>
+                        <div class = "col-lg-4 p-3">
+                            <div class="card food-item" data-id="7" data-category="noodle">
+                                <div class = "position-relative img-holder">
+                                    <img src="asset/images/sarawak-laksa.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                  <h5 class="card-title fs-3">Sarawak Laksa</h5>
+                                  <p class="card-text fs-6">Sarawak</p>
                                 </div>
                               </div>
                         </div>
                     </div>
                     <div class = "row">
                         <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="4">
+                            <div class="card food-item" data-id="6" data-category="rice">
                                 <div class = "position-relative img-holder">
-                                    <img src="asset/Images/chinese-temple.jpg" class="card-img-top" alt="...">
+                                    <img src="asset/images/lemang.jpg" class="card-img-top" alt="...">
                                 </div>
                                 <div class="card-body">
-                                  <h5 class="card-title fs-2">Roti Canai</h5>
-                                  <p class="card-text fs-6">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <h5 class="card-title fs-3">Lemang</h5>
+                                  <p class="card-text fs-6">Sarawak</p>
                                 </div>
                               </div>
                         </div>
                         <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="5">
+                            <div class="card food-item" data-id="8" data-category="noodle">
                                 <div class = "position-relative img-holder">
-                                    <img src="asset/Images/chinese-temple.jpg" class="card-img-top" alt="...">
+                                    <img src="asset/images/mee-goreng-basah.jpg" class="card-img-top" alt="...">
                                 </div>
                                 <div class="card-body">
-                                  <h5 class="card-title fs-2">Roti Canai</h5>
-                                  <p class="card-text fs-6">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <h5 class="card-title fs-3">Mee Goreng Basah</h5>
+                                  <p class="card-text fs-6">Sarawak</p>
                                 </div>
                               </div>
                         </div>
                         <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="6">
+                            <div class="card food-item" data-id="9" data-category="noodle">
                                 <div class = "position-relative img-holder">
-                                    <img src="asset/Images/chinese-temple.jpg" class="card-img-top" alt="...">
+                                    <img src="asset/images/tuaran-mee.jpg" class="card-img-top" alt="...">
                                 </div>
                                 <div class="card-body">
-                                  <h5 class="card-title fs-2">Roti Canai</h5>
-                                  <p class="card-text fs-6">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <h5 class="card-title fs-3">Tuaran Mee</h5>
+                                  <p class="card-text fs-6">Tuaran, Sabah</p>
                                 </div>
                               </div>
                         </div>
                     </div>
-                    <div class = "row">
+                    <div class ="row">
                         <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="7">
+                            <div class="card food-item" data-id="10" data-category="snack">
                                 <div class = "position-relative img-holder">
-                                    <img src="asset/Images/chinese-temple.jpg" class="card-img-top" alt="...">
+                                    <img src="asset/images/kuih-cincin.jpg" class="card-img-top" alt="...">
                                 </div>
                                 <div class="card-body">
-                                  <h5 class="card-title fs-2">Roti Canai</h5>
-                                  <p class="card-text fs-6">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <h5 class="card-title fs-3">Kuih Cincin</h5>
+                                  <p class="card-text fs-6">Sabah</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "col-lg-4 p-3">
+                            <div class="card food-item" data-id="3" data-category="rice">
+                                <div class = "position-relative img-holder">
+                                    <img src="asset/images/nasi-tumpang.jpg" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                  <h5 class="card-title fs-3">Nasi Tumpang</h5>
+                                  <p class="card-text fs-6">Bajau</p>
                                 </div>
                               </div>
                         </div>
                         <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="8">
+                            <div class="card food-item" data-id="12" data-category="snack">
                                 <div class = "position-relative img-holder">
-                                    <img src="asset/Images/chinese-temple.jpg" class="card-img-top" alt="...">
+                                    <img src="asset/images/kek-lapis.jpg" class="card-img-top" alt="...">
                                 </div>
                                 <div class="card-body">
-                                  <h5 class="card-title fs-2">Roti Canai</h5>
-                                  <p class="card-text fs-6">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                </div>
-                              </div>
-                        </div>
-                        <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="9">
-                                <div class = "position-relative img-holder">
-                                    <img src="asset/Images/chinese-temple.jpg" class="card-img-top" alt="...">
-                                </div>
-                                <div class="card-body">
-                                  <h5 class="card-title fs-2">Roti Canai</h5>
-                                  <p class="card-text fs-6">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <h5 class="card-title fs-3">Kek Lapis</h5>
+                                  <p class="card-text fs-6">Sarawak</p>
                                 </div>
                               </div>
                         </div>
@@ -187,127 +307,70 @@
                 </div>
             </div>
         </section>
-        <footer class = "mt-5">
-            <div class = "jumbotron">
-                <div class = "container">
-                    <div class = "row justify-content-center">
-                        <ul class = "d-flex flex-row justify-content-center align-items-center m-5">
-                            <li class = "me-5">
-                                <a href = "#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook">
-                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class = "me-5">
-                                <a href = "#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter">
-                                        <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href = "#">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram">
-                                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
-                                    </svg>
-                                </a>
-                            </li>
+        <footer class="bg-dark text-white pt-5 pb-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 p-3 mb-3">
+                        <img src="" alt="Website Logo" class="img-fluid mb-3">
+                        <p>We are dedicated to bringing you the best content about Malaysian cuisine and culture. Explore
+                            our website for more insights and updates.</p>
+                    </div>
+                    <div class="col-lg-3 p-3 mb-3">
+                        <h5 class="mb-4">Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-3"><a href="#" class="text-white text-decoration-none">Home</a></li>
+                            <li class="mb-3"><a href="#" class="text-white text-decoration-none">Explore</a></li>
+                            <li class="mb-3"><a href="#" class="text-white text-decoration-none">Event</a></li>
+                            <li class="mb-3"><a href="#" class="text-white text-decoration-none">About</a></li>
                         </ul>
                     </div>
-                    <div class = "row">
-                        <ul class="d-flex justify-content-center">
-                            <li class = "me-5"><a href="#hi">Home</a></li>
-                            <li class = "me-5"><a href="#">About</a></li>
-                            <li><a href="#">Recipes</a></li>
-                        </ul>
-                        <ul class = "d-flex justify-content-center">
-                            <li class = "me-5"><a href="#">Gallery</a></li>
-                            <li><a href="#">Recomendation</a></li>
-                        </ul>
+                    <div class="col-lg-3 p-3 mb-3">
+                        <h5 class="mb-4">Contact Us</h5>
+                        <p>Email: info@example.com</p>
+                        <p>Phone: +123 456 7890</p>
+                        <p>Address: 123 Street, City, Country</p>
+                        <div class="d-flex mt-4">
+                            <a href="#" class="social-icon rounded-circle text-center me-4">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon rounded-circle text-center me-4">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon rounded-circle text-center me-4">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class = "jumbotron d-flex justify-content-center bg-black align-items-center">
-                <p class ="text-white m-2">&copy; 2024 FoodClub </p>
+                <hr>
+                <div class="p-3 mt-3">
+                    <p>&copy; 2024 Malaysian Cuisine The Food Paradise. All rights reserved.</p>
+                </div>
             </div>
         </footer>
         
+        <!-- Anime js -->
         <script src ='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js'></script>
+        
+        <!-- Jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         
-        <script src="asset/js/borneo-food.js"></script>
+        <!-- Swiper Bundle -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
         <!-- Bootstrap -->
         <script src="asset/js/bootstrap.bundle.min.js"></script>
 
+        <!-- Animate on Scroll -->
         <script src="asset/js/aos.js"></script>
+
+        <!-- Custom -->
+        <script src="asset/js/borneo-food.js"></script>
+        <script src="asset/js/borneo.js"></script>
+        <script src="asset/js/common.js"></script>
 
         <script>
             AOS.init( {disable: window.innerWidth < 768});
         </script>
     </body>
 </html>
-
-                <!-- <div class = "container position-absolute slideshow">
-                    <div id="wrapper">
-                        <div id="slider-wrap">
-                           <ul id="slider">
-                              <li data-color="#1abc9c">
-                               <div>
-                                   <h3>Slide #1</h3>
-                                   <span>Sub-title #1</span>
-                               </div>                
-                               <i class="fa fa-image"></i>
-                            </li>
-                            
-                            <li data-color="#3498db">
-                               <div>
-                                   <h3>Slide #2</h3>
-                                   <span>Sub-title #2</span>
-                               </div>
-                               <i class="fa fa-gears"></i>
-                            </li>
-                            
-                            <li data-color="#9b59b6">
-                               <div>
-                                   <h3>Slide #3</h3>
-                                   <span>Sub-title #3</span>
-                               </div>
-                               <i class="fa fa-sliders"></i>
-                            </li>
-                            
-                            <li data-color="#34495e">
-                               <div>
-                                   <h3>Slide #4</h3>
-                                   <span>Sub-title #4</span>
-                               </div>
-                               <i class="fa fa-code"></i>
-                            </li>
-                            
-                            <li data-color="#e74c3c">
-                               <div>
-                                   <h3>Slide #5</h3>
-                                   <span>Sub-title #5</span>
-                               </div>
-                               <i class="fa fa-microphone-slash"></i>
-                            </li>
-                            
-                            
-                         </ul>
-                         
-                         <div class="btns" id="next"><i class="fa fa-arrow-right"></i></div>
-                         <div class="btns" id="previous"><i class="fa fa-arrow-left"></i></div>
-                         <div id="counter"></div>
-                         
-                         <div id="pagination-wrap">
-                           <ul>
-                           </ul>
-                         </div>
-                                
-                     </div>
-                 
-                  </div>
-                </div> -->

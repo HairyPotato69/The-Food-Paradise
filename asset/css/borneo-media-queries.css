@@ -1,26 +1,121 @@
 @media screen and (max-width: 480px){
-    .borneo-title h1{
-        font-size: 2rem;
+    .sabah, 
+    .sarawak{
+        width: fit-content;
     }
-    
-    .borneo-title h1:nth-child(2){
-        transform: translateX(1.5rem);
+    #hero{
+        overflow: hidden;
     }
-    
-    .borneo-title h1:nth-child(3){
-        transform: translateX(1.5rem);
-    }
-    
-    .borneo-title h1:nth-child(4){
-        transform: translateX(1.5rem);
+    #sabah-sarawak-carousel{
+        display: none;
     }
 
-    .slideshow *{
+    /* .borneo-title{
+        justify-content: center;
+    } */
+    .borneo-title h1{
+        font-size: 4rem;
+        line-height: 1.8rem;
+    }
+
+    .borneo-title .sabah{
+        transform: translateX(0rem) !important;
+    }
+    .borneo-title .sarawak{
+        transform: translateX(0rem) !important;
+    }
+    
+    .mobile-hero{
+        display: block;
+    }
+    .desktop-hero{
+        display: none;
+    }
+    
+    .blackbar{
         display: none;
     }
 
     .menu{
         width: fit-content;
+    }
+    .food-card{
+        height:700px;
+        width: 350px;
+    }
+    .food-card img{
+        max-height:600px;
+        /* height: 200px; */
+        width: 350px;
+        object-fit: cover;
+    }
+    .food-image h1{
+        position: absolute;
+        top: calc(200px * 3/4);
+    }
+    .food-info{
+        padding:0.75rem;
+    }
+
+}
+
+@media screen and (max-width: 360px){
+    .sabah, 
+    .sarawak{
+        width: fit-content;
+    }
+    #hero{
+        overflow: hidden;
+    }
+    #sabah-sarawak-carousel{
+        display: none;
+    }
+
+    /* .borneo-title{
+        justify-content: center;
+    } */
+    .borneo-title h1{
+        font-size: 4rem;
+        line-height: 3rem;
+    }
+
+    .borneo-title .sabah{
+        transform: translateX(0rem) !important;
+    }
+    .borneo-title .sarawak{
+        transform: translateX(0rem) !important;
+    }
+    
+    .mobile-hero{
+        display: block;
+    }
+    .desktop-hero{
+        display: none;
+    }
+    
+    .blackbar{
+        display: none;
+    }
+
+    .menu{
+        width: fit-content;
+    }
+    .food-card{
+        height:580px;
+        width: 300px;
+    }
+    .food-card img{
+        max-height:500px;
+        height: 200px;
+        width: 300px;
+        object-fit: cover;
+    }
+    .food-image h1{
+        position: absolute;
+        top: calc(200px * 3/4);
+    }
+    .food-info{
+        padding:0.75rem;
     }
 
 }
