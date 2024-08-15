@@ -5,6 +5,7 @@
     margin:0;
     cursor: default;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -16,6 +17,7 @@
     --color-yellow: #ffd700;
     --color-green: #2f452d;
     --color-white: #fafafa;
+    --color-blue:#4169E1;
 }
 
 body{
@@ -121,29 +123,13 @@ p{
     color: var(--color-red);
 }
 
-footer{
-    background-color: var(--color-black);
-    height: fit-content;
+footer p{
+    color: var(--color-white);
 }
-
-footer ul{
-    list-style-type: none;
-}
-footer ul li a{
-    text-decoration: none;
-    color:var(--color-white);
+footer a{
+    color: var(--color-white);
     transition: color 0.2s ease-in-out;
 }
-
-footer ul li a:hover{
-    color:var(--color-red);
-}
-
-.social-media{
-    height: 35px;
-    border-bottom: 2px solid var(--color-white);
-}
-
-.footer-statements p{
-    color:var(--color-white)
+footer ul li:hover a{
+    color:var(--color-red) !important;
 }

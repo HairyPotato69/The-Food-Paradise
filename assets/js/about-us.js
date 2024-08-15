@@ -63,25 +63,6 @@ let animation_finished = false;
 let current_timeline = null;
 
 function animate_m(){
-
-  // let ketupat_object = document.getElementById("ketupat");
-  // let lantern_object = document.getElementById("lanterns");
-  // let ketupat_docu = ketupat_object.contentDocument;
-  // let lantern_docu = lantern_object.contentDocument;
-  
-  // if (ketupat_docu){
-  //   var ketupat_path = ketupat_docu.querySelector("path");
-  //   var lantern_path = lantern_docu.querySelector("path");
-  //   var ketupat_path_length = ketupat_path.getTotalLength();
-  //   var lantern_path_length = lantern_path.getTotalLength();
-
-  //   ketupat_path.style.strokeDasharray = ketupat_path_length;
-  //   ketupat_path.style.strokeDashoffset = ketupat_path_length;
-
-  //   lantern_path.style.strokeDasharray = lantern_path_length;
-  //   lantern_path.style.strokeDashoffset = lantern_path_length;
-  // }
-  
   const timeline = anime.timeline({
     easing: 'easeInOutQuad',
     autoplay: false,
@@ -178,7 +159,6 @@ function animate_m(){
   timeline.type='m';
   return timeline;
 }
-
 function animate_c(){
   const timeline = anime.timeline({
     easing: 'easeInOutQuad',
@@ -241,7 +221,6 @@ function animate_c(){
   timeline.type= 'c';
   return timeline;
 }
-
 function animate_i(){
   const timeline = anime.timeline({
     easing: 'easeInOutQuad',
@@ -307,7 +286,6 @@ function animate_i(){
   timeline.type= 'i';
   return timeline;
 }
-
 document.getElementById('malay').addEventListener('mouseover', function() {
   if(animation_playing){
     return;
@@ -402,3 +380,26 @@ document.getElementById('indian').addEventListener('mouseover', function() {
   next_timeline = null;
 });
 
+
+const quotes = [
+  { text: "Food is the ingredient that binds us together.", author: "Anonymous" },
+  { text: "Cooking is an art, but all art requires knowing something about the techniques and materials.", author: "Nathan Myhrvold" },
+  { text: "One cannot think well, love well, sleep well, if one has not dined well.", author: "Virginia Woolf" },
+  { text: "The secret of success in life is to eat what you like and let the food fight it out inside.", author: "Mark Twain" },
+  { text: "The only thing I like better than talking about food is eating.", author: "John Walters" }
+];
+
+// Function to select a random quote
+function getRandomQuote() {
+  return quotes[Math.floor(Math.random() * quotes.length)];
+}
+
+// Function to display the quote
+function displayQuote() {
+  const quote = getRandomQuote();
+  document.getElementById('quote-text').textContent = quote.text;
+  document.getElementById('quote-author').textContent = `— ${quote.author}`;
+}
+
+// Display a new quote every time the page loads
+displayQuote();

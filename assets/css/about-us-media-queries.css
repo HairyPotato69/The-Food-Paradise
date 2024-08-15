@@ -7,7 +7,24 @@
         margin: 0;
         overflow-x: hidden;
     }
-    
+
+    #hero h1{
+        font-size: 2rem;
+    }
+    #hero h2{
+        font-size: 1rem;
+    }
+    #hero p{
+        width: 100% !important;
+        color: var(--color-black);
+    }
+    .red-circle{
+        left:-50%;
+    }
+    .blue-circle{
+        top:60%;
+    }
+
     #about-us {
         height:100%;
         display: flex;
@@ -47,20 +64,6 @@
     }
     #mission-and-vision .jumbotron{
         margin-top: 2rem;
-    }
-
-    #join-us{
-        height: 40vh;
-    }
-    #join-us h1{
-        font-size: 1.5rem;
-    }
-
-    #join-us .jumbotron{
-        height:100%;
-        border-bottom-left-radius: 80% 300px;
-        border-bottom-right-radius: 80% 300px;
-        margin-bottom: 2rem;
     }
 
     #the-team{
@@ -113,8 +116,10 @@
         transform: translateY(50px);
     }
 
-
     #mission-and-vision .card:hover{
         transform: scale(1.1);
+    }
+    #join-us{
+        margin: 32px;
     }
 }
