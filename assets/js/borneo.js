@@ -2,7 +2,6 @@ const filter = document.querySelectorAll('.filter-cat');
 const foodContainer = document.getElementById('food-container');
 const foodItems = Array.from(document.querySelectorAll('.food-item'));
 
-console.log(foodItems);
 function createNewRows(){
     const row = document.createElement('div');
     row.className = 'row';
@@ -49,31 +48,3 @@ filter.forEach(filter => {
     });
 });
 
-
-// filter.forEach(filter => {
-//     filter.addEventListener('click', function(event) {
-//         event.preventDefault();
-//         const category = this.getAttribute('data-filter');
-//         foodContainer.innerHTML = '';
-//         if (category === 'all'){
-//             foodItems.forEach(item =>{
-//                 let col = document.createElement('div');
-//                 col.className = 'col-lg-4 p-3';
-//                 col.appendChild(item);
-//                 foodContainer.appendChild(col);
-//                 item.style.display = "flex";
-//             });
-//         } else{
-//             foodItems.forEach(item => {
-//                 const categories = item.getAttribute('data-category').split(',').map(cat => cat.trim());
-//                 if (categories.includes(category)){
-//                     let col = document.createElement('div');
-//                     col.className = 'col-lg-4 p-3';
-//                     col.appendChild(item);
-//                     foodContainer.appendChild(col);
-//                     item.style.display = 'block'
-//                 }
-//             });
-//         }
-//     });
-// });

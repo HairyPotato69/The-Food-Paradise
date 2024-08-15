@@ -1,7 +1,6 @@
 #hero{
     background-color: var(--color-green);
     height: 75vh;
-	/* background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)); */
 }
 
 #hero .jumbotron{
@@ -18,6 +17,7 @@
 	width: 375px;
 	height: fit-content;
 }
+
 #sabah-sarawak-carousel img{
 	object-fit: fill;
 }
@@ -25,7 +25,6 @@
 .borneo-title{
 	width: fit-content;
 }
-
 
 .borneo-title .desktop-hero h1{
     color: var(--color-yellow);
@@ -43,11 +42,8 @@
 }
 
 .borneo-title .desktop-hero h1:nth-child(3){
-    /* transform: translateX(8rem); */
     position: relative;
 }
-
-
 
 .borneo-title .desktop-hero h1:nth-child(4){
     color:var(--color-white);
@@ -57,6 +53,7 @@
 .borneo-title .mobile-hero .sarawak{
 		color: var(--color-yellow);
 }
+
 .borneo-title .mobile-hero .sabah{
 	color: var(--color-white);
 }
@@ -68,9 +65,6 @@
 .desktop-hero{
 	width: fit-content;
 }
-/* .borneo-title h1:nth-child(odd){
-    transform: translateX(3rem);
-} */
 
 .blackbar{
     position: absolute;
@@ -81,7 +75,6 @@
 
 
 /* Food showcase */
-
 #food-showcase{
     min-height: 100vh;
 	height: auto;
@@ -106,6 +99,7 @@
     margin: 0 10px;
     font-weight: bold;
 	transition: color .2s ease-in-out;
+	width: auto;
 }
 
 .menu a{

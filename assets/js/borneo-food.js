@@ -18,7 +18,7 @@ const foodData = {
     },
     2: {
         title: "Nasi Linou",
-        image: "asset\\images\\nasi-linou.jpg",
+        image: "assets\\images\\nasi-linou.jpg",
         description: "Nasi Linou is a traditional Kadazan-Dusun dish made with glutinous rice, cooked with coconut milk and flavored with pandan leaves. It's usually served with side dishes like chicken, beef, or vegetables.",
 		allergenlist: ['Coconut'],
 		nutrients: [            
@@ -30,7 +30,7 @@ const foodData = {
     },
 	3: {
 		title: "Nasi Tumpang",
-        image: "asset\\images\\nasi-tumpang.jpg",
+        image: "assets\\images\\nasi-tumpang.jpg",
         description: "A specialty of the Bajau people, Nasi Tumpang consists of rice layered with various fillings like spicy sambal, meat, and vegetables, all wrapped in banana leaves and steamed.",
 		allergenlist: ['Depends on filling ingredients'],
 		nutrients: [            
@@ -43,7 +43,7 @@ const foodData = {
 	},
 	4: {
 		title: "Nasi Ulam",
-        image: "asset\\images\\nasi-ulam.jpg",
+        image: "assets\\images\\nasi-ulam.jpg",
         description: "Nasi Ulam is a rice dish mixed with a variety of fresh herbs and vegetables, often seasoned with sambal. It’s a healthy and aromatic dish.",
 		allergenlist: ['Peanuts', 'Seafood'],
 		nutrients: [            
@@ -56,7 +56,7 @@ const foodData = {
 	},
 	5: {
 		title: "Nuba Laya",
-        image: "asset\\images\\lun-bawang.jpg",
+        image: "assets\\images\\lun-bawang.jpg",
 		description: "Nuba Laya is a Lun Bawang dish from Sarawak, made with mashed rice wrapped in banana leaves. It is typically served with a variety of side dishes, such as meats and vegetables, offering a hearty and satisfying meal.",
         allergenlist: ["None"],
         nutrients: [
@@ -68,7 +68,7 @@ const foodData = {
 	},
 	6: {
 		title: "Lemang",
-        image: "asset\\images\\lemang.jpg",
+        image: "assets\\images\\lemang.jpg",
 		description: "Sarawak Lemang is a traditional glutinous rice dish cooked in bamboo with coconut milk, commonly enjoyed during festive occasions. The bamboo imparts a unique aroma and flavor to the rice, which is often served with meat or curries.",
         allergenlist: ["Coconut"],
         nutrients: [
@@ -80,7 +80,7 @@ const foodData = {
 	},
 	7: {
 		title: "Sarawak Laksa",
-        image: "asset\\images\\sarawak-laksa.jpg",
+        image: "assets\\images\\sarawak-laksa.jpg",
 		description: "A rich, spicy noodle soup with a coconut milk base, flavored with sambal belacan, garlic, lemon grass, and tamarind.",
         allergenlist: ["Shellfish", "Coconut"],
 		nutrients: [
@@ -92,7 +92,7 @@ const foodData = {
 	},
 	8: {
 		title: "Sarawak Laksa",
-        image: "asset\\images\\mee-goreng-basah.jpg",
+        image: "assets\\images\\mee-goreng-basah.jpg",
 		description: "Mee Goreng Basah is a Malaysian wet fried noodle dish. The noodles are stir-fried with a flavorful blend of spices, soy sauce, vegetables, and a choice of meat or seafood, creating a savory, slightly saucy dish.",
         allergenlist: ["Wheat", "Soy", "Seafood"],
         nutrients: [
@@ -104,7 +104,7 @@ const foodData = {
 	},
 	9: {
 		title: "Tuaran Mee",
-        image: "asset\\images\\tuaran-mee.jpg",
+        image: "assets\\images\\tuaran-mee.jpg",
 		description: "Tuaran Mee is a famous noodle dish from Tuaran, Sabah, featuring homemade egg noodles stir-fried with vegetables, pork, and egg. The noodles are known for their springy texture and are often served with a savory sauce.",
         allergenlist: ["Wheat", "Eggs", "Pork"],
         nutrients: [
@@ -116,7 +116,7 @@ const foodData = {
 	},
 	10: {
 		title: "Kuih Cincin",
-        image: "asset\\images\\kuih-cincin.jpg",
+        image: "assets\\images\\kuih-cincin.jpg",
 		description: "Kuih Cincin is a traditional Sabahan snack made from rice flour, palm sugar, and pandan leaves. The dough is shaped into rings and deep-fried until crispy, creating a sweet and crunchy treat.",
         allergenlist: ["None"],
         nutrients: [
@@ -128,7 +128,7 @@ const foodData = {
 	},
 	11: {
 		title: "Kuih Penyaram",
-        image: "asset\\images\\penyaram.jpg",
+        image: "assets\\images\\penyaram.jpg",
 		description: "Penyaram, also known as Kuih UFO, is a traditional Sarawakian snack made from rice flour, coconut milk, and palm sugar. It has a distinctive UFO shape and is deep-fried to achieve a crispy texture.",
         allergenlist: ["Coconut"],
         nutrients: [
@@ -140,7 +140,7 @@ const foodData = {
 	},
 	12: {
 		title: "Kuih Penyaram",
-        image: "asset\\images\\kek-lapis.jpg",
+        image: "assets\\images\\kek-lapis.jpg",
 		description: "Kek Lapis Sarawak, or Sarawak Layer Cake, is a colorful and intricate layered cake made from butter, condensed milk, and eggs. It is a festive snack often enjoyed during celebrations.",
         allergenlist: ["Eggs", "Dairy"],
         nutrients: [
