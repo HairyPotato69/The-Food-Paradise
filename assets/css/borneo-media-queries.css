@@ -1,3 +1,95 @@
+@media (max-width: 1024px){
+    .sabah, 
+    .sarawak{
+        width: fit-content;
+    }
+
+    #sabah-sarawak-carousel{
+        transform: translateX(-10rem);
+    }
+
+    .borneo-title h1{
+        font-size: 4rem;
+    }
+    .borneo-title .desktop-hero h1:nth-child(2){
+        transform: translateX(0rem) !important;
+    }
+    .borneo-title .desktop-hero h1:nth-child(3){
+        transform: translateX(10rem) !important;
+    }
+
+    .blackbar{
+        height:100px;
+    }
+
+    .menu{
+        width: fit-content;
+    }
+    .food-card{
+        height:800px;
+        width: 700px;
+    }
+    .food-card img{
+        max-height:800px;
+        width: 700px;
+        object-fit: cover;
+    }
+
+    .food-image h1{
+        position: absolute;
+        bottom: 0;
+    }
+    .food-info{
+        padding:0.75rem;
+    }
+}
+
+/* @media (max-width: 768px){
+    .sabah, 
+    .sarawak{
+        width: fit-content;
+    }
+
+    #sabah-sarawak-carousel{
+        transform: translateX(-10rem);
+    }
+
+    .borneo-title h1{
+        font-size: 4rem;
+    }
+    .borneo-title .desktop-hero h1:nth-child(2){
+        transform: translateX(0rem) !important;
+    }
+    .borneo-title .desktop-hero h1:nth-child(3){
+        transform: translateX(10rem) !important;
+    }
+
+    .blackbar{
+        height:100px;
+    }
+
+    .menu{
+        width: fit-content;
+    }
+    .food-card{
+        height:800px;
+        width: 700px;
+    }
+    .food-card img{
+        max-height:800px;
+        width: 700px;
+        object-fit: cover;
+    }
+    
+    .food-image h1{
+        position: absolute;
+        top: calc(200px * 3/4);
+    }
+    .food-info{
+        padding:0.75rem;
+    }
+} */
+
 @media screen and (max-width: 480px){
     .sabah, 
     .sarawak{
@@ -10,9 +102,6 @@
         display: none;
     }
 
-    /* .borneo-title{
-        justify-content: center;
-    } */
     .borneo-title h1{
         font-size: 4rem;
         line-height: 1.8rem;
@@ -31,21 +120,19 @@
     .desktop-hero{
         display: none;
     }
-    
     .blackbar{
-        display: none;
+        height:75px;
     }
 
     .menu{
         width: fit-content;
     }
     .food-card{
-        height:700px;
+        height:750px;
         width: 350px;
     }
     .food-card img{
         max-height:600px;
-        /* height: 200px; */
         width: 350px;
         object-fit: cover;
     }
@@ -93,27 +180,22 @@
         display: none;
     }
     
-    .blackbar{
-        display: none;
-    }
-
     .menu{
         width: fit-content;
     }
+
     .food-card{
         height:580px;
         width: 300px;
     }
+
     .food-card img{
         max-height:500px;
         height: 200px;
         width: 300px;
         object-fit: cover;
     }
-    .food-image h1{
-        position: absolute;
-        top: calc(200px * 3/4);
-    }
+
     .food-info{
         padding:0.75rem;
     }
