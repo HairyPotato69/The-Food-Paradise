@@ -68,7 +68,7 @@
         <section id = "about-us">
             <div class = "jumbotron h-100 d-flex align-items-center">
                 <div class = "container h-75 d-flex align-items-center justify-content-center position-relative">
-                    <div class = "background-fill position-absolute"></div>
+                    <!-- <div class = "background-fill position-absolute"></div> -->
                     <div class = "row gx-5 h-75">
                         <div class = "col-lg-6 col-md-12 about-malaysia d-flex justify-content-center mb-4 mb-lg-0 ">
                             <div class = "d-flex align-items-center"> 
@@ -95,7 +95,7 @@
             <div class = "jumbotron h-100 d-flex align-items-center">
                 <div class = "container">
                     <div class = "row">
-                        <div class = "col d-flex align-items-center faces" data-aos="fade-right" data-aos-easing="ease-in-sine">
+                        <div class = "col-md-6 d-flex align-items-center faces" data-aos="fade-right" data-aos-easing="ease-in-sine">
                             <div class = "row row-cols-2">
                                 <div class = "col">
                                     <figure id = "alex">
@@ -178,8 +178,8 @@
             <div class = "jumbotron h-100 d-flex flex-column align-items-center justify-content-center">
                 <div class = "container">
                     <h1 class = "text-center mb-5">OUR MISSION AND VISION</h1>
-                    <div class = "row gx-5 align-items-center">
-                        <div class = "col-md-4 mb-5">
+                    <div class = "row gx-5 align-items-center justify-content-center">
+                        <div class = "col col-md-3 col-lg-4 mb-5">
                             <div class = "card" data-aos = "fade-right" data-aos-easing="ease-in-sine">
                                 <div class="card-border-top"></div>
                                     <div class = "img">
@@ -193,7 +193,7 @@
                                 <p class = "desc">To present the rich and diverse world of Malaysian cuisine with engaging and informative content.</p>
                             </div>
                         </div>
-                        <div class = "col-md-4 mb-5">
+                        <div class = "col col-md-3 col-lg-4 mb-5">
                             <div class = "card" data-aos="fade-up" data-aos-easing="ease-in-sine">
                                 <div class="card-border-top"></div>
                                     <div class = "img">
@@ -208,7 +208,7 @@
                                 <p class = "desc">To become the main resource for discovering and celebrating Malaysian cuisine</p>
                             </div>
                         </div>
-                        <div class = "col-md-4 mb-5">
+                        <div class = "col col-md-3  col-lg-4 mb-5">
                             <div class = "card" data-aos="fade-left" data-aos-easing="ease-in-sine">
                                 <div class="card-border-top"></div>
                                     <div class = "img">
@@ -286,7 +286,7 @@
         <script src="assets/js/aos.js"></script>
 
         <script>
-            AOS.init( {disable: window.innerWidth < 768});
+            AOS.init( {disable: ['mobile', 'tablet']});
         </script>
     </body>
 </html>

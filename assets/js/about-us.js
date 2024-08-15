@@ -1,7 +1,7 @@
-const about_us_section = document.getElementById('about-us');
-const test = about_us_section.getBoundingClientRect();
-const width = test.width;
-const height = test.height;
+// const about_us_section = document.getElementById('about-us');
+// const test = about_us_section.getBoundingClientRect();
+// const width = test.width;
+// const height = test.height;
 
 const menuButton = document.querySelector('#menu-button')
 const rootElement = document.documentElement
@@ -58,327 +58,327 @@ jimmy_span.addEventListener('mouseout', () => {
 });
 
 
-let animation_playing = false;
-let animation_finished = false;
-let current_timeline = null;
+// let animation_playing = false;
+// let animation_finished = false;
+// let current_timeline = null;
 
-function animate_m(){
-  const timeline = anime.timeline({
-    easing: 'easeInOutQuad',
-    autoplay: false,
-    complete: function(){
-      animation_playing = false;
-      animation_finished = true;
-    },
-    begin: function(){
-      animation_playing = true;
-    }
-  })
-  timeline.add({
-    targets: '.background-fill',
-    background: color_green,
-      width: [
-        function(el) {
-          return 0;
-        },
-        function (el){
-          return height;
-        }],
+// function animate_m(){
+//   const timeline = anime.timeline({
+//     easing: 'easeInOutQuad',
+//     autoplay: false,
+//     complete: function(){
+//       animation_playing = false;
+//       animation_finished = true;
+//     },
+//     begin: function(){
+//       animation_playing = true;
+//     }
+//   })
+//   timeline.add({
+//     targets: '.background-fill',
+//     background: color_green,
+//       width: [
+//         function(el) {
+//           return 0;
+//         },
+//         function (el){
+//           return height;
+//         }],
   
-      height: [
-        function(el){
-          return 0;
-        },
-        function(el){
-          return height;
-        }],
+//       height: [
+//         function(el){
+//           return 0;
+//         },
+//         function(el){
+//           return height;
+//         }],
   
-      borderRadius:['50%', '50%'],
-      duration: 900
-  })
-  .add({
-    targets: '.background-fill',
-    background: color_green,
-      width: [        
-        function(el) {
-          return height;
-        },
-        function (el){
-          return width;
-        }],
-      height: [        
-        function(el) {
-        return height;
-      },
-      function (el){
-        return height;
-      }],
-      borderRadius:['50%', '0%'],
-    })
-  .add({
-    targets: ['#about-us p', '#malay', '#chinese', '#indian'],
-    color: color_yellow
-  }, 0)
-  .add({      
-    targets: '#about-us .container .row',
-    borderColor: ['#000000','#FFD700'],
-    }, 0)
-  // .add({
-  //   targets: ketupat_path,
-  //   translateX: {
-  //     value: -500,
-  //     duration: 800,
-  //     easing:'easeOutElastic(1, .8)'
-  //   },
+//       borderRadius:['50%', '50%'],
+//       duration: 900
+//   })
+//   .add({
+//     targets: '.background-fill',
+//     background: color_green,
+//       width: [        
+//         function(el) {
+//           return height;
+//         },
+//         function (el){
+//           return width;
+//         }],
+//       height: [        
+//         function(el) {
+//         return height;
+//       },
+//       function (el){
+//         return height;
+//       }],
+//       borderRadius:['50%', '0%'],
+//     })
+//   .add({
+//     targets: ['#about-us p', '#malay', '#chinese', '#indian'],
+//     color: color_yellow
+//   }, 0)
+//   .add({      
+//     targets: '#about-us .container .row',
+//     borderColor: ['#000000','#FFD700'],
+//     }, 0)
+//   // .add({
+//   //   targets: ketupat_path,
+//   //   translateX: {
+//   //     value: -500,
+//   //     duration: 800,
+//   //     easing:'easeOutElastic(1, .8)'
+//   //   },
 
-  //   strokeDashoffset: [ketupat_path_length, 0],
-  //   easing:'easeInOutQuad',
-  //   duration: 3000,
-  //   opacity: [0, 100],
-  //   begin: function() {
-  //     ketupat_object.style.opacity = 1;  // Show the SVG when the animation starts
-  //   }
-  // })
-  // .add({
-  //   targets: lantern_path,
+//   //   strokeDashoffset: [ketupat_path_length, 0],
+//   //   easing:'easeInOutQuad',
+//   //   duration: 3000,
+//   //   opacity: [0, 100],
+//   //   begin: function() {
+//   //     ketupat_object.style.opacity = 1;  // Show the SVG when the animation starts
+//   //   }
+//   // })
+//   // .add({
+//   //   targets: lantern_path,
     
-  //   translateY:{
-  //     value: -800,
-  //     duration: 800,
-  //     easing:'easeOutElastic(1, .8)'
-  //   },
+//   //   translateY:{
+//   //     value: -800,
+//   //     duration: 800,
+//   //     easing:'easeOutElastic(1, .8)'
+//   //   },
 
-  //   strokeDashoffset: [lantern_path_length, 0],
-  //   easing:'easeInOutQuad',
-  //   duration: 3000,
-  //   opacity: [0, 100],
-  //   begin: function() {
-  //     lantern_object.style.opacity = 1;  // Show the SVG when the animation starts
-  //   }
-  //   }, 1000)
-  timeline.type='m';
-  return timeline;
-}
-function animate_c(){
-  const timeline = anime.timeline({
-    easing: 'easeInOutQuad',
-    autoplay: false,
-    complete: function(){
-      animation_playing = false;
-      animation_finished = true;
-    },
-    begin: function(){
-      animation_playing = true;
-    }
-  })
+//   //   strokeDashoffset: [lantern_path_length, 0],
+//   //   easing:'easeInOutQuad',
+//   //   duration: 3000,
+//   //   opacity: [0, 100],
+//   //   begin: function() {
+//   //     lantern_object.style.opacity = 1;  // Show the SVG when the animation starts
+//   //   }
+//   //   }, 1000)
+//   timeline.type='m';
+//   return timeline;
+// }
+// function animate_c(){
+//   const timeline = anime.timeline({
+//     easing: 'easeInOutQuad',
+//     autoplay: false,
+//     complete: function(){
+//       animation_playing = false;
+//       animation_finished = true;
+//     },
+//     begin: function(){
+//       animation_playing = true;
+//     }
+//   })
 
-  timeline.add({
-    targets: '.background-fill',
-    background: color_red,
-    width: [
-      function(el) {
-        return 0;
-      },
-      function (el){
-        return height;
-      }],
+//   timeline.add({
+//     targets: '.background-fill',
+//     background: color_red,
+//     width: [
+//       function(el) {
+//         return 0;
+//       },
+//       function (el){
+//         return height;
+//       }],
 
-      height: [
-        function(el){
-          return 0;
-        },
+//       height: [
+//         function(el){
+//           return 0;
+//         },
 
-        function(el){
-          return height;
-      }],
-      borderRadius:['50%', '50%'],
-      duration: 900
-  })
-  .add({
-    targets: '.background-fill',
-    background: color_yellow,
-      width: [        
-        function(el) {
-          return height;
-        },
-        function (el){
-          return width;
-        }],
-      height: [        
-        function(el) {
-        return height;
-      },
-      function (el){
-        return height;
-      }],
-      borderRadius:['50%', '0%'],
-    })
-    .add({
-      targets: ['#about-us p', '#malay', '#chinese', '#indian'],
-      color: color_black
-    },0)
+//         function(el){
+//           return height;
+//       }],
+//       borderRadius:['50%', '50%'],
+//       duration: 900
+//   })
+//   .add({
+//     targets: '.background-fill',
+//     background: color_yellow,
+//       width: [        
+//         function(el) {
+//           return height;
+//         },
+//         function (el){
+//           return width;
+//         }],
+//       height: [        
+//         function(el) {
+//         return height;
+//       },
+//       function (el){
+//         return height;
+//       }],
+//       borderRadius:['50%', '0%'],
+//     })
+//     .add({
+//       targets: ['#about-us p', '#malay', '#chinese', '#indian'],
+//       color: color_black
+//     },0)
 
-  timeline.type= 'c';
-  return timeline;
-}
-function animate_i(){
-  const timeline = anime.timeline({
-    easing: 'easeInOutQuad',
-    autoplay: false,
-    complete: function(){
-      animation_playing = false;
-      animation_finished = true;
-    },
-    begin: function(){
-      animation_playing = true;
-    }
-  })
+//   timeline.type= 'c';
+//   return timeline;
+// }
+// function animate_i(){
+//   const timeline = anime.timeline({
+//     easing: 'easeInOutQuad',
+//     autoplay: false,
+//     complete: function(){
+//       animation_playing = false;
+//       animation_finished = true;
+//     },
+//     begin: function(){
+//       animation_playing = true;
+//     }
+//   })
 
-  timeline.add({
-    targets: '.background-fill',
-    background: color_black,
-    width: [
-      function(el) {
-        return 0;
-      },
-      function (el){
-        return height;
-      }],
+//   timeline.add({
+//     targets: '.background-fill',
+//     background: color_black,
+//     width: [
+//       function(el) {
+//         return 0;
+//       },
+//       function (el){
+//         return height;
+//       }],
 
-      height: [
-        function(el){
-          return 0;
-        },
+//       height: [
+//         function(el){
+//           return 0;
+//         },
 
-        function(el){
-          return height;
-      }],
-      borderRadius:['50%', '50%'],
-      duration: 900
-  })
-  .add({
-    targets: '.background-fill',
-    background: color_purple,
-      width: [        
-        function(el) {
-          return height;
-        },
-        function (el){
-          return width;
-        }],
-      height: [        
-        function(el) {
-        return height;
-      },
-      function (el){
-        return height;
-      }],
-      borderRadius:['50%', '0%'],
-    })
-    .add({
-      targets: ['#about-us p', '#malay', '#chinese', '#indian'],
-      color: color_white
-    },0)
-    .add({      
-      targets: '#about-us .container .row',
-      borderColor: [color_black, color_white],
-      },0)
-  timeline.type= 'i';
-  return timeline;
-}
-document.getElementById('malay').addEventListener('mouseover', function() {
-  if(animation_playing){
-    return;
-  }
+//         function(el){
+//           return height;
+//       }],
+//       borderRadius:['50%', '50%'],
+//       duration: 900
+//   })
+//   .add({
+//     targets: '.background-fill',
+//     background: color_purple,
+//       width: [        
+//         function(el) {
+//           return height;
+//         },
+//         function (el){
+//           return width;
+//         }],
+//       height: [        
+//         function(el) {
+//         return height;
+//       },
+//       function (el){
+//         return height;
+//       }],
+//       borderRadius:['50%', '0%'],
+//     })
+//     .add({
+//       targets: ['#about-us p', '#malay', '#chinese', '#indian'],
+//       color: color_white
+//     },0)
+//     .add({      
+//       targets: '#about-us .container .row',
+//       borderColor: [color_black, color_white],
+//       },0)
+//   timeline.type= 'i';
+//   return timeline;
+// }
+// document.getElementById('malay').addEventListener('mouseover', function() {
+//   if(animation_playing){
+//     return;
+//   }
 
-  if(current_timeline === null){
-    current_timeline = animate_m();
-    current_timeline.play();
-  }
+//   if(current_timeline === null){
+//     current_timeline = animate_m();
+//     current_timeline.play();
+//   }
 
-  else if(current_timeline.type != 'm'){
-    current_timeline.reverse();
-    current_timeline.play();
+//   else if(current_timeline.type != 'm'){
+//     current_timeline.reverse();
+//     current_timeline.play();
 
-    current_timeline.finished.then(() => {
-      current_timeline = animate_m();
-      current_timeline.play();
-    });
-  }
-  else if (current_timeline && current_timeline.type == 'm' && animation_finished){
-    current_timeline.reverse();
-    current_timeline.play();
-    current_timeline.finished.then(()=>{
-      current_timeline = null;
-    });
-  }
+//     current_timeline.finished.then(() => {
+//       current_timeline = animate_m();
+//       current_timeline.play();
+//     });
+//   }
+//   else if (current_timeline && current_timeline.type == 'm' && animation_finished){
+//     current_timeline.reverse();
+//     current_timeline.play();
+//     current_timeline.finished.then(()=>{
+//       current_timeline = null;
+//     });
+//   }
 
-  next_timeline = null;
-});
+//   next_timeline = null;
+// });
 
-document.getElementById('chinese').addEventListener('mouseover', function() {
-  if(animation_playing){
-    return;
-  }
+// document.getElementById('chinese').addEventListener('mouseover', function() {
+//   if(animation_playing){
+//     return;
+//   }
 
-  else if(current_timeline === null){
-    current_timeline = animate_c();
-    current_timeline.play();
-  }
+//   else if(current_timeline === null){
+//     current_timeline = animate_c();
+//     current_timeline.play();
+//   }
 
-  else if(current_timeline.type != 'c'){
-    current_timeline.reverse();
-    current_timeline.play();
+//   else if(current_timeline.type != 'c'){
+//     current_timeline.reverse();
+//     current_timeline.play();
 
-    current_timeline.finished.then(()=>{
-      current_timeline = animate_c();
-      current_timeline.play();
-    });
+//     current_timeline.finished.then(()=>{
+//       current_timeline = animate_c();
+//       current_timeline.play();
+//     });
 
-  }
-  else if (current_timeline && current_timeline.type == 'c' && animation_finished){
-    current_timeline.reverse();
-    current_timeline.play();
+//   }
+//   else if (current_timeline && current_timeline.type == 'c' && animation_finished){
+//     current_timeline.reverse();
+//     current_timeline.play();
 
-    current_timeline.finished.then(()=>{
-      current_timeline = null;
-    });
-  }
+//     current_timeline.finished.then(()=>{
+//       current_timeline = null;
+//     });
+//   }
 
-  next_timeline = null;
-});
+//   next_timeline = null;
+// });
 
-document.getElementById('indian').addEventListener('mouseover', function() {
-  if(animation_playing){
-    return;
-  }
+// document.getElementById('indian').addEventListener('mouseover', function() {
+//   if(animation_playing){
+//     return;
+//   }
 
-  else if(current_timeline === null){
-    current_timeline = animate_i();
-    current_timeline.play();
-  }
+//   else if(current_timeline === null){
+//     current_timeline = animate_i();
+//     current_timeline.play();
+//   }
 
-  else if(current_timeline.type != 'i'){
-    current_timeline.reverse();
-    current_timeline.play();
+//   else if(current_timeline.type != 'i'){
+//     current_timeline.reverse();
+//     current_timeline.play();
 
-    current_timeline.finished.then(()=>{
-      current_timeline = animate_i();
-      current_timeline.play();
-    });
+//     current_timeline.finished.then(()=>{
+//       current_timeline = animate_i();
+//       current_timeline.play();
+//     });
 
-  }
-  else if (current_timeline && current_timeline.type == 'i' && animation_finished){
-    current_timeline.reverse();
-    current_timeline.play();
+//   }
+//   else if (current_timeline && current_timeline.type == 'i' && animation_finished){
+//     current_timeline.reverse();
+//     current_timeline.play();
 
-    current_timeline.finished.then(()=>{
-      current_timeline = null;
-    });
-  }
+//     current_timeline.finished.then(()=>{
+//       current_timeline = null;
+//     });
+//   }
 
-  next_timeline = null;
-});
+//   next_timeline = null;
+// });
 
 
 const quotes = [
