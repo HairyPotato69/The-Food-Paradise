@@ -32,7 +32,73 @@ p{
     color:var(--color-gray);
 }
 
+.navbar {
+    transition: background-color 0.3s ease;
+    font-weight: 580;
+}
+
+.navbar .navbar-brand {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .navbar-brand:hover {
+    color: var(--color-red);
+    transform: scale(1.1);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-item a {
+    border-bottom: 0.1875rem solid transparent;
+    transition: border-bottom 0.3s ease, color 0.3s ease;
+}
+
+.navbar .navbar-nav .nav-item a:hover,
+.navbar .navbar-nav .nav-item a.active {
+    color: var(--color-red);
+    transition: border-bottom 0.3s ease, color 0.3s ease;
+}
+
+.btn-contact-us {
+    cursor: pointer;
+    position: relative;
+    padding: 0.5rem 1.5rem;
+    border: 0.125rem solid var(--color-red);
+    border-radius: 9rem;
+    color: var(--color-red);
+    background-color: var(--color-white);
+    font-weight: 600;
+    overflow: hidden;
+    transition: scale 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.btn-contact-us::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 3rem;
+    height: 3rem;
+    border-radius: inherit;
+    background-color: var(--color-red);
+    scale: 0;
+    z-index: -1;
+    transition: scale 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.btn-contact-us:hover::before {
+    scale: 3;
+}
+
+.btn-contact-us:hover {
+    color: var(--color-white);
+    scale: 1.1;
+    box-shadow: 0 0 1.25rem var(--color-red);
+}
+
+/* .nav-link:hover{
+
 .nav-link:hover{
+
     color:var(--color-red);
 }
 
@@ -121,6 +187,26 @@ p{
 
 .desktop-navbar a:hover{
     color: var(--color-red);
+
+} */
+
+.social-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1.125rem;
+    color: var(--color-white);
+    border: 0.125rem solid var(--color-white);
+    transition: 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--color-white);
+    background-color: var(--color-red);
+    border-color: var(--color-red);
+    transition: 0.3s ease;
+}
+
 }
 
 footer p{
@@ -133,3 +219,4 @@ footer a{
 footer ul li:hover a{
     color:var(--color-red) !important;
 }
+
