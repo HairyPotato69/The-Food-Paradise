@@ -5,6 +5,7 @@
     margin:0;
     cursor: default;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -16,11 +17,15 @@
     --color-yellow: #ffd700;
     --color-green: #2f452d;
     --color-white: #fafafa;
+    --color-blue:#4169E1;
 }
 
 body{
     font-family: 'Poppins', medium;
     background-color: white;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.9)), 
+    url('https://www.shutterstock.com/image-vector/seamless-texture-kitchen-doodle-sketch-600nw-278535350.jpg');
 }
 
 p{
@@ -91,6 +96,9 @@ p{
 }
 
 /* .nav-link:hover{
+
+.nav-link:hover{
+
     color:var(--color-red);
 }
 
@@ -179,6 +187,7 @@ p{
 
 .desktop-navbar a:hover{
     color: var(--color-red);
+
 } */
 
 .social-icon {
@@ -197,3 +206,17 @@ p{
     border-color: var(--color-red);
     transition: 0.3s ease;
 }
+
+}
+
+footer p{
+    color: var(--color-white);
+}
+footer a{
+    color: var(--color-white);
+    transition: color 0.2s ease-in-out;
+}
+footer ul li:hover a{
+    color:var(--color-red) !important;
+}
+
