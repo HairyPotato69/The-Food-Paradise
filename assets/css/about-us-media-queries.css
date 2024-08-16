@@ -69,20 +69,15 @@
     .hover-active .name{
         transform: translateY(50px);
     }
-    #mission-and-vision{
-        height:fit-content;
+    #mission-and-vision{        
         min-height:75vh;
+        height:fit-content;
         margin-bottom: 2rem;
     }
-    #mission-and-vision .container{
-        height: 100%;
-    }
+
     #mission-and-vision .jumbotron{
         margin-top: 2rem;
     }
-    /* #mission-and-vision .col:nth-child(even){
-        margin:0 2rem;
-    } */
 }
 
 @media (max-width: 480px) { 
