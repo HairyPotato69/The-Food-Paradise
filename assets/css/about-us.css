@@ -247,7 +247,7 @@ figure:hover .name,
 /* Mission and Vision */
 
 #mission-and-vision{
-    height: 75vh;
+    min-height: 75vh;
     width: 100%;
 }
 

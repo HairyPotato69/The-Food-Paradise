@@ -70,7 +70,8 @@
         transform: translateY(50px);
     }
     #mission-and-vision{
-        height:75vh;
+        height:fit-content;
+        min-height:75vh;
         margin-bottom: 2rem;
     }
     #mission-and-vision .container{
