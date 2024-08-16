@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head lang = "en">
-        <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
         <title>About us</title>
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,19 +11,16 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         
         <!-- Bootstrap -->
-        <link rel = "stylesheet" href = "assets/css/bootstrap.min.css"/>
+        <link rel = "stylesheet" href = "asset/css/bootstrap.min.css"/>
 
         <!-- Personal -->
-        <link rel = "stylesheet" href = "assets/css/about-us.css"/>
-        <link rel = "stylesheet" href = "assets/css/about-us-media-queries.css"/>
-        <link rel = "stylesheet" href = "assets/css/common.css"/>
-        <link rel = "stylesheet" href = "assets/css/common-media-queries.css"/>
+        <link rel = "stylesheet" href = "asset/css/about-us.css"/>
+        <link rel = "stylesheet" href = "asset/css/common.css"/>
+        <link rel = "stylesheet" href = "asset/css/about-us-media-queries.css"/>
+        <link rel = "stylesheet" href = "asset/css/common-media-queries.css"/>
         
         <!-- AOS -->
-        <link href="assets/css/aos.css" rel="stylesheet"/>
-
-        <!-- Font Awesome -->
-        <link href = "assets/css/all.min.css" rel ="stylesheet"/>
+        <link href="asset/css/aos.css" rel="stylesheet">
     </head>
     <body>
         <!-- Desktop Navigation -->
@@ -52,28 +48,36 @@
             </div>
         </nav>
         <!-- Hero section -->
-        <section id = "hero" class = "bg-white position-relative z-1">
-            <div class = "jumbotron h-100">
-                <div class = "red-circle circle position-absolute z-n1"></div>
-                <div class = "blue-circle circle position-absolute z-n1"></div>
-                <div class = "yellow-circle circle position-absolute z-n1"></div>
-                <!-- <div class = "green-circle circle position-absolute z-n1"></div> -->
-                <div class = "container d-flex flex-column justify-content-center align-items-center h-100">
-                    <h1 class="text-center">Discovery Made Easy</h1>
-                    <h2 >Explore the Authentic Flavors of Malaysia</h2>
-                    <p class = "w-50 text-center text-black">Explore the rich and diverse flavors of Malaysian cuisine, where every dish tells a story. From the spicy heat of sambal to the fragrant aromas of coconut milk, embark on a culinary journey that captures the heart of Malaysia.</p>
-                    <a href = "#about-us">Learn more about us!</a>
+        <section id = "carousel">
+            <div id = "tourists-spots" class = "carousel slide" data-bs-ride="carousel">
+                <div class = "carousel-indicators">
+                    <button type="button" data-bs-target="#tourists-spots" data-bs-slide-to="0" class = "active"></button>
+                    <button type="button" data-bs-target="#tourists-spots" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#tourists-spots" data-bs-slide-to="2"></button>
+                </div>
+                <div class = "carousel-inner">
+                    <div class = "carousel-item active" data-bs-interval="10000">
+                        <img src = "Asset/Images/chinese-temple.jpg" class = "d-block w-100" alt = "...">
+                    </div>
+                    <div class = "carousel-item" data-bs-interval="10000">
+                        <img src = "Asset/Images/empty_room.jpg" class = "d-block w-100" alt = "...">
+                    </div>
+                    <div class = "carousel-item" data-bs-interval="10000">
+                        <img src = "Asset/Images/start_menu_wallpaper.png" class = "d-block w-100" alt = "...">
+                    </div>
                 </div>
             </div>
         </section>
         <section id = "about-us">
             <div class = "jumbotron h-100 d-flex align-items-center">
+                <!-- <object id = "lanterns" type = "image/svg+xml" data = "Asset/Background-Decorations/lanterns.svg" class = "position-absolute"></object>
+                <object id = "ketupat" type = "image/svg+xml" data = "Asset/Background-Decorations/ketupat.svg" class = "position-absolute end-0 top-0"></object> -->
                 <div class = "container h-75 d-flex align-items-center justify-content-center position-relative">
-                    <!-- <div class = "background-fill position-absolute"></div> -->
+                    <div class = "background-fill position-absolute"></div>
                     <div class = "row gx-5 h-75">
                         <div class = "col-lg-6 col-md-12 about-malaysia d-flex justify-content-center mb-4 mb-lg-0 ">
                             <div class = "d-flex align-items-center"> 
-                                <img src = "assets/images/hand-paint-malaysia-flag.png" class = "img-fluid">
+                                <img src = "Asset/Images/hand-paint-malaysia-flag.png" class = "img-fluid">
                                 <h2 class = "text-white">ABOUT <br>
                                 <span class = "flag">MALAYSIA</span></h2>
                             </div>
@@ -92,15 +96,15 @@
                 </div>
             </div>
         </section>
-        <section id = "the-team" class = "bg-white">
+        <section id = "the-team">
             <div class = "jumbotron h-100 d-flex align-items-center">
                 <div class = "container">
                     <div class = "row">
-                        <div class = "col-md-6 d-flex align-items-center faces" data-aos="fade-right" data-aos-easing="ease-in-sine">
+                        <div class = "col d-flex align-items-center faces" data-aos="fade-right" data-aos-easing="ease-in-sine">
                             <div class = "row row-cols-2">
                                 <div class = "col">
                                     <figure id = "alex">
-                                        <img src="assets/images/jimmy.jpg" class="figure-img img-fluid rounded d-block" alt="Alex">
+                                        <img src="Asset/Images/hehe2.jpg" class="figure-img img-fluid rounded d-block" alt="...">
                                         <figcaption>
                                             <h3 class = "fs-1 role">
                                                 Lead Designer
@@ -113,7 +117,7 @@
                                 </div>
                                 <div class = "col">
                                     <figure id = "jia-en">
-                                        <img src="assets/images/jimmy.jpg" class="figure-img img-fluid rounded d-block" alt="Jia En">
+                                        <img src="Asset/Images/hehe2.jpg" class="figure-img img-fluid rounded d-block" alt="...">
                                         <figcaption>
                                             <h3 class = "fs-1 role">
                                                 Technical Wizard
@@ -126,7 +130,7 @@
                                 </div>
                                 <div class = "col">
                                     <figure id = "thomas">
-                                        <img src="assets/images/jimmy.jpg" class="figure-img img-fluid rounded d-block" alt="Thomas">
+                                        <img src="Asset/Images/hehe2.jpg" class="figure-img img-fluid rounded d-block" alt="...">
                                         <figcaption>
                                             <h3 class = "fs-1 role">
                                                 Marketing Guru
@@ -139,7 +143,7 @@
                                 </div>
                                 <div class = "col">
                                     <figure id = "jimmy">
-                                        <img src="assets/images/jimmy.jpg" class="figure-img img-fluid rounded d-block" alt="Jimmy">
+                                        <img src="Asset/Images/hehe2.jpg" class="figure-img img-fluid rounded d-block" alt="...">
                                         <figcaption>
                                             <h3 class = "fs-1 role">
                                                 Project Manager
@@ -176,11 +180,11 @@
             </div>
         </section>
         <section id = "mission-and-vision">
-            <div class = "jumbotron h-100 d-flex flex-column align-items-center justify-content-center pt-5">
+            <div class = "jumbotron h-100 d-flex flex-column align-items-center justify-content-center">
                 <div class = "container">
                     <h1 class = "text-center mb-5">OUR MISSION AND VISION</h1>
-                    <div class = "row gx-5 align-items-center justify-content-center">
-                        <div class = "col col-sm-3 col-md-6 col-lg-4 mb-5">
+                    <div class = "row gx-5 align-items-center">
+                        <div class = "col-md-4 mb-5">
                             <div class = "card" data-aos = "fade-right" data-aos-easing="ease-in-sine">
                                 <div class="card-border-top"></div>
                                     <div class = "img">
@@ -194,7 +198,7 @@
                                 <p class = "desc">To present the rich and diverse world of Malaysian cuisine with engaging and informative content.</p>
                             </div>
                         </div>
-                        <div class = "col col-sm-3 col-md-6 col-lg-4 mb-5">
+                        <div class = "col-md-4 mb-5">
                             <div class = "card" data-aos="fade-up" data-aos-easing="ease-in-sine">
                                 <div class="card-border-top"></div>
                                     <div class = "img">
@@ -209,7 +213,7 @@
                                 <p class = "desc">To become the main resource for discovering and celebrating Malaysian cuisine</p>
                             </div>
                         </div>
-                        <div class = "col col-sm-3 col-md-6  col-lg-4 mb-5">
+                        <div class = "col-md-4 mb-5">
                             <div class = "card" data-aos="fade-left" data-aos-easing="ease-in-sine">
                                 <div class="card-border-top"></div>
                                     <div class = "img">
@@ -226,68 +230,70 @@
             </div>
         </section>
         <section id = "join-us">
-            <div class = "jumbotron h-100 mb-5 d-flex align-items-center">
-                <div class = "quote-container container d-flex flex-column bg-white p-5 shadow">
-                    <blockquote id = "quote-text" class ="fs-1 fst-italic" data-aos="fade-down" data-aos-easing="ease-in-sine"></blockquote>
-                    <cite id = "quote-author" class = "align-self-end fs-3 mt-5" data-aos="fade-up" data-aos-easing="ease-in-sine"></cite>
+            <div class = "jumbotron h-100 mb-5">
+                <div class = "container d-flex justify-content-center align-items-center flex-column h-100 w-100">
+                    <h1 class = "h1 text-white">
+                        JOIN US NOW!
+                    </h1>
+                    <button type = "button" class = "btn-contact-us"> Contact us </button>
                 </div>
             </div>
         </section>
-        <footer class="bg-black text-white pt-5 pb-1 px-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 pe-5 py-3">
-                        <img src="" alt="Website Logo" class="img-fluid mb-3">
-                        <p>We are dedicated to bringing you the best content about Malaysian cuisine and culture. Explore
-                            our website for more insights and updates.</p>
-                    </div>
-                    <div class="col-lg-3 py-3">
-                        <h5 class="mb-4">Quick Links</h5>
-                        <ul class="list-unstyled">
-                            <li class="mb-3"><a href="#" class="text-white text-decoration-none">Home</a></li>
-                            <li class="mb-3"><a href="#" class="text-white text-decoration-none">Explore</a></li>
-                            <li class="mb-3"><a href="#" class="text-white text-decoration-none">Event</a></li>
-                            <li class="mb-3"><a href="#" class="text-white text-decoration-none">About</a></li>
+        <footer class = "mt-5">
+            <div class = "jumbotron">
+                <div class = "container">
+                    <div class = "row justify-content-center">
+                        <ul class = "d-flex flex-row justify-content-center align-items-center m-5">
+                            <li class = "me-5">
+                                <a href = "#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class = "me-5">
+                                <a href = "#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter">
+                                        <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram">
+                                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                                    </svg>
+                                </a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="col-lg-3 py-3">
-                        <h5 class="mb-4">Contact Us</h5>
-                        <p>Email: info@example.com</p>
-                        <p>Phone: +123 456 7890</p>
-                        <p>Address: 123 Street, City, Country</p>
-                        <div class="d-flex mt-4">
-                            <a href="#" class="icon-social-media rounded-circle text-center me-4">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="icon-social-media rounded-circle text-center me-4">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#" class="icon-social-media rounded-circle text-center me-4">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </div>
+                    <div class = "row">
+                        <ul class="d-flex justify-content-center">
+                            <li class = "me-5"><a href="#hi">Home</a></li>
+                            <li class = "me-5"><a href="#">About</a></li>
+                            <li><a href="#">Recipes</a></li>
+                        </ul>
+                        <ul class = "d-flex justify-content-center">
+                            <li class = "me-5"><a href="#">Gallery</a></li>
+                            <li><a href="#">Recomendation</a></li>
+                        </ul>
                     </div>
                 </div>
-                <hr>
-                <div class="text-center p-3 mt-3">
-                    <p>&copy; 2024 Malaysian Cuisine The Food Paradise. All rights reserved.</p>
-                </div>
+            </div>
+            <div class = "jumbotron d-flex justify-content-center bg-black align-items-center">
+                <p class ="text-white m-2">&copy; 2024 FoodClub </p>
             </div>
         </footer>
-        <!-- <a href="#" class="btn-go-to-top"><i class="fas fa-chevron-up"></i></a> -->
         <script src ='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js'></script>
-        <!-- Common -->
-        <script src="assets/js/about-us.js"></script>
-        <script src="assets/js/common.js"></script>
-        
+        <script src="asset/js/about-us.js"></script>
         <!-- Bootstrap -->
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="asset/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Animate on Scroll -->
-        <script src="assets/js/aos.js"></script>
-
+        <script src="asset/js/aos.js"></script>
         <script>
-            AOS.init( {disable: ['mobile', 'tablet']});
-        </script>
+            AOS.init( {disable: window.innerWidth < 768});
+          </script>
     </body>
 </html>
