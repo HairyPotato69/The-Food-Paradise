@@ -1,0 +1,13 @@
+@media (min-width: 992px) {
+    .top-1 {
+        transform: translateY(-2rem);
+    }
+}
+
+@media (min-width: 993px) {
+    #featured-news .card img {
+        width: 100%;
+        height: 30rem;
+        object-fit: cover;
+    }
+}

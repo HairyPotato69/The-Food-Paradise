@@ -1,0 +1,16 @@
+#peninsular-carousel {
+    height: 75vh;
+}
+
+#peninsular-carousel .carousel-item {
+    height: 100%;
+}
+
+#peninsular-carousel .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: stretch;
+    /* Maintains aspect ratio and fills the container */
+    max-height: 75vh;
+    /* Set a max height to control vertical size */
+}

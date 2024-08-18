@@ -1,0 +1,265 @@
+@media (min-width: 1251px) {
+    .form-title {
+        font-size: 38px !important;
+    }
+}
+
+@media (max-width: 1251px) {
+    .form-title {
+        font-size: 32px !important;
+    }
+}
+
+/*Main Media Query*/
+@media (max-width: 1200px) {
+    #black-container h1 {
+        font-size: 2rem;
+    }
+
+    #black-container h3 {
+        font-size: 1.4rem;
+    }
+
+    .ribbonconfig+h2 {
+        margin-top: 0.3em;
+    }
+
+    .img-fluid {
+        max-height: 15em;
+    }
+}
+
+@media (max-width: 992px) {
+    #black-container h1 {
+        font-size: 1.75rem;
+    }
+
+    .ribbonconfig+h2 {
+        margin-top: 0.25em;
+        font-size: 25px;
+        ;
+    }
+
+    .form-title {
+        font-size: 32px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #black-container h1 {
+        font-size: 1.5rem;
+    }
+
+    #black-container h3 {
+        font-size: 1rem;
+        line-height: 2.3em;
+    }
+
+    #set-video {
+        width: 85%;
+    }
+
+    .section-bg {
+        background-size: contain;
+    }
+
+    .main-partner img {
+        min-width: 8em;
+        width: 8em;
+    }
+
+    .ribbonconfig+h2 {
+        margin-top: 0.15em;
+        font-size: 20px;
+        ;
+    }
+
+    .form-container {
+        max-width: 100%;
+    }
+
+    .marquee img:hover {
+        width: 6em;
+    }
+
+    .main-partner img:hover {
+        width: 10.1em;
+        min-width: 10.1em;
+    }
+
+    .img-fluid {
+        max-height: 11em !important;
+    }
+
+    /*Form*/
+    .form-title {
+        font-size: 30px !important;
+    }
+
+    .form-popup {
+        width: 90%;
+        right: 5%;
+        bottom: 5%;
+    }
+
+    .payment li,
+    .payment b {
+        font-size: 15px;
+    }
+
+    .fixed-line-height {
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .gradient-overlay {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 80%, #CD1010 100%);
+    }
+    .gradien0ay {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 80%, #fff53b 100%);
+    }
+}
+
+@media (max-width: 576px) {
+    #black-container h1 {
+        font-size: 1.25rem;
+    }
+
+    #black-container h3 {
+        font-size: 0.7rem;
+        line-height: 2em;
+        max-width: 80;
+    }
+
+    #set-video {
+        width: 95%;
+    }
+
+    .card-content h2 {
+        font-size: 1em;
+    }
+
+    .card-content p {
+        font-size: 0.6em;
+        ;
+    }
+
+    .marquee img {
+        width: 11vh;
+        filter: saturate(10%);
+        cursor: pointer;
+    }
+
+    .main-partner img {
+        min-width: 2em;
+        width: 5em;
+    }
+
+    .ribbonconfig img {
+        width: 80%;
+        max-height: 4em;
+        height: 4em;
+    }
+
+    .ribbonconfig+h2 {
+        margin-top: 0.0em;
+        font-size: 13px;
+        ;
+    }
+
+    .payment li,
+    .payment b {
+        font-size: 13px;
+    }
+
+    .fixed-line-height {
+        line-height: 18px;
+    }
+
+    .form-title {
+        font-size: 20px !important;
+    }
+}
+
+/*Custom*/
+@media (max-width: 480px) {
+    .form-popup {
+        width: 100%;
+        right: 0;
+        bottom: 0;
+    }
+
+    .form-container {
+        padding: 5px;
+    }
+
+    #company-title {
+        font-size: small;
+    }
+
+    #company-detail {
+        font-size: smaller;
+        line-height: 2vh;
+    }
+
+    .swiper-container {
+        width: 100%;
+    }
+
+    .payment li,
+    .payment b {
+        font-size: 12px;
+    }
+
+    .fixed-line-height {
+        line-height: 20px;
+    }
+
+    .form-popup th,
+    td {
+        font-size: x-small;
+    }
+
+    #submit {
+        padding: 10px 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .form-container form .form-row {
+        margin: 0 0;
+    }
+
+    .container .text {
+        font-size: 30px;
+    }
+
+    .container form {
+        padding: 10px 0 0 0;
+    }
+
+    .container form .form-row {
+        display: block;
+    }
+
+    form .form-row .input-data {
+        margin: 020px 0 !important;
+    }
+
+    .submit-btn .input-data {
+        width: 40% !important;
+    }
+
+    .configure-button-set {
+        margin-top: 20px;
+    }
+
+    .form-title {
+        margin-top: 3em !important;
+    }
+
+    .img-fluid {
+        max-height: 7em;
+    }
+}

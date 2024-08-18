@@ -1,0 +1,141 @@
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    word-break: break-word;
+    color: var(--color-red);
+}
+
+.jumbotron {
+    padding: 6rem 1rem;
+}
+
+.card {
+    border: none;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0.25rem 1rem var(--color-medium-gray);
+    transition: 0.3s ease;
+}
+
+#top-stories .jumbotron,
+#featured-video .jumbotron,
+#topics .jumbotron,
+#recommended-reading .jumbotron {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+        url('https://www.shutterstock.com/image-vector/seamless-texture-kitchen-doodle-sketch-600nw-278535350.jpg');
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: var(--color-medium-gray);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    top: 13rem;
+}
+
+.carousel-control-prev {
+    left: -3.75rem;
+}
+
+.carousel-control-next {
+    right: -3.75rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+#top-stories .card p,
+#top-stories .card h5 {
+    transition: color 0.3s ease;
+}
+
+#top-stories .card:hover p,
+#top-stories .card:hover h5 {
+    color: var(--color-red);
+}
+
+#topics h4 {
+    color: var(--color-red);
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 1.5rem;
+    line-height: 1.5rem;
+}
+
+#topics .card {
+    min-height: 9.25rem;
+}
+
+#topics a {
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+#topics a:hover {
+    color: var(--color-red);
+}
+
+#topics .card img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+}
+
+#topics .card-body span {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 4.5rem;
+    line-height: 1.5rem;
+}
+
+#topics .card-body small {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 1.5rem;
+    line-height: 1.5rem;
+}
+
+#recommended-reading .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#recommended-reading .card a {
+    color: var(--color-black);
+    text-decoration: none;
+}
+
+#recommended-reading .card a:hover {
+    color: var(--color-red);
+}
+
+.btn-read-more {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-red);
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.btn-read-more:hover {
+    transform: scale(1.1);
+}

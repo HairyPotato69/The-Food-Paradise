@@ -1,376 +1,450 @@
 <!DOCTYPE html>
 <html>
-    <head lang = "en">
-        <title>About us</title>
-        <meta charset="UTF-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name = "viewport" content="width=device-width, initial-scale=1"/>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        
-        <!-- Bootstrap -->
-        <link rel = "stylesheet" href = "assets/css/bootstrap.min.css"/>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+    <title>Borneo Malaysia</title>
 
-        <!-- Personal -->
-        <link rel = "stylesheet" href = "assets/css/borneo.css"/>
-        <link rel = "stylesheet" href = "assets/css/borneo-media-queries.css"/>
-        <link rel = "stylesheet" href = "assets/css/common.css"/>
-        <link rel = "stylesheet" href = "assets/css/common-media-queries.css"/>
-        
-        <!-- AOS -->
-        <link rel="stylesheet" href="assets/css/aos.css"/>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
-        <!-- Swiper Bundle -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        
-        <!-- Awesome font -->
-        <link rel="stylesheet" href="assets/css/all.min.css"/>
+    <!-- AOS -->
+    <link rel="stylesheet" href="assets/css/aos.css" />
 
-        <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
-    
-    </head>
-    <body>
-        <!-- Desktop Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
-            <div class="container">
-                <div class="d-flex">
-                    <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-    
-                    <a class="navbar-brand d-flex mx-3" href="#">
+    <!-- Awesome font -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+
+    <!-- Common -->
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/common-media-queries.css" />
+
+    <!-- Personal -->
+    <link rel="stylesheet" href="assets/css/malaysia-regions.css" />
+    <link rel="stylesheet" href="assets/css/malaysia-regions-media-queries.css" />
+    <link rel="stylesheet" href="assets/css/borneo.css" />
+    <link rel="stylesheet" href="assets/css/borneo-media-queries.css" />
+</head>
+
+<body>
+    <!-- nagivation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <div class="container">
+            <div class="d-flex">
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand d-flex mx-3 align-items-center" href="index.html">
+                    <img src="./assets/images/logo.png" alt="Logo" class="me-2">
+                    <div class="d-flex flex-column lh-1">
+                        <p class="mb-0">Malaysian Cuisine</p>
+                        <p class="mb-0 fs-6 fw-light">The Food Paradise</p>
+                    </div>
+                </a>
+            </div>
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
                         <div class="d-flex flex-column lh-1">
                             <p class="mb-0">Malaysian Cuisine</p>
                             <p class="mb-0 fs-6 fw-light">The Food Paradise</p>
                         </div>
-                    </a>
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
                 </div>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                            <div class="d-flex flex-column lh-1">
-                                <p class="mb-0">Malaysian Cuisine</p>
-                                <p class="mb-0 fs-6 fw-light text-muted">The Food Paradise</p>
-                            </div>
-                        </h5>
-                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle mx-2" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Explore</a>
+                            <ul class="dropdown-menu dropdown-menu-dark shadow-sm">
+                                <li><a class="dropdown-item border-0" href="peninsular.html">Peninsular</a></li>
+                                <li><a class="dropdown-item border-0" href="borneo.html">Borneo</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="recommendation.html">Recommendation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="news-flash.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="about-us.html">About</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-start align-items-center mx-2 mt-3 mt-lg-0 ">
+                        <a href="contact-us.html">
+                            <button type="button" class="btn-contact-us">Contact Us</button>
+                        </a>
+                        <a href="favorite.html" class="mx-2">
+                            <button class="btn-favorite-cart"><i class="fa fa-heart"></i></button>
+                        </a>
                     </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-center flex-grow-1">
-                            <li class="nav-item">
-                                <a class="nav-link mx-2" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-2" href="#">Explore</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-2" href="#">Events</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link mx-2" href="#">About</a>
-                            </li>
-                        </ul>
-                        <div class="d-flex justify-content-start align-items-center mx-2 mt-3 mt-lg-0 ">
-                            <button type="button" class="btn-contact-us">Contact us</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section id="hero">
+        <div class="jumbotron d-flex position-relative h-100 justify-content-center">
+            <div id="sabah-sarawak-carousel" class="carousel slide position-absolute rounded" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/images/orang-utan.jpg" class="d-block w-100" alt="Orang Utan"
+                            data-bs-interval="1000">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-white fs-1">Orang Utan</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/proboscis-monkey.jpg" class="d-block w-100" alt="Proboscis Monkey"
+                            data-bs-interval="10000">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-white fs-1">Proboscis Monkey</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/mount-kinabalu.jpg" class="d-block w-100" alt="Mount Kinabalu"
+                            data-bs-interval="1000">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-white fs-1">Mount Kinabalu</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/rafflesia.jpg" class="d-block w-100" alt="Rafflesia"
+                            data-bs-interval="1000">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-white fs-1">Rafflesia</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/hornbill.jpg" class="d-block w-100" alt="Rafflesia"
+                            data-bs-interval="1000">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-white fs-2">Rhinocerous Hornbill</h5>
                         </div>
                     </div>
                 </div>
             </div>
-        </nav>
-        <!-- Hero section -->
-        <section id = "hero">
-            <div class = "jumbotron d-flex position-relative h-100">
-                <div id = "sabah-sarawak-carousel" class="carousel slide position-absolute rounded" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="assets/images/orang-utan.jpg" class="d-block w-100" alt="Orang Utan" data-bs-interval="1000">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class = "text-white fs-1">Orang Utan</h5>
-                            </div>
-                        </div>
-                        <div class="carousel-item"> 
-                            <img src="assets/images/proboscis-monkey.jpg" class = "d-block w-100" alt="Proboscis Monkey" data-bs-interval="10000">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class = "text-white fs-1">Proboscis Monkey</h5>
-                            </div>
-                        </div>
-                        <div class="carousel-item"> 
-                            <img src="assets/images/mount-kinabalu.jpg" class = "d-block w-100" alt="Mount Kinabalu" data-bs-interval="1000">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class = "text-white fs-1">Mount Kinabalu</h5>
-                            </div>
-                        </div>
-                        <div class="carousel-item"> 
-                            <img src="assets/images/rafflesia.jpg" class = "d-block w-100" alt="Rafflesia" data-bs-interval="1000">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class = "text-white fs-1">Rafflesia</h5>
-                            </div>
-                        </div>
-                        <div class="carousel-item"> 
-                            <img src="assets/images/hornbill.jpg" class = "d-block w-100" alt="Rafflesia" data-bs-interval="1000">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5 class = "text-white fs-1">Rhinocerous Hornbill</h5>
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                <div class = "borneo-title container d-flex flex-column text-center mt-5">
-                    <div class = "desktop-hero">
-                        <h1 class = "sabah">SABAH</h1>
-                        <h1 class = "sarawak">SARAWAK</h1>
-                        <h1 class = "sarawak">SARAWAK</h1>
-                        <h1 class = "sabah">SABAH</h1>
-                    </div>
-                    <div class = "mobile-hero">
-                        <h1 class = "sarawak">SARAWAK</h1>
-                        <h1 class = "sabah">SABAH</h1>
-                        <h1 class = "sarawak">SARAWAK</h1>
-                        <h1 class = "sabah">SABAH</h1>
-                        <h1 class = "sarawak">SARAWAK</h1>
-                        <h1 class = "sabah">SABAH</h1>
-                        <h1 class = "sarawak">SARAWAK</h1>
-                        <h1 class = "sabah">SABAH</h1>
-                        <h1 class = "sarawak">SARAWAK</h1>
-                        <h1 class = "sabah">SABAH</h1>
-                        <h1 class = "sarawak">SARAWAK</h1>
-                        <h1 class = "sabah">SABAH</h1>
-                        <h1 class = "sarawak">SARAWAK</h1>
-                        <h1 class = "sabah">SABAH</h1>
-                        <h1 class = "sarawak">SARAWAK</h1>
-                        <h1 class = "sabah">SABAH</h1>
-                        <h1 class = "sarawak">SARAWAK</h1>
-                    </div>
+            <div class="borneo-title container d-flex flex-column text-center mt-5">
+                <div class="desktop-hero">
+                    <h1 class="sabah">SABAH</h1>
+                    <h1 class="sarawak">SARAWAK</h1>
+                    <h1 class="sarawak">SARAWAK</h1>
+                    <h1 class="sabah">SABAH</h1>
                 </div>
-                <div class ="blackbar bg-black position-absolute w-100"></div>
-            </div>
-        </section>
-        <!-- Food Cards -->
-        <section id = "food-showcase">
-            <div class = "jumbotron pt-5 h-100 pb-5">
-                <div class = "container d-flex justify-content-center">
-                    <div class = "menu w-100">
-                        <ul class = "d-flex justify-content-around align-items-center ps-0">
-                            <li><a href = "#" class = "filter-cat" data-filter = "all">All</a></li>
-                            <li><a href = "#" class = "filter-cat" data-filter = "rice">Rice</a></li>
-                            <li><a href = "#" class = "filter-cat" data-filter = "noodle">Noodle</a></li>
-                            <li><a href = "#" class = "filter-cat" data-filter = "snack">Snack</a></li>
-                            <li><a href = "#" class = "filter-cat" data-filter = "sides">Sides</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div id = "food-container" class = "container">
-                    <div class = "row">
-                        <div class = "col-lg-4 p-3">
-                            <div class="card food-item rounded" data-id="1" data-category = "rice">
-                                <div class = "position-relative img-holder">
-                                    <img src="https://www.andy-cooks.com/cdn/shop/articles/20231116072724-c2-a9andy_cooks_thumbnails_nasi_lemak_01.jpg?v=1700389619&width=1600" class="card-img-top" alt="Nasi Lemak">
-                                </div>
-                                <div class="card-body">
-                                  <h5 class="card-title fs-3">Nasi Lemak</h5>
-                                  <p class="card-text fs-6">Malaysia</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class = "col-lg-4 p-3">
-                            <div class="card food-item rounded" data-id="2" data-category="rice">
-                                <div class = "position-relative img-holder">
-                                    <img src="assets/images/nasi-linou.jpg" class="card-img-top" alt="Nasi Linou">
-                                </div>
-                                <div class="card-body">
-                                  <h5 class="card-title fs-3">Nasi Linou</h5>
-                                  <p class="card-text fs-6">Kadazan-Dusun</p>
-                                </div>
-                              </div>
-                        </div>
-                        <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="11" data-category="snack">
-                                <div class = "position-relative img-holder">
-                                    <img src="assets/images/penyaram.jpg" class="card-img-top" alt="...">
-                                </div>
-                                <div class="card-body">
-                                  <h5 class="card-title fs-3">Penyaram</h5>
-                                  <p class="card-text fs-6">Sabah</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "row">
-                        <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="4" data-category="rice">
-                                <div class = "position-relative img-holder">
-                                    <img src="assets/images/nasi-ulam.jpg" class="card-img-top" alt="...">
-                                </div>
-                                <div class="card-body">
-                                  <h5 class="card-title fs-3">Nasi Ulam</h5>
-                                  <p class="card-text fs-6">Brunei</p>
-                                </div>
-                              </div>
-                        </div>
-                        <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="5" data-category="rice">
-                                <div class = "position-relative img-holder">
-                                    <img src="assets/images/lun-bawang.jpg" class="card-img-top" alt="...">
-                                </div>
-                                <div class="card-body">
-                                  <h5 class="card-title fs-3">Nuba Laya</h5>
-                                  <p class="card-text fs-6">Lun Bawang from Sarawak</p>
-                                </div>
-                              </div>
-                        </div>
-                        <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="7" data-category="noodle">
-                                <div class = "position-relative img-holder">
-                                    <img src="assets/images/sarawak-laksa.jpg" class="card-img-top" alt="...">
-                                </div>
-                                <div class="card-body">
-                                  <h5 class="card-title fs-3">Sarawak Laksa</h5>
-                                  <p class="card-text fs-6">Sarawak</p>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class = "row">
-                        <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="6" data-category="rice">
-                                <div class = "position-relative img-holder">
-                                    <img src="assets/images/lemang.jpg" class="card-img-top" alt="...">
-                                </div>
-                                <div class="card-body">
-                                  <h5 class="card-title fs-3">Lemang</h5>
-                                  <p class="card-text fs-6">Sarawak</p>
-                                </div>
-                              </div>
-                        </div>
-                        <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="8" data-category="noodle">
-                                <div class = "position-relative img-holder">
-                                    <img src="assets/images/mee-goreng-basah.jpg" class="card-img-top" alt="...">
-                                </div>
-                                <div class="card-body">
-                                  <h5 class="card-title fs-3">Mee Goreng Basah</h5>
-                                  <p class="card-text fs-6">Sarawak</p>
-                                </div>
-                              </div>
-                        </div>
-                        <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="9" data-category="noodle">
-                                <div class = "position-relative img-holder">
-                                    <img src="assets/images/tuaran-mee.jpg" class="card-img-top" alt="...">
-                                </div>
-                                <div class="card-body">
-                                  <h5 class="card-title fs-3">Tuaran Mee</h5>
-                                  <p class="card-text fs-6">Tuaran, Sabah</p>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div class ="row">
-                        <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="10" data-category="snack">
-                                <div class = "position-relative img-holder">
-                                    <img src="assets/images/kuih-cincin.jpg" class="card-img-top" alt="...">
-                                </div>
-                                <div class="card-body">
-                                  <h5 class="card-title fs-3">Kuih Cincin</h5>
-                                  <p class="card-text fs-6">Sabah</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="3" data-category="rice">
-                                <div class = "position-relative img-holder">
-                                    <img src="assets/images/nasi-tumpang.jpg" class="card-img-top" alt="...">
-                                </div>
-                                <div class="card-body">
-                                  <h5 class="card-title fs-3">Nasi Tumpang</h5>
-                                  <p class="card-text fs-6">Bajau</p>
-                                </div>
-                              </div>
-                        </div>
-                        <div class = "col-lg-4 p-3">
-                            <div class="card food-item" data-id="12" data-category="snack">
-                                <div class = "position-relative img-holder">
-                                    <img src="assets/images/kek-lapis.jpg" class="card-img-top" alt="...">
-                                </div>
-                                <div class="card-body">
-                                  <h5 class="card-title fs-3">Kek Lapis</h5>
-                                  <p class="card-text fs-6">Sarawak</p>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
+                <div class="mobile-hero">
+                    <h1 class="sarawak">SARAWAK</h1>
+                    <h1 class="sabah">SABAH</h1>
+                    <h1 class="sarawak">SARAWAK</h1>
+                    <h1 class="sabah">SABAH</h1>
+                    <h1 class="sarawak">SARAWAK</h1>
+                    <h1 class="sabah">SABAH</h1>
+                    <h1 class="sarawak">SARAWAK</h1>
+                    <h1 class="sabah">SABAH</h1>
+                    <h1 class="sarawak">SARAWAK</h1>
+                    <h1 class="sabah">SABAH</h1>
+                    <h1 class="sarawak">SARAWAK</h1>
+                    <h1 class="sabah">SABAH</h1>
+                    <h1 class="sarawak">SARAWAK</h1>
+                    <h1 class="sabah">SABAH</h1>
+                    <h1 class="sarawak">SARAWAK</h1>
+                    <h1 class="sabah">SABAH</h1>
+                    <h1 class="sarawak">SARAWAK</h1>
                 </div>
             </div>
-        </section>
-        <footer class="bg-black text-white pt-5 pb-1 px-3">
-            <div class="container">
+            <div class="blackbar bg-black position-absolute w-100"></div>
+        </div>
+    </section>
+
+    <!-- Food Cards -->
+    <section id="food-showcase">
+        <div class="jumbotron pt-5 h-100 pb-5">
+            <div class="container d-flex justify-content-center">
+                <div class="menu w-100">
+                    <ul class="d-flex justify-content-around align-items-center ps-0">
+                        <li><a href="#" class="filter-cat" data-filter="all">All</a></li>
+                        <li><a href="#" class="filter-cat" data-filter="rice">Rice</a></li>
+                        <li><a href="#" class="filter-cat" data-filter="noodle">Noodle</a></li>
+                        <li><a href="#" class="filter-cat" data-filter="snack">Snack</a></li>
+                        <li><a href="#" class="filter-cat" data-filter="sides">Sides</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="food-container" class="container">
                 <div class="row">
-                    <div class="col-lg-6 pe-5 py-3">
-                        <img src="" alt="Website Logo" class="img-fluid mb-3">
-                        <p>We are dedicated to bringing you the best content about Malaysian cuisine and culture. Explore
-                            our website for more insights and updates.</p>
+                    <div class="col-lg-4 p-3">
+                        <div class="card food-item rounded" data-id="1" data-category="rice">
+                            <div class="position-relative img-holder">
+                                <img src="assets/images/nasi-lemak.jpg" class="card-img-top" alt="Nasi Lemak">
+                                <button class="btn-favorite"
+                                    onclick="event.stopPropagation(); toggleFavorite(1, 'rice', 'assets/images/nasi-lemak.jpg', 'Nasi Lemak', 'Malaysia')"><i
+                                        class="fas fa-heart"></i></button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-3">Nasi Lemak</h5>
+                                <p class="card-text fs-6">Malaysia</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-3 py-3">
-                        <h5 class="mb-4">Quick Links</h5>
-                        <ul class="list-unstyled">
-                            <li class="mb-3"><a href="#" class="text-white text-decoration-none">Home</a></li>
-                            <li class="mb-3"><a href="#" class="text-white text-decoration-none">Explore</a></li>
-                            <li class="mb-3"><a href="#" class="text-white text-decoration-none">Event</a></li>
-                            <li class="mb-3"><a href="#" class="text-white text-decoration-none">About</a></li>
-                        </ul>
+                    <div class="col-lg-4 p-3">
+                        <div class="card food-item rounded" data-id="2" data-category="rice">
+                            <div class="position-relative img-holder">
+                                <img src="assets/images/nasi-linou.jpg" class="card-img-top" alt="Nasi Linou">
+                                <button class="btn-favorite"
+                                    onclick="event.stopPropagation(); toggleFavorite(2, 'rice', 'assets/images/nasi-linou.jpg', 'Nasi Linou', 'Kadazan-Dusun')"><i
+                                        class="fas fa-heart"></i></button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-3">Nasi Linou</h5>
+                                <p class="card-text fs-6">Kadazan-Dusun</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-3 py-3">
-                        <h5 class="mb-4">Contact Us</h5>
-                        <p>Email: info@example.com</p>
-                        <p>Phone: +123 456 7890</p>
-                        <p>Address: 123 Street, City, Country</p>
-                        <div class="d-flex mt-4">
-                            <a href="#" class="icon-social-media rounded-circle text-center me-4">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#" class="icon-social-media rounded-circle text-center me-4">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="#" class="icon-social-media rounded-circle text-center me-4">
-                                <i class="fab fa-twitter"></i>
-                            </a>
+                    <div class="col-lg-4 p-3">
+                        <div class="card food-item" data-id="11" data-category="snack">
+                            <div class="position-relative img-holder">
+                                <img src="assets/images/penyaram.jpg" class="card-img-top" alt="Penyaram">
+                                <button class="btn-favorite"
+                                    onclick="event.stopPropagation(); toggleFavorite(11, 'snack', 'assets/images/penyaram.jpg', 'Penyaram', 'Sabah')"><i
+                                        class="fas fa-heart"></i></button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-3">Penyaram</h5>
+                                <p class="card-text fs-6">Sabah</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <hr>
-                <div class="text-center p-3 mt-3">
-                    <p>&copy; 2024 Malaysian Cuisine The Food Paradise. All rights reserved.</p>
+                <div class="row">
+                    <div class="col-lg-4 p-3">
+                        <div class="card food-item" data-id="4" data-category="rice">
+                            <div class="position-relative img-holder">
+                                <img src="assets/images/nasi-ulam.jpg" class="card-img-top" alt="Nasi Ulam">
+                                <button class="btn-favorite"
+                                    onclick="event.stopPropagation(); toggleFavorite(4, 'rice', 'assets/images/nasi-ulam.jpg', 'Nasi Ulam', 'Brunei')"><i
+                                        class="fas fa-heart"></i></button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-3">Nasi Ulam</h5>
+                                <p class="card-text fs-6">Brunei</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-3">
+                        <div class="card food-item" data-id="5" data-category="rice">
+                            <div class="position-relative img-holder">
+                                <img src="assets/images/lun-bawang.jpg" class="card-img-top" alt="Nuba Laya">
+                                <button class="btn-favorite"
+                                    onclick="event.stopPropagation(); toggleFavorite(5, 'rice', 'assets/images/lun-bawang.jpg', 'Nuba Laya', 'Lun Bawang, Sarawak')"><i
+                                        class="fas fa-heart"></i></button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-3">Nuba Laya</h5>
+                                <p class="card-text fs-6">Lun Bawang, Sarawak</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-3">
+                        <div class="card food-item" data-id="7" data-category="noodle">
+                            <div class="position-relative img-holder">
+                                <img src="assets/images/sarawak-laksa.jpg" class="card-img-top" alt="Sarawak Laksa">
+                                <button class="btn-favorite"
+                                    onclick="event.stopPropagation(); toggleFavorite(7, 'noodle', 'assets/images/sarawak-laksa.jpg', 'Sarawak Laksa', 'Sarawak')"><i
+                                        class="fas fa-heart"></i></button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-3">Sarawak Laksa</h5>
+                                <p class="card-text fs-6">Sarawak</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 p-3">
+                        <div class="card food-item" data-id="6" data-category="rice">
+                            <div class="position-relative img-holder">
+                                <img src="assets/images/lemang.jpg" class="card-img-top" alt="Lemang">
+                                <button class="btn-favorite"
+                                    onclick="event.stopPropagation(); toggleFavorite(6, 'rice', 'assets/images/lemang.jpg', 'Lemang', 'Sarawak')"><i
+                                        class="fas fa-heart"></i></button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-3">Lemang</h5>
+                                <p class="card-text fs-6">Sarawak</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-3">
+                        <div class="card food-item" data-id="8" data-category="noodle">
+                            <div class="position-relative img-holder">
+                                <img src="assets/images/mee-goreng-basah.jpg" class="card-img-top"
+                                    alt="Mee Goreng Basah">
+                                <button class="btn-favorite"
+                                    onclick="event.stopPropagation(); toggleFavorite(8, 'noodle', 'assets/images/mee-goreng-basah.jpg', 'Mee Goreng Basah', 'Sarawak')"><i
+                                        class="fas fa-heart"></i></button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-3">Mee Goreng Basah</h5>
+                                <p class="card-text fs-6">Sarawak</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-3">
+                        <div class="card food-item" data-id="9" data-category="noodle">
+                            <div class="position-relative img-holder">
+                                <img src="assets/images/tuaran-mee.jpg" class="card-img-top" alt="Tuaran Mee">
+                                <button class="btn-favorite"
+                                    onclick="event.stopPropagation(); toggleFavorite(9, 'noodle', 'assets/images/tuaran-mee.jpg', 'Tuaran Mee', 'Tuaran, Sabah')"><i
+                                        class="fas fa-heart"></i></button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-3">Tuaran Mee</h5>
+                                <p class="card-text fs-6">Tuaran, Sabah</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 p-3">
+                        <div class="card food-item" data-id="10" data-category="snack">
+                            <div class="position-relative img-holder">
+                                <img src="assets/images/kuih-cincin.jpg" class="card-img-top" alt="Kuih Cincin">
+                                <button class="btn-favorite"
+                                    onclick="event.stopPropagation(); toggleFavorite(10, 'snack', 'assets/images/kuih-cincin.jpg', 'Kuih Cincin', 'Sabah')"><i
+                                        class="fas fa-heart"></i></button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-3">Kuih Cincin</h5>
+                                <p class="card-text fs-6">Sabah</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-3">
+                        <div class="card food-item" data-id="3" data-category="rice">
+                            <div class="position-relative img-holder">
+                                <img src="assets/images/nasi-tumpang.jpg" class="card-img-top" alt="Nasi Tumpang">
+                                <button class="btn-favorite"
+                                    onclick="event.stopPropagation(); toggleFavorite(3, 'rice', 'assets/images/nasi-tumpang.jpg', 'Nasi Tumpang', 'Bajau')"><i
+                                        class="fas fa-heart"></i></button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-3">Nasi Tumpang</h5>
+                                <p class="card-text fs-6">Bajau</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 p-3">
+                        <div class="card food-item" data-id="12" data-category="snack">
+                            <div class="position-relative img-holder">
+                                <img src="assets/images/kek-lapis.jpg" class="card-img-top" alt="Kek Lapis">
+                                <button class="btn-favorite"
+                                    onclick="event.stopPropagation(); toggleFavorite(12, 'snack', 'assets/images/kek-lapis.jpg', 'Kek Lapis', 'Sarawak')"><i
+                                        class="fas fa-heart"></i></button>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title fs-3">Kek Lapis</h5>
+                                <p class="card-text fs-6">Sarawak</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </footer>
-        
-        <!-- Anime js -->
-        <script src ='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js'></script>
-        
-        <!-- Jquery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        
-        <!-- Swiper Bundle -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        </div>
+    </section>
 
-        <!-- Bootstrap -->
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Footer -->
+    <footer class="bg-black text-white pt-5 pb-1 px-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 py-3">
+                    <div class="d-flex flex-column flex-md-row">
+                        <div class="me-5">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/logo.png" alt="Logo" class="mb-3"
+                                    style="width: 100%; max-width: 144px;">
+                                <div class="d-flex flex-column lh-1">
+                                    <h3 class="mb-1">Malaysian Cuisine</h3>
+                                    <p>The Food Paradise</p>
+                                </div>
+                            </div>
+                            <p>
+                                We are dedicated to bringing you the best content about Malaysian cuisine and
+                                culture. Explore
+                                our website for more insights and updates.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 py-3">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="index.html">Home</a></li>
+                        <li class="mb-3"><a href="peninsular.html">Peninsular</a></li>
+                        <li class="mb-3"><a href="borneo.html">Borneo</a></li>
+                        <li class="mb-3"><a href="news-flash.html">News</a></li>
+                        <li class="mb-3"><a href="about-us.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 py-3">
+                    <h5 class="mb-4">Contact Us</h5>
+                    <p>Email: jimmy@1utar.my</p>
+                    <p>Phone: +60 12-345 6789</p>
+                    <p>Address: No 1, Jalan Universiti, 31900 Kampar, Perak</p>
+                    <div class="d-flex mt-4">
+                        <a href="https://www.facebook.com/UTARnet" target="_blank"
+                            class="icon-social-media rounded-circle text-center me-4">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/utardsakampar/" target="_blank"
+                            class="icon-social-media rounded-circle text-center me-4">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com/UTARnet" target="_blank"
+                            class="icon-social-media rounded-circle text-center me-4">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center p-3 mt-3">
+                <p>&copy; 2024 Malaysian Cuisine The Food Paradise. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-        <!-- Animate on Scroll -->
-        <script src="assets/js/aos.js"></script>
+    <a href="#" class="btn-go-to-top"><i class="fas fa-chevron-up"></i></a>
 
-        <!-- Custom -->
-        <script src="assets/js/borneo-food.js"></script>
-        <script src="assets/js/borneo.js"></script>
-        <script src="assets/js/common.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 
-        <script>
-            AOS.init( {disable: window.innerWidth < 768});
-        </script>
-    </body>
+    <!-- Animate on Scroll -->
+    <script src="assets/js/aos.js"></script>
+
+    <!-- Anime js -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js'></script>
+
+    <!-- Common -->
+    <script src="assets/js/common.js"></script>
+
+    <!-- Personal -->
+    <script src="assets/js/malaysia-food.js"></script>
+    <script src="assets/js/malaysia-regions.js"></script>
+    <script src="assets/js/cookie.js"></script>
+
+    <script>
+        AOS.init({ disable: window.innerWidth < 768 });
+    </script>
+</body>
+
 </html>

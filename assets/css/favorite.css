@@ -1,0 +1,43 @@
+/* .page-title {
+  position: relative;
+  display: block;
+  text-align: center;
+  top: 5em;
+  margin: auto !important;
+} */
+
+/* #food-container {
+  position: relative;
+  margin: 7em;
+}
+
+#food-container {
+  margin-left: auto;
+  margin-right: auto;
+  
+} */
+
+.jumbotron {
+  padding: 6rem 1rem;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url('https://www.shutterstock.com/image-vector/seamless-texture-kitchen-doodle-sketch-600nw-278535350.jpg');
+  object-fit: cover;
+}
+
+h1 {
+  word-break: break-word;
+  color: var(--color-red);
+}
+
+/* If Empty Fav */
+.empty-container {
+  max-width: 37.5rem;
+  margin: auto;
+  padding: 2.5rem 3.125rem;
+  border: 0.125rem solid white;
+  border-radius: 0.625rem;
+  box-shadow: inset 0 0 0.625rem rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: gray;
+}

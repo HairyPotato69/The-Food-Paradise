@@ -1,0 +1,188 @@
+@media (min-width: 1024px) {
+    .food-card {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -45%);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        animation-name: popup;
+        animation-duration: 0.2s;
+        width: fit-content;
+        height: 85vh;
+        border-radius: 16px;
+        z-index: 999;
+    }
+
+    .food-card.visible {
+        display: block;
+    }
+
+    .food-image img {
+        width: 100%;
+        height: 25rem;
+        object-fit: cover;
+        transform: scale(1.1);
+    }
+
+    .food-image h1 {
+        position: absolute;
+        bottom: 0;
+        color: white;
+        height: fit-content;
+    }
+
+    .food-info {
+        padding: 1rem 2rem 2rem 2rem;
+        height: auto;
+    }
+
+    .food-description,
+    .food-allergies,
+    .food-nutrition {
+        height: fit-content;
+        border-bottom: 1px solid black;
+        padding: 1rem;
+    }
+
+    .food-info h2 {
+        margin-bottom: 1rem;
+    }
+
+    .food-info p {
+        line-height: 1.5rem;
+    }
+
+    .allergens-list {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .allergens-list li {
+        margin-right: 2rem;
+    }
+
+    @keyframes popup {
+        from {
+            transform: translate(50%, -50%);
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .menu {
+        width: fit-content;
+    }
+
+    .food-card {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -45%);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        animation-name: popup;
+        animation-duration: 0.2s;
+        width: 80vw;
+        height: 75vh;
+        border-radius: 16px;
+        z-index: 999;
+    }
+
+    .food-image img {
+        max-height: 400px;
+        width: 750px;
+        object-fit: cover;
+    }
+
+    .food-image h1 {
+        position: absolute;
+        bottom: 0;
+        color: white;
+        height: fit-content;
+    }
+
+    .food-info {
+        padding: 1rem 2rem 2rem 2rem;
+        height: auto;
+    }
+
+    .food-description,
+    .food-allergies,
+    .food-nutrition {
+        height: fit-content;
+        border-bottom: 1px solid black;
+        padding: 1rem;
+    }
+
+    .food-info h2 {
+        margin-bottom: 1rem;
+    }
+
+    .food-info p {
+        line-height: 1.5rem;
+    }
+
+    .allergens-list {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .allergens-list li {
+        margin-right: 2rem;
+    }
+
+    @keyframes popup {
+        from {
+            transform: translate(50%, -50%);
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        width: fit-content;
+    }
+
+    .food-card {
+        height: 750px;
+        width: 350px;
+    }
+
+    .food-card img {
+        max-height: 600px;
+        width: 350px;
+        object-fit: cover;
+    }
+
+    .food-image h1 {
+        position: absolute;
+        top: calc(200px * 3/4);
+    }
+
+    .food-info {
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .menu {
+        width: fit-content;
+    }
+
+    .food-card {
+        height: 580px;
+        width: 300px;
+    }
+
+    .food-card img {
+        max-height: 500px;
+        height: 200px;
+        width: 300px;
+        object-fit: cover;
+    }
+
+    .food-info {
+        padding: 0.75rem;
+    }
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+    <title>News Hub</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- Animation -->
+    <link rel="stylesheet" href="./assets/css/aos.css">
+
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+
+    <!-- Common -->
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/common-media-queries.css">
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="./assets/css/news-hub.css">
+    <link rel="stylesheet" href="./assets/css/news-hub-media-queries.css">
+</head>
+
+<body>
+    <!-- nagivation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+        <div class="container">
+            <div class="d-flex">
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand d-flex mx-3 align-items-center" href="index.html">
+                    <img src="./assets/images/logo.png" alt="Logo" class="me-2">
+                    <div class="d-flex flex-column lh-1">
+                        <p class="mb-0">Malaysian Cuisine</p>
+                        <p class="mb-0 fs-6 fw-light">The Food Paradise</p>
+                    </div>
+                </a>
+            </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <div class="d-flex flex-column lh-1">
+                            <p class="mb-0">Malaysian Cuisine</p>
+                            <p class="mb-0 fs-6 fw-light">The Food Paradise</p>
+                        </div>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle mx-2" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Explore</a>
+                            <ul class="dropdown-menu shadow-sm">
+                                <li><a class="dropdown-item border-0" href="peninsular.html">Peninsular</a></li>
+                                <li><a class="dropdown-item border-0" href="borneo.html">Borneo</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="recommendation.html">Recommendation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="news-flash.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="about-us.html">About</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-start align-items-center mx-2 mt-3 mt-lg-0 ">
+                        <a href="contact-us.html">
+                            <button type="button" class="btn-contact-us">Contact Us</button>
+                        </a>
+                        <a href="favorite.html" class="mx-2">
+                            <button class="btn-favorite-cart"><i class="fa fa-heart"></i></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Screen loading -->
+    <div id="screen-loading">
+        <div class="spinner-border text-danger" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Malaysian Cuisine News -->
+    <section id="malaysian-cuisine-news">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="text-center fw-bold mt-5 mb-4">Malaysian Cuisine News</h1>
+                <div class="row mb-5">
+                    <div class="col-md-4 p-2">
+                        <input type="text" id="search-input" class="form-control shadow-sm" placeholder="Search news">
+                    </div>
+                    <div class="col-md-4 p-2">
+                        <select id="sort-order" class="form-select shadow-sm">
+                            <option value="newest">Newest First</option>
+                            <option value="oldest">Oldest First</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 p-2">
+                        <select id="category-filter" class="form-select shadow-sm">
+                            <option value="all">All Categories</option>
+                            <option value="cuisine">Cuisine</option>
+                            <option value="restaurant">Restaurant</option>
+                            <option value="food">Food</option>
+                        </select>
+                    </div>
+                    <!-- <div class="col-md-2 p-2">
+                        <select id="language-filter" class="form-select shadow-sm">
+                            <option value="en">English</option>
+                            <option value="my">Malay</option>
+                            <option value="zg">Chinese</option>
+                        </select>
+                    </div> -->
+                </div>
+                <div id="news-container" class="row"></div>
+                <div id="no-results" class="text-center text-muted d-none">No results found.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white pt-5 pb-1 px-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 py-3">
+                    <div class="d-flex flex-column flex-md-row">
+                        <div class="me-5">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/logo.png" alt="Logo" class="mb-3"
+                                    style="width: 100%; max-width: 144px;">
+                                <div class="d-flex flex-column lh-1">
+                                    <h3 class="mb-1">Malaysian Cuisine</h3>
+                                    <p>The Food Paradise</p>
+                                </div>
+                            </div>
+                            <p>
+                                We are dedicated to bringing you the best content about Malaysian cuisine and
+                                culture. Explore
+                                our website for more insights and updates.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 py-3">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="index.html">Home</a></li>
+                        <li class="mb-3"><a href="peninsular.html">Peninsular</a></li>
+                        <li class="mb-3"><a href="borneo.html">Borneo</a></li>
+                        <li class="mb-3"><a href="news-flash.html">News</a></li>
+                        <li class="mb-3"><a href="about-us.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 py-3">
+                    <h5 class="mb-4">Contact Us</h5>
+                    <p>Email: jimmy@1utar.my</p>
+                    <p>Phone: +60 12-345 6789</p>
+                    <p>Address: No 1, Jalan Universiti, 31900 Kampar, Perak</p>
+                    <div class="d-flex mt-4">
+                        <a href="https://www.facebook.com/UTARnet" target="_blank"
+                            class="icon-social-media rounded-circle text-center me-4">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/utardsakampar/" target="_blank"
+                            class="icon-social-media rounded-circle text-center me-4">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com/UTARnet" target="_blank"
+                            class="icon-social-media rounded-circle text-center me-4">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center p-3 mt-3">
+                <p>&copy; 2024 Malaysian Cuisine The Food Paradise. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#" class="btn-go-to-top"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- Bootstrap -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Animation -->
+    <script src="./assets/js/aos.js"></script>
+
+    <!-- Common -->
+    <script src="./assets/js/common.js"></script>
+
+    <!-- Custome -->
+    <script src="./assets/js/news-hub.js"></script>
+</body>
+
+</html>

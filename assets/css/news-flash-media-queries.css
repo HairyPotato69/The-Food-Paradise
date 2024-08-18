@@ -1,0 +1,8 @@
+
+@media (min-width: 768px) {
+    #recommended-reading .card img {
+        width: 10rem;
+        height: 10rem;
+        object-fit: cover;
+    }
+}

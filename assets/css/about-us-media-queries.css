@@ -1,4 +1,24 @@
-@media (max-width: 1024px){
+@media (min-width: 1024px) {
+    figure img {
+        width: 100%;
+        height: 25rem;
+        object-fit: cover;
+    }
+    
+    figure:hover .role,
+    .hover-active .role {
+        transform: translateY(70px);
+    }
+    
+    figure:hover .name,
+    .hover-active .name {
+        transform: translateY(50px);
+    }
+    
+}
+
+
+@media (max-width: 1023px){
     #hero,
     #about-us,
     #the-team,
@@ -171,28 +191,31 @@
     }
 
     #alex:hover .role,
-    #thomas:hover .role,
-    .hover-active .role{
+    #jia-en:hover .role{
         transform: translateY(5rem);
 
     }
 
     #alex:hover .name,
-    #thomas:hover.name,
-    .hover-active .name{
+    #thomas:hover .name{
         transform: translateY(50px);
     }
 
-    #jia-en:hover .role,
-    #jimmy:hover .role,
-    .hover-active .role{
+    #thomas:hover .role,
+    #jimmy:hover .role{
         transform: translateY(5rem);
     }
 
     #jia-en:hover .name,
-    #jimmy:hover.name,
+    #jimmy:hover .name{
+        transform: translateY(50px);
+    }
+
     .hover-active .name{
         transform: translateY(50px);
+    }
+    .hover-active .role{
+        transform: translateY(5rem);
     }
 
     #mission-and-vision .card:hover{
@@ -294,28 +317,31 @@
     }
 
     #alex:hover .role,
-    #thomas:hover .role,
-    .hover-active .role{
+    #jia-en:hover .role{
         transform: translateY(5rem);
 
     }
 
     #alex:hover .name,
-    #thomas:hover.name,
-    .hover-active .name{
+    #thomas:hover .name{
         transform: translateY(50px);
     }
 
-    #jia-en:hover .role,
-    #jimmy:hover .role,
-    .hover-active .role{
+    #thomas:hover .role,
+    #jimmy:hover .role{
         transform: translateY(5rem);
     }
 
     #jia-en:hover .name,
-    #jimmy:hover.name,
+    #jimmy:hover .name{
+        transform: translateY(50px);
+    }
+
     .hover-active .name{
         transform: translateY(50px);
+    }
+    .hover-active .role{
+        transform: translateY(5rem);
     }
 
     #mission-and-vision .card:hover{

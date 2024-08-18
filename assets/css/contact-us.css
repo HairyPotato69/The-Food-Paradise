@@ -1,0 +1,39 @@
+h1 {
+    word-break: break-word;
+    color: var(--color-red);
+}
+
+.jumbotron {
+    padding: 5rem 0rem;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+        url('https://www.shutterstock.com/image-vector/seamless-texture-kitchen-doodle-sketch-600nw-278535350.jpg');
+    object-fit: cover;
+}
+
+.border {
+    opacity: 1;
+    width: 6rem;
+    height: 0.7rem;
+    background-color: var(--color-red);
+}
+
+.accordion-button {
+    border: 0.0625rem solid var(--color-red);
+    height: 4.5rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--color-snow);
+}
+
+.accordion-button.collapsed {
+    background-color: var(--color-snow);
+}
+
+.card {
+    border: 0.0625rem solid var(--color-red);
+    background-color: var(--color-snow);
+}

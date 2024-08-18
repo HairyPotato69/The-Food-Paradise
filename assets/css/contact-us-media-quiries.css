@@ -1,0 +1,74 @@
+@media (max-width: 576px) {
+    .subtitles {
+        font-size: 1.75rem; 
+    }
+
+    .accordion-button {
+        height: 3rem; 
+        font-size: 1rem;
+    }
+
+    .accordion-body {
+        font-size: 0.875rem; 
+    }
+
+    .container {
+        padding: 0 15px; 
+    }
+
+    .card {
+        padding: 2rem; 
+    }
+
+    .card .form-control {
+        font-size: 0.875rem; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .subtitles {
+        font-size: 2rem; 
+    }
+
+    .accordion-button {
+        height: 3.5rem; 
+        font-size: 1.125rem; 
+    }
+
+    .accordion-body {
+        font-size: 1rem; 
+    }
+
+    .container {
+        padding: 0 30px; 
+    }
+
+    .card {
+        padding: 3rem; 
+    }
+}
+
+
+@media (max-width: 992px) {
+    .subtitles {
+        font-size: 2.25rem; 
+    }
+
+    .accordion-button {
+        height: 4rem;
+        font-size: 1.125rem; 
+    }
+
+    .accordion-body {
+        font-size: 1.125rem; 
+    }
+
+    .container {
+        padding: 0 45px;
+    }
+
+    .card {
+        padding: 3.5rem; 
+    }
+}

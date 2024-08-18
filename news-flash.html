@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+    <title>News Flash</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- Animation -->
+    <link rel="stylesheet" href="./assets/css/aos.css">
+
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+
+    <!-- Common -->
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/common-media-queries.css">
+
+    <!-- Custom -->
+    <link rel="stylesheet" href="./assets/css/news-flash.css">
+    <link rel="stylesheet" href="./assets/css/news-flash-media-queries.css">
+</head>
+
+<body>
+    <!-- nagivation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+        <div class="container">
+            <div class="d-flex">
+                <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand d-flex mx-3 align-items-center" href="index.html">
+                    <img src="./assets/images/logo.png" alt="Logo" class="me-2">
+                    <div class="d-flex flex-column lh-1">
+                        <p class="mb-0">Malaysian Cuisine</p>
+                        <p class="mb-0 fs-6 fw-light">The Food Paradise</p>
+                    </div>
+                </a>
+            </div>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <div class="d-flex flex-column lh-1">
+                            <p class="mb-0">Malaysian Cuisine</p>
+                            <p class="mb-0 fs-6 fw-light">The Food Paradise</p>
+                        </div>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle mx-2" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Explore</a>
+                            <ul class="dropdown-menu shadow-sm">
+                                <li><a class="dropdown-item border-0" href="peninsular.html">Peninsular</a></li>
+                                <li><a class="dropdown-item border-0" href="borneo.html">Borneo</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="recommendation.html">Recommendation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="news-flash.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-2" href="about-us.html">About</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex justify-content-start align-items-center mx-2 mt-3 mt-lg-0 ">
+                        <a href="contact-us.html">
+                            <button type="button" class="btn-contact-us">Contact Us</button>
+                        </a>
+                        <a href="favorite.html" class="mx-2">
+                            <button class="btn-favorite-cart"><i class="fa fa-heart"></i></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Top stories -->
+    <section id="top-stories">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8" data-aos="fade-right" data-aos-delay="90">
+                        <a href="https://www.thestar.com.my/food/food-news/curious-cook/2024/08/12/curious-cook-the-big-c-and-god"
+                            target="_blank" class="card mb-3">
+                            <img src="https://apicms.thestar.com.my/uploads/images/2024/08/12/thumbs/700/2853574.webp"
+                                class="card-img" alt="...">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end align-items-center">
+                                <div class="bg-light bg-opacity-75 text-dark p-3 rounded-4">
+                                    <h5 class="fw-bold">Curious Cook: The big C and GOD</h5>
+                                    <p class="d-none d-sm-block"> This is a wider card with supporting
+                                        text
+                                        below as a natural
+                                        lead-in to
+                                        additional content. This content is a little bit longer.</p>
+                                    <small>Chris Chan • 12 Aug 2024</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4" data-aos="fade-left" data-aos-delay="100">
+                        <a href="https://www.thestar.com.my/food/food-news/2024/08/09/enjoy-premium-beef-in-various-ways-at-kl-japanese-restaurant-this-month"
+                            target="_blank" class="card mb-3">
+                            <img src="https://apicms.thestar.com.my/uploads/images/2024/08/09/thumbs/700/2848488.webp"
+                                class="card-img" alt="...">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end align-items-center p-3">
+                                <div class="bg-light bg-opacity-75 text-dark p-3 rounded-4">
+                                    <p class="fw-bold mb-0">Enjoy premium beef in various ways at KL Japanese restaurant
+                                        this month</p>
+                                    <small>The Star • 09 Aug 2024</small>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.thestar.com.my/food/eating-out/2024/08/07/celebratory-menu-marks-25-years-of-great-tastes"
+                            target="_blank" class="card">
+                            <img src="https://apicms.thestar.com.my/uploads/images/2024/08/07/thumbs/700/2844512.webp"
+                                class="card-img" alt="...">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end align-items-center p-3">
+                                <div class="bg-light bg-opacity-75 text-dark p-3 rounded-4">
+                                    <p class="fw-bold mb-0">Celebratory menu marks 25 years of great tastes</p>
+                                    <small>Joshua Yap • 07 Aug 2024</small>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured video -->
+    <section id="featured-video">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="text-center fw-bold mb-5" data-aos="fade-down" data-aos-delay="90">Featured Video</h1>
+                <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-down"
+                    data-aos-delay="100">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active p-3">
+                            <div class="card h-100">
+                                <div class="row g-0">
+                                    <div class="col-xl-7">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe src="https://www.youtube.com/embed/vvbA25MbIHI"
+                                                title="YouTube video" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-5">
+                                        <div class="card-body p-4">
+                                            <h5 class="fw-bold mb-4">Can Gordon Ramsay Get His Uncle Crown Back from
+                                                Uncle Roger??</h5>
+                                            <p class="text-muted">Once given the crown of Uncle Gordon by ‪@mrnigelng‬,
+                                                Gordon is attempting to get back. This week on Scrambled, after years of
+                                                being rivals, can Gordon impress Uncle Roger to get his crown back by
+                                                making a delicious breakfast bao?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item p-3">
+                            <div class="card h-100">
+                                <div class="row g-0">
+                                    <div class="col-xl-7">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe src="https://www.youtube.com/embed/FYCoCYcuSb4"
+                                                title="YouTube video" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-5">
+                                        <div class="card-body p-4">
+                                            <h5 class="fw-bold mb-4">BBQ Breakfast Kebabs | Jamie Oliver</h5>
+                                            <p class="text-muted">Looking for something really special this summer to
+                                                impress the ones you love, or simply looking to dust off that barbecue
+                                                and get cooking? This one's a real winner – my incredible BBQ kebabs.
+                                                Mushrooms, sausages, bacon, tomatoes, and spicy peppers... what's not to
+                                                love!?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item p-3">
+                            <div class="card h-100">
+                                <div class="row g-0">
+                                    <div class="col-xl-7">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe src="https://www.youtube.com/embed/KzL7Q2N6mCY"
+                                                title="YouTube video" allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-5">
+                                        <div class="card-body p-4">
+                                            <h5 class="fw-bold mb-4">A Day Making NYC's Most Hyped Burgers at Hamburger
+                                                America | On The Line | Bon Appétit</h5>
+                                            <p class="text-muted">I’ve been obsessed with burgers, easily for about 25
+                                                years now. Hamburger America is the name of the documentary film I made
+                                                in 2004; I have since then written five books, I’ve had three TV shows,
+                                                and now a restaurant.Today Bon Appétit spends a day on the line with
+                                                George Motz, burger scholar and owner of Hamburger America.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topic -->
+    <section id="topics">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row" data-aos="fade-down" data-aos-delay="100">
+                    <div class="col-md-4 p-3">
+                        <h4 class="fw-bold ms-1 mb-3">Living Related</h4>
+                        <div class="d-flex flex-column">
+                            <a href="https://www.thestar.com.my/lifestyle/living/2024/08/13/australian-celebrity-chef-shines-a-spotlight-on-malaysian-culinary-gems"
+                                target="_blank" class="card mb-3">
+                                <div class="card-body p-3">
+                                    <div class="row mb-2">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="h6 me-4">
+                                                Malaysian culinary gems get the spotlight in show by Australian
+                                                celebrity chef
+                                            </span>
+                                            <img src="https://apicms.thestar.com.my/uploads/images/2024/08/13/thumbs/700/2855728.webp"
+                                                class="rounded-3" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <small class="text-muted">Abirami Durai • 13 Aug 2024</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.thestar.com.my/lifestyle/living/2024/08/09/how-to-make-ice-cubes-at-home-that-last-as-long-as-the-ones-in-bars"
+                                target="_blank" class="card mb-3">
+                                <div class="card-body p-3">
+                                    <div class="row mb-2">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="h6 me-4">
+                                                How to make ice cubes at home that last as long as the ones in bars
+                                            </span>
+                                            <img src="https://apicms.thestar.com.my/uploads/images/2024/08/09/thumbs/700/2849249.webp"
+                                                class="rounded-3" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <small class="text-muted">Agency • 10 Aug 2024</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.thestar.com.my/lifestyle/living/tipsy-turvy/2024/07/31/cocktail-characters-kl-bar-three-x-co039s-new-menu-celebrates-individuality"
+                                target="_blank" class="card mb-3">
+                                <div class="card-body p-3">
+                                    <div class="row mb-2">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="h6 me-4">
+                                                Newly ranked No. 56 in Asia, KL bar Three X Co's new menu celebrates
+                                                individuality
+                                            </span>
+                                            <img src="https://apicms.thestar.com.my/uploads/images/2024/07/31/thumbs/700/2833069.webp"
+                                                class="rounded-3" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <small class="text-muted">Michael Cheang • 31 Jul 2024</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-3">
+                        <h4 class="fw-bold ms-1 mb-3">Eatery Experiences</h4>
+                        <div class="d-flex flex-column">
+                            <a href="https://www.freemalaysiatoday.com/category/leisure/2024/08/14/heres-to-a-royally-good-time-at-kings-hall/"
+                                target="_blank" class="card mb-3">
+                                <div class="card-body p-3">
+                                    <div class="row mb-2">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="h6 me-4">
+                                                Here’s to a royally good time at Kings Hall
+                                            </span>
+                                            <img src="https://www.freemalaysiatoday.com/_next/image/?url=https%3A%2F%2Fmedia.freemalaysiatoday.com%2Fwp-content%2Fuploads%2F2024%2F08%2F851cc887-coffeeegg.webp&w=2048&q=75"
+                                                class="rounded-3" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <small class="text-muted">Sheela Vijayan • 14 Aug 2024</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.freemalaysiatoday.com/category/leisure/2024/08/05/have-a-golden-time-enjoying-hong-kong-style-wantan-noodles/"
+                                target="_blank" class="card mb-3">
+                                <div class="card-body p-3">
+                                    <div class="row mb-2">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="h6 me-4">
+                                                <span>
+                                                    Have a Golden Time enjoying Hong Kong-style wantan noodles
+                                                </span>
+                                            </span>
+                                            <img src="https://media.freemalaysiatoday.com/wp-content/uploads/2024/08/64edf251-wonton.webp"
+                                                class="rounded-3" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <small class="text-muted">Terence Toh • 05 Aug 2024</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.freemalaysiatoday.com/category/leisure/2024/08/04/sea-you-at-mawilla-yacht-club-restaurant-labuan-for-a-fishy-feast/"
+                                target="_blank" class="card mb-3">
+                                <div class="card-body p-3">
+                                    <div class="row mb-2">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="h6 me-4">
+                                                ‘Sea’ you at Mawilla Yacht Club Restaurant, Labuan for a fishy feast
+                                            </span>
+                                            <img src="https://www.freemalaysiatoday.com/_next/image/?url=https%3A%2F%2Fmedia.freemalaysiatoday.com%2Fwp-content%2Fuploads%2F2024%2F08%2Fead1a587-lifestyle-mawilla-emel-pic-030824.webp&w=2048&q=75"
+                                                class="rounded-3" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <small class="text-muted">KY Speaks • 04 Aug 2024</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-3">
+                        <h4 class="fw-bold ms-1 mb-3">Street Bites</h4>
+                        <div class="d-flex flex-column">
+                            <a href="https://www.freemalaysiatoday.com/category/leisure/2024/07/29/big-mommy-serves-great-nasi-kandar-in-puchong/"
+                                target="_blank" class="card mb-3">
+                                <div class="card-body p-3">
+                                    <div class="row mb-2">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="h6 me-4">
+                                                Big Mommy serves great nasi kandar in Puchong
+                                            </span>
+                                            <img src="https://www.freemalaysiatoday.com/_next/image/?url=https%3A%2F%2Fmedia.freemalaysiatoday.com%2Fwp-content%2Fuploads%2F2024%2F07%2F17800477-pair-lifestyle-emelpic-280724.webp&w=2048&q=75"
+                                                class="rounded-3" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <small class="text-muted">Noel Wong • 14 Jul 2024</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.freemalaysiatoday.com/category/leisure/2023/03/15/5-local-street-foods-that-are-surprisingly-nutritious/"
+                                target="_blank" class="card mb-3">
+                                <div class="card-body p-3">
+                                    <div class="row mb-2">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="h6 me-4">
+                                                5 local street foods that are surprisingly nutritious
+                                            </span>
+                                            <img src="https://www.freemalaysiatoday.com/_next/image/?url=https%3A%2F%2Fmedia.freemalaysiatoday.com%2Fwp-content%2Fuploads%2F2023%2F03%2F1e098c36-streetfood-lifestyle-emel-pic-140323-1.jpg&w=2048&q=75"
+                                                class="rounded-3" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <small class="text-muted">Theevya Ragu • 13 Aug 2024</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.freemalaysiatoday.com/category/leisure/2019/01/03/3-street-foods-that-are-perfect-with-a-chilled-tiger/"
+                                target="_blank" class="card mb-3">
+                                <div class="card-body p-3">
+                                    <div class="row mb-2">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="h6 me-4">
+                                                3 street foods that are perfect with a chilled Tiger
+                                            </span>
+                                            <img src="https://www.freemalaysiatoday.com/_next/image/?url=https%3A%2F%2Fmedia.freemalaysiatoday.com%2Fwp-content%2Fuploads%2F2019%2F01%2Ftiger-beer.jpg&w=2048&q=75"
+                                                class="rounded-3" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <small class="text-muted">KY Speaks • 12 Aug 2014</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended reading -->
+    <section id="recommended-reading">
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="text-center fw-bold mb-5" data-aos="fade-down" data-aos-delay="90">Recommended Reading</h1>
+                <div class="row" data-aos="fade-down" data-aos-delay="100">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <a href="https://chicagoreader.com/food-drink/monday-night-foodball/kedai-tapao-malaysian-karipap-curry-puff-pop-up-frank-marys-tavern/"
+                                    target="_blank" class="d-flex flex-column flex-md-row justify-content-between">
+                                    <div class="order-2 order-md-1 me-md-4">
+                                        <div class="d-flex flex-column justify-content-between h-100">
+                                            <div>
+                                                <h5>Get smothered in love like ayam rendang when Kedai Tapao return to
+                                                    the next Monday Night Foodball
+                                                </h5>
+                                                <p class="text-muted">Check out Jennifer Pou Alesi and Mike Alesi’s
+                                                    Malaysian menu at the Reader’s weekly chef pop-up at Frank and
+                                                    Mary’s Tavern.
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <small class="text-muted">Mike Sula • 25 Jul 2024</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img src="https://chicagoreader.com/wp-content/uploads/2024/07/image_50743297-scaled-e1721916569281.jpeg"
+                                        class="img-fluid fixed-size order-1 order-md-2 rounded-3 mb-3 mb-md-0"
+                                        alt="...">
+                                </a>
+                                <hr>
+                                <a href="https://twincities.eater.com/maps/korean-restaurants-minneapolis-st-paul-twin-cities"
+                                    target="_blank" class="d-flex flex-column flex-md-row justify-content-between">
+                                    <div class="order-2 order-md-1 me-md-4">
+                                        <div class="d-flex flex-column justify-content-between h-100">
+                                            <div>
+                                                <h5>13 Essential Korean Restaurants in the Twin Cities
+                                                </h5>
+                                                <p class="text-muted">For bulgogi burgers, barbecue, ample banchan,
+                                                    steaming silken tofu stews, and much, much more
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <small class="text-muted">Eater • 1 Aug 2024</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img src="https://cdn.vox-cdn.com/thumbor/70Jd4W_Twn3d3J6GRyEXzh4wETA=/0x302:4256x2530/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/25554281/CTYP_FOOD_KimchiTofuHouse_AlmaGuzman_09072019_09.jpg"
+                                        class="img-fluid fixed-size order-1 order-md-2 rounded-3 mb-3 mb-md-0"
+                                        alt="...">
+                                </a>
+                                <hr>
+                                <a href="https://www.nationalgeographic.com/travel/article/ice-cream-styles-around-world"
+                                    target="_blank" class="d-flex flex-column flex-md-row justify-content-between">
+                                    <div class="order-2 order-md-1 me-md-4">
+                                        <div class="d-flex flex-column justify-content-between h-100">
+                                            <div>
+                                                <h5>8 ice cream styles from around the world
+                                                </h5>
+                                                <p class="text-muted">​Whether it’s the stretchy dondurma in Istanbul or
+                                                    ‘ice beans’ in Kuala Lumpur, there are plenty of options to keep ice
+                                                    cream loving travellers cool.
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <small class="text-muted">National Geographic • 16 Jul 2024</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <img src="https://i.natgeofe.com/n/bf91fafe-3255-4b14-93e1-dd5bde1a735b/gettyimages-534056246_16x9.jpg?w=1200"
+                                        class="img-fluid fixed-size order-1 order-md-2 rounded-3 mb-3 mb-md-0"
+                                        alt="...">
+                                </a>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="text-center mt-4">
+                            <a href="news-hub.html" target="_blank" class="btn-read-more">
+                                Read More <i class="fa-solid fa-angles-down"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white pt-5 pb-1 px-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 py-3">
+                    <div class="d-flex flex-column flex-md-row">
+                        <div class="me-5">
+                            <div class="d-flex align-items-center">
+                                <img src="./assets/images/logo.png" alt="Logo" class="mb-3"
+                                    style="width: 100%; max-width: 144px;">
+                                <div class="d-flex flex-column lh-1">
+                                    <h3 class="mb-1">Malaysian Cuisine</h3>
+                                    <p>The Food Paradise</p>
+                                </div>
+                            </div>
+                            <p>
+                                We are dedicated to bringing you the best content about Malaysian cuisine and
+                                culture. Explore
+                                our website for more insights and updates.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 py-3">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="index.html">Home</a></li>
+                        <li class="mb-3"><a href="peninsular.html">Peninsular</a></li>
+                        <li class="mb-3"><a href="borneo.html">Borneo</a></li>
+                        <li class="mb-3"><a href="news-flash.html">News</a></li>
+                        <li class="mb-3"><a href="about-us.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 py-3">
+                    <h5 class="mb-4">Contact Us</h5>
+                    <p>Email: jimmy@1utar.my</p>
+                    <p>Phone: +60 12-345 6789</p>
+                    <p>Address: No 1, Jalan Universiti, 31900 Kampar, Perak</p>
+                    <div class="d-flex mt-4">
+                        <a href="https://www.facebook.com/UTARnet" target="_blank"
+                            class="icon-social-media rounded-circle text-center me-4">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/utardsakampar/" target="_blank"
+                            class="icon-social-media rounded-circle text-center me-4">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com/UTARnet" target="_blank"
+                            class="icon-social-media rounded-circle text-center me-4">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center p-3 mt-3">
+                <p>&copy; 2024 Malaysian Cuisine The Food Paradise. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#" class="btn-go-to-top"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- Bootstrap -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Animation -->
+    <script src="./assets/js/aos.js"></script>
+
+    <!-- Common -->
+    <script src="./assets/js/common.js"></script>
+
+    <!-- Custome -->
+    <script src="./assets/js/news-flash.js"></script>
+</body>
+
+</html>
