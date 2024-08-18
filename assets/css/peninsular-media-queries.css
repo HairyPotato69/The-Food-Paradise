@@ -71,3 +71,47 @@
         padding: 0.75rem;
     }
 }
+
+
+@media screen and (max-width: 1020px) {
+    #peninsular-carousel .carousel-item img {
+        min-height: 34em;
+        max-height: 34em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #peninsular-carousel .carousel-item img {
+        min-height: 30em;
+        max-height: 30em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #peninsular-carousel .carousel-item img {
+        min-height: 27em;
+        max-height: 27em;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #peninsular-carousel .carousel-item img {
+        min-height: 23em;
+        max-height: 23em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #peninsular-carousel .carousel-item img {
+        min-height: 18em;
+        max-height: 18em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #peninsular-carousel .carousel-item img {
+        min-height: 14em;
+        max-height: 14em;
+    }
+}

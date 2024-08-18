@@ -68,7 +68,7 @@ function loadFavorites() {
 function displayEmptyMessage(container) {
     let message = document.createElement('h2');
     message.className = 'empty-container mt-4';
-    message.textContent = 'Favorites Is Empty';
+    message.textContent = 'No Favourite Food';
     container.appendChild(message);
 }
 
