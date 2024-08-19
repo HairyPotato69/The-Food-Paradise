@@ -39,7 +39,8 @@
 
     .food-description,
     .food-allergies,
-    .food-nutrition {
+    .food-nutrition,
+    .food-ingredients{
         height: fit-content;
         border-bottom: 1px solid black;
         padding: 1rem;
@@ -61,6 +62,17 @@
     .allergens-list li {
         margin-right: 2rem;
     }
+
+    .ingredients-list {
+        columns: 2;
+        list-style-type: none;
+        padding:0;
+    }
+    .ingredients-list li{
+        break-inside:avoid;
+        padding: 5px 0;
+    }
+
 
     @keyframes popup {
         from {

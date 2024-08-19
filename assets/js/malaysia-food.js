@@ -4,6 +4,7 @@ const foodData = {
 		image: "assets\\images\\nasi-lemak.jpg",
 		description: "Nasi Lemak is Malaysia's national dish, featuring fragrant rice cooked in coconut milk, served with sambal, anchovies, peanuts, boiled egg, and cucumber. This flavorful meal is enjoyed at any time of day and is traditionally wrapped in a banana leaf. Its rich, creamy rice paired with spicy sambal and crunchy sides creates a delightful blend of textures and flavors. Variations may include fried chicken, rendang, or sambal squid.",
 		allergenlist: ["Peanuts", "Anchovies", "Eggs"],
+		ingredients: ["Rice", "Coconut Milk", "Sambal", "Anchovies", "Peanuts", "Boiled Egg", "Cucumber", "Banana Leaf", "Fried Chicken (optional)", "Rendang (optional)", "Sambal Squid (optional)"],
 		nutrients: [
 			{ name: "Calories", value: 1040 },
 			{ name: "Fat", value: 69 },
@@ -21,6 +22,7 @@ const foodData = {
 		image: "assets\\images\\nasi-linou.jpg",
 		description: "Nasi Linou is a traditional Kadazan-Dusun dish made with glutinous rice, cooked with coconut milk and flavored with pandan leaves. It's usually served with side dishes like chicken, beef, or vegetables.",
 		allergenlist: ['Coconut'],
+		ingredients: ["Glutinous Rice", "Coconut Milk", "Pandan Leaves", "Chicken (optional)", "Beef (optional)", "Vegetables (optional)"],
 		nutrients: [
 			{ name: "Calories", value: 150 },
 			{ name: "Fat", value: 1.5 },
@@ -33,6 +35,7 @@ const foodData = {
 		image: "assets\\images\\nasi-tumpang.jpg",
 		description: "A specialty of the Bajau people, Nasi Tumpang consists of rice layered with various fillings like spicy sambal, meat, and vegetables, all wrapped in banana leaves and steamed.",
 		allergenlist: ['Depends on filling ingredients'],
+		ingredients: ["Rice", "Spicy Sambal", "Meat", "Vegetables", "Banana Leaves"],
 		nutrients: [
 			{ name: "Calories", value: 180 },
 			{ name: "Fat", value: 2 },
@@ -46,6 +49,7 @@ const foodData = {
 		image: "assets\\images\\nasi-ulam.jpg",
 		description: "Nasi Ulam is a rice dish mixed with a variety of fresh herbs and vegetables, often seasoned with sambal. It's a healthy and aromatic dish.",
 		allergenlist: ['Peanuts', 'Seafood'],
+		ingredients: ["Rice", "Fresh Herbs", "Vegetables", "Sambal"],
 		nutrients: [
 			{ name: "Calories", value: 170 },
 			{ name: "Fat", value: 3 },
@@ -59,6 +63,7 @@ const foodData = {
 		image: "assets\\images\\lun-bawang.jpg",
 		description: "Nuba Laya is a Lun Bawang dish from Sarawak, made with mashed rice wrapped in banana leaves. It is typically served with a variety of side dishes, such as meats and vegetables, offering a hearty and satisfying meal.",
 		allergenlist: ["None"],
+		ingredients: ["Rice", "Banana Leaves", "Meat (optional)", "Vegetables (optional)"],
 		nutrients: [
 			{ name: "Calories", value: 200 },
 			{ name: "Fat", value: 1 },
@@ -71,6 +76,7 @@ const foodData = {
 		image: "assets\\images\\lemang.jpg",
 		description: "Sarawak Lemang is a traditional glutinous rice dish cooked in bamboo with coconut milk, commonly enjoyed during festive occasions. The bamboo imparts a unique aroma and flavor to the rice, which is often served with meat or curries.",
 		allergenlist: ["Coconut"],
+		ingredients: ["Glutinous Rice", "Coconut Milk", "Bamboo"],
 		nutrients: [
 			{ name: "Calories", value: 330 },
 			{ name: "Fat", value: 8 },
@@ -83,6 +89,7 @@ const foodData = {
 		image: "assets\\images\\sarawak-laksa.jpg",
 		description: "A rich, spicy noodle soup with a coconut milk base, flavored with sambal belacan, garlic, lemon grass, and tamarind.",
 		allergenlist: ["Shellfish", "Coconut"],
+		ingredients: ["Noodles", "Coconut Milk", "Sambal Belacan", "Garlic", "Lemon Grass", "Tamarind"],
 		nutrients: [
 			{ "name": "Calories", "value": 450 },
 			{ "name": "Fat", "value": 20 },
@@ -91,10 +98,11 @@ const foodData = {
 		]
 	},
 	8: {
-		title: "Sarawak Laksa",
+		title: "Mee Goreng Basah",
 		image: "assets\\images\\mee-goreng-basah.jpg",
 		description: "Mee Goreng Basah is a Malaysian wet fried noodle dish. The noodles are stir-fried with a flavorful blend of spices, soy sauce, vegetables, and a choice of meat or seafood, creating a savory, slightly saucy dish.",
 		allergenlist: ["Wheat", "Soy", "Seafood"],
+		ingredients: ["Noodles", "Spices", "Soy Sauce", "Vegetables", "Meat (optional)", "Seafood (optional)"],
 		nutrients: [
 			{ name: "Calories", value: 480 },
 			{ name: "Fat", value: 15 },
@@ -107,6 +115,7 @@ const foodData = {
 		image: "assets\\images\\tuaran-mee.jpg",
 		description: "Tuaran Mee is a famous noodle dish from Tuaran, Sabah, featuring homemade egg noodles stir-fried with vegetables, pork, and egg. The noodles are known for their springy texture and are often served with a savory sauce.",
 		allergenlist: ["Wheat", "Eggs", "Pork"],
+		ingredients: ["Egg Noodles", "Vegetables", "Pork", "Egg", "Savory Sauce"],
 		nutrients: [
 			{ name: "Calories", value: 500 },
 			{ name: "Fat", value: 18 },
@@ -119,6 +128,7 @@ const foodData = {
 		image: "assets\\images\\kuih-cincin.jpg",
 		description: "Kuih Cincin is a traditional Sabahan snack made from rice flour, palm sugar, and pandan leaves. The dough is shaped into rings and deep-fried until crispy, creating a sweet and crunchy treat.",
 		allergenlist: ["None"],
+		ingredients: ["Rice Flour", "Palm Sugar", "Pandan Leaves"],
 		nutrients: [
 			{ name: "Calories", value: 150 },
 			{ name: "Fat", value: 5 },
@@ -131,6 +141,7 @@ const foodData = {
 		image: "assets\\images\\penyaram.jpg",
 		description: "Penyaram, also known as Kuih UFO, is a traditional Sarawakian snack made from rice flour, coconut milk, and palm sugar. It has a distinctive UFO shape and is deep-fried to achieve a crispy texture.",
 		allergenlist: ["Coconut"],
+		ingredients: ["Rice Flour", "Coconut Milk", "Palm Sugar"],
 		nutrients: [
 			{ name: "Calories", value: 180 },
 			{ name: "Fat", value: 7 },
@@ -139,10 +150,11 @@ const foodData = {
 		]
 	},
 	12: {
-		title: "Kuih Penyaram",
+		title: "Kek Lapis",
 		image: "assets\\images\\kek-lapis.jpg",
 		description: "Kek Lapis Sarawak, or Sarawak Layer Cake, is a colorful and intricate layered cake made from butter, condensed milk, and eggs. It is a festive snack often enjoyed during celebrations.",
 		allergenlist: ["Eggs", "Dairy"],
+		ingredients: ["Butter", "Condensed Milk", "Eggs"],
 		nutrients: [
 			{ name: "Calories", value: 220 },
 			{ name: "Fat", value: 12 },
@@ -155,6 +167,7 @@ const foodData = {
 		image: "assets\\images\\laksa-utara.jpg",
 		description: "Laksa Utara, also known as Northern Laksa, is a beloved Malaysian dish originating from the northern states of Malaysia. This flavorful noodle soup features a rich, spicy broth made from a blend of fish, tamarind, and aromatic herbs and spices. The dish is typically served with thick rice noodles, garnished with fresh herbs like mint and Vietnamese coriander, and topped with ingredients such as cucumber, pineapple, and boiled egg. The combination of tangy, spicy, and savory flavors makes Laksa Utara a unique and satisfying culinary experience.",
 		allergenlist: ["Fish", "Tamarind", "Herbs and Spices"],
+		ingredients: ["Rice Noodles", "Fish", "Tamarind", "Herbs", "Spices", "Cucumber", "Pineapple", "Boiled Egg"],
 		nutrients: [
 			{ name: "Calories", value: 350 },
 			{ name: "Fat", value: 10 },
@@ -172,6 +185,7 @@ const foodData = {
 		image: "assets\\images\\asam-laksa.jpg",
 		description: "Asam Laksa is a tangy and spicy Malaysian noodle soup made with mackerel fish, tamarind, and a variety of aromatic herbs and spices. This dish is known for its distinctive sour flavor, which comes from the tamarind and asam gelugur (dried tamarind slices). It is typically served with thick rice noodles and garnished with ingredients such as cucumber, pineapple, mint, and red chili. Asam Laksa is a refreshing and flavorful dish that is popular in the northern states of Malaysia.",
 		allergenlist: ["Fish", "Tamarind", "Herbs and Spices"],
+		ingredients: ["Mackerel Fish", "Tamarind", "Herbs", "Spices", "Rice Noodles", "Cucumber", "Pineapple", "Mint", "Red Chili"],
 		nutrients: [
 			{ name: "Calories", value: 300 },
 			{ name: "Fat", value: 8 },
@@ -189,6 +203,7 @@ const foodData = {
 		image: "assets\\images\\lamb-rendang.jpg",
 		description: "Lamb Rendang is a rich and aromatic dish made with lamb slow-cooked in coconut milk and a blend of spices. This traditional Malaysian dish is known for its deep flavors and tender meat, often served with rice.",
 		allergenlist: ["Coconut", "Spices"],
+		ingredients: ["Lamb", "Coconut Milk", "Spices"],
 		nutrients: [
 			{ name: "Calories", value: 299 },
 			{ name: "Fat", value: 59 },
@@ -211,6 +226,7 @@ const foodData = {
 		image: "assets\\images\\curry-mee.jpg",
 		description: "Curry Mee is a popular Malaysian noodle soup made with yellow egg noodles and a rich, spicy curry broth. This dish is typically garnished with a variety of toppings such as chicken, shrimp, tofu, and bean sprouts. The creamy coconut milk base combined with the aromatic spices creates a flavorful and satisfying meal.",
 		allergenlist: ["Coconut", "Shrimp", "Chicken", "Spices"],
+		ingredients: ["Yellow Egg Noodles", "Coconut Milk", "Chicken", "Shrimp", "Tofu", "Bean Sprouts", "Spices"],
 		nutrients: [
 			{ name: "Calories", value: 642 },
 			{ name: "Fat", value: 44 },
@@ -233,6 +249,7 @@ const foodData = {
 		image: "assets\\images\\keropok-lekor.jpg",
 		description: "Keropok Lekor is a traditional Malaysian snack made from fish and sago flour, shaped into long sausages and deep-fried until crispy. This popular street food is often enjoyed with a sweet and spicy chili sauce. The combination of the crunchy exterior and the chewy interior makes Keropok Lekor a delightful treat.",
 		allergenlist: ["Fish", "Sago"],
+		ingredients: ["Fish", "Sago Flour", "Chili Sauce (optional)"],
 		nutrients: [
 			{ name: "Calories", value: 250 },
 			{ name: "Fat", value: 12 },
@@ -255,6 +272,7 @@ const foodData = {
 		image: "assets\\images\\murtabak.jpg",
 		description: "Murtabak is a savory stuffed pancake or flatbread commonly found in Malaysia. It is filled with a mixture of minced meat, onions, and spices, then pan-fried until crispy. This dish is often enjoyed with a side of curry sauce or pickled vegetables.",
 		allergenlist: ["Wheat", "Eggs", "Meat"],
+		ingredients: ["Minced Meat", "Onions", "Spices", "Pancake/Flatbread", "Curry Sauce (optional)", "Pickled Vegetables (optional)"],
 		nutrients: [
 			{ name: "Calories", value: 396 },
 			{ name: "Fat", value: 17 },
@@ -274,6 +292,7 @@ const foodData = {
 		image: "assets\\images\\popiah.jpg",
 		description: "Popiah is a fresh spring roll commonly enjoyed in Malaysia. It consists of a thin crepe-like wrapper filled with a mixture of cooked vegetables, tofu, and sometimes shrimp or meat. Popiah is often served with a sweet and savory sauce.",
 		allergenlist: ["Wheat", "Soy", "Shrimp (optional)"],
+		ingredients: ["Crepe Wrapper", "Cooked Vegetables", "Tofu", "Shrimp (optional)", "Meat (optional)", "Sweet and Savory Sauce"],
 		nutrients: [
 			{ name: "Calories", value: 188 },
 			{ name: "Fat", value: 4 },
@@ -296,6 +315,7 @@ const foodData = {
 		image: "assets\\images\\biryani.jpg",
 		description: "Biryani is a flavorful and aromatic rice dish that is popular in Malaysia. It is made with basmati rice, spices, and meat such as chicken, beef, or lamb. The dish is often garnished with fried onions, boiled eggs, and fresh herbs.",
 		allergenlist: ["Dairy (if yogurt is used)", "Meat"],
+		ingredients: ["Basmati Rice", "Spices", "Meat (Chicken, Beef, or Lamb)", "Fried Onions", "Boiled Eggs", "Fresh Herbs"],
 		nutrients: [
 			{ name: "Calories", value: 515 },
 			{ name: "Fat", value: 22 },
@@ -414,10 +434,10 @@ function createPopup(data) {
 				</div>
 				<div class = "food-allergies">
 					<h2>Allergens</h2>
-					<ul class = "allergens-list d-flex ps-0 mb-2">
-					</ul>
+					<ul class = "allergens-list d-flex ps-0 mb-2"></ul>
 				</div>
 				<div class = "food-nutrition">
+					<h2>Nutritions</h2>
 					<div class = "table-responsive">
 						<table class = "table table-borderless table-striped">
 							<thead>
@@ -431,6 +451,10 @@ function createPopup(data) {
 						</table>
 					</div>
 				</div>
+				<div class = "food-ingredients">
+					<h2>Ingredients</h2>
+					<ul class = "ingredients-list"> 
+				</div>
 			</div>
 		</div>
 		<button class="close-btn">Close</button>
@@ -441,6 +465,14 @@ function createPopup(data) {
 		listItem.textContent = allergen;
 		allergensList.appendChild(listItem);
 	});
+
+	const ingredientsList = popup.querySelector('.ingredients-list');
+	data.ingredients.forEach(ingredient => {
+		const listItem = document.createElement('li');
+		listItem.textContent = ingredient;
+		ingredientsList.appendChild(listItem);
+	});
+	
 
 	const nutrientsList = popup.querySelector('.nutrients-list');
 	data.nutrients.forEach(nutrient => {
